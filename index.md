@@ -43,6 +43,7 @@ uDork is a script written in Bash Scripting that uses advanced Google search tec
 | [Shibboleth](https://m3n0sd0n4ld.github.io/htb/Shibboleth/) | `Medium` | `Linux` | `#IPMI #Zabbix #MariaDB ` |
 | Paper (**private**) | `Easy` | `Linux` | --- |
 | Timelapse (**private**) | `Easy` | `Windows` | --- |
+| Pandora (**private**) | `Easy` | `Linux` | --- |
 
 <img src='imgs/tryhackme.png' width='200' align='center'>
 
