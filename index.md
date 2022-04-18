@@ -42,9 +42,9 @@ uDork is a script written in Bash Scripting that uses advanced Google search tec
 | [Secret](https://m3n0sd0n4ld.github.io/htb/Secret/) | `Easy` | `Linux` | `#JWT #Cmd-Injection` |
 | [Shibboleth](https://m3n0sd0n4ld.github.io/htb/Shibboleth/) | `Medium` | `Linux` | `#IPMI #Zabbix #MariaDB ` |
 | [Paper (**private**)](https://m3n0sd0n4ld.github.io/htb/Paper/) | `Easy` | `Linux` | --- |
-| Timelapse (**private**) | `Easy` | `Windows` | --- |
-| Pandora (**private**) | `Easy` | `Linux` | --- |
-| Unicode (**private**) | `Medium` | `Linux` | --- |
+| [Timelapse (**private**)](https://m3n0sd0n4ld.github.io/htb/Timelapse/) | `Easy` | `Windows` | --- |
+| [Pandora (**private**)](https://m3n0sd0n4ld.github.io/htb/Pandora/) | `Easy` | `Linux` | --- |
+| [Unicode (**private**)](https://m3n0sd0n4ld.github.io/htb/Unicode/) | `Medium` | `Linux` | --- |
 
 <img src='imgs/tryhackme.png' width='200' align='center'>
 
