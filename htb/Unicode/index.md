@@ -1,7 +1,7 @@
 # Unicode HackTheBox Writeup
 ### Level: `Medium` | OS: `Linux`
 
-![logo](1.jpg)
+![logo](1.png)
 
 ## Post protected
 This publication will not be displayed until the machine is officially withdrawn.
