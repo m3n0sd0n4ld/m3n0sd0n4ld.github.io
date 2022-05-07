@@ -44,7 +44,7 @@ uDork is a script written in Bash Scripting that uses advanced Google search tec
 | [Paper (**private**)](https://m3n0sd0n4ld.github.io/htb/Paper/) | `Easy` | `Linux` | --- |
 | [Timelapse (**private**)](https://m3n0sd0n4ld.github.io/htb/Timelapse/) | `Easy` | `Windows` | --- |
 | [Pandora (**private**)](https://m3n0sd0n4ld.github.io/htb/Pandora/) | `Easy` | `Linux` | --- |
-| [Unicode (**private**)](https://m3n0sd0n4ld.github.io/htb/Unicode/) | `Medium` | `Linux` | --- |
+| [Unicode](https://m3n0sd0n4ld.github.io/htb/Unicode/) | `Medium` | `Linux` | `JWT` `RSA` `ByPass` `cURL`|
 | [RouterSpace (**private**)](https://m3n0sd0n4ld.github.io/htb/RouterSpace/) | `Easy` | `Linux` | --- |
 | [Meta (**private**)](https://m3n0sd0n4ld.github.io/htb/Meta/) | `Medium` | `Linux` | --- |
 | [Undetected (**private**)](https://m3n0sd0n4ld.github.io/htb/Undetected/) | `Medium` | `Linux` | --- |
