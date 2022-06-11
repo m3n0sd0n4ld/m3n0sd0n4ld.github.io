@@ -46,7 +46,7 @@ uDork is a script written in Bash Scripting that uses advanced Google search tec
 | [Pandora](https://m3n0sd0n4ld.github.io/htb/Pandora/) | `Easy` | `Linux` | `#SNMP` `#PandoraFMS` `PathHijacking` |
 | [Unicode](https://m3n0sd0n4ld.github.io/htb/Unicode/) | `Medium` | `Linux` | `#JWT` `#RSA` `#ByPass` `#cURL`|
 | [RouterSpace (**private**)](https://m3n0sd0n4ld.github.io/htb/RouterSpace/) | `Easy` | `Linux` | --- |
-| [Meta (**private**)](https://m3n0sd0n4ld.github.io/htb/Meta/) | `Medium` | `Linux` | --- |
+| [Meta](https://m3n0sd0n4ld.github.io/htb/Meta/) | `Medium` | `Linux` | `#Exiftool` `#RCE` `#Mogrify` `#ImageMagick` `#Neofetch`|
 | [Undetected (**private**)](https://m3n0sd0n4ld.github.io/htb/Undetected/) | `Medium` | `Linux` | --- |
 | [Timing](https://m3n0sd0n4ld.github.io/htb/Timing/) | `Medium` | `Linux` | `#PHPWrappers #PHPTime #Git` |
 | [AdmirerToo](https://m3n0sd0n4ld.github.io/htb/AdmirerToo/) | `Hard` | `Linux` | `#Adminer` `#SSRF` `#OpenTSDB` `#OpenCATS` `#Fail2Ban` |
