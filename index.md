@@ -41,7 +41,7 @@
 | [Bolt](https://m3n0sd0n4ld.github.io/htb/Bolt/) | `Medium`| `Linux`| `#Passbolt #AdminLTE3 #GPG` |
 | [Secret](https://m3n0sd0n4ld.github.io/htb/Secret/) | `Easy` | `Linux` | `#JWT #Cmd-Injection` |
 | [Shibboleth](https://m3n0sd0n4ld.github.io/htb/Shibboleth/) | `Medium` | `Linux` | `#IPMI #Zabbix #MariaDB ` |
-| [Paper](https://m3n0sd0n4ld.github.io/htb/Paper/) | `Easy` | `Linux` | `#rocketchat` `#Polkit`|
+| [Paper](https://m3n0sd0n4ld.github.io/htb/Paper/) | `Easy` | `Linux` | `WordPress` `#rocketchat` `#Polkit`|
 | [Timelapse (**private**)](https://m3n0sd0n4ld.github.io/htb/Timelapse/) | `Easy` | `Windows` | --- |
 | [Pandora](https://m3n0sd0n4ld.github.io/htb/Pandora/) | `Easy` | `Linux` | `#SNMP` `#PandoraFMS` `#PathHijacking` |
 | [Unicode](https://m3n0sd0n4ld.github.io/htb/Unicode/) | `Medium` | `Linux` | `#JWT` `#RSA` `#ByPass` `#cURL`|
