@@ -151,6 +151,7 @@
 * [Ciberataques físicos: cuando el peligro está en un USB](https://www.sothis.tech/sistemas-de-control-industrial/)
 * [Black Fraude: cómo evitar las estafas en rebajas](https://www.sothis.tech/black-fraude-como-evitar-las-estafas-en-rebajas/)
 * [El Coronavirus, una excusa más para los ciberdelincuentes](https://www.sothis.tech/ciberseguridad-aplicada-al-coronavirus/)
+* [GooFuzz: la herramienta para la enumeración de directorios y ficheros de forma pasiva](https://www.hackplayers.com/2022/06/goofuzz-tool-enum-pasiva.html)
 
 ---
 ## Events & Conferences
