@@ -53,7 +53,7 @@
 | [Catch (**private**)](https://m3n0sd0n4ld.github.io/htb/Catch/) | `Medium` | `Linux` | --- |
 | [Noter (**private**)](https://m3n0sd0n4ld.github.io/htb/Noter/) | `Medium` | `Linux` | --- |
 | [Acute (**private**)](https://m3n0sd0n4ld.github.io/htb/Acute/) | `Hard` | `Windows` | --- |
-| [Phoenix (**private**)](https://m3n0sd0n4ld.github.io/htb/Phoenix/) | `Hard` | `Linux` | --- |
+| [Phoenix](https://m3n0sd0n4ld.github.io/htb/Phoenix/) | `Hard` | `Linux` | `#WP` `#plugins` `#google-authenticator` `#rsync` |
 | [OpenSource (**private**)](https://m3n0sd0n4ld.github.io/htb/OpenSource/) | `Easy` | `Linux` | --- |
 
 <img src='imgs/tryhackme.png' width='200' align='center'>
