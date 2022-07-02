@@ -14,6 +14,7 @@
 | SUDO | CVE-2021-3156 (Checker) | [Link](https://github.com/m3n0sd0n4ld/CVE-Exploits/tree/main/CVE-2021-3156) |
 | Strapi < 3.0.0-beta.17.7 (Authenticated) | CVE-2019-19609 | [Link](https://www.exploit-db.com/exploits/50238) |
 | Simple Image Gallery System 1.0 - SQL Injection (Time-Based blind) | n/a | [Link](https://github.com/m3n0sd0n4ld/CVE-Exploits/blob/main/Simple%20Image%20Gallery%20System/index.md) |
+| Company’s Recruitment Management System 1.0 - Remote Readable Administrator Credentials (Unauthenticated) | n/a | [Link](https://m3n0sd0n4ld.github.io/articles/Company-Recruitment-Management-System_1.0_Remote_Readable_Administrator_Credentials%20(Unauthenticated)/) |
 
 ---
 
@@ -47,7 +48,7 @@
 | [Unicode](https://m3n0sd0n4ld.github.io/htb/Unicode/) | `Medium` | `Linux` | `#JWT` `#RSA` `#ByPass` `#cURL`|
 | [RouterSpace (**private**)](https://m3n0sd0n4ld.github.io/htb/RouterSpace/) | `Easy` | `Linux` | --- |
 | [Meta](https://m3n0sd0n4ld.github.io/htb/Meta/) | `Medium` | `Linux` | `#Exiftool` `#RCE` `#Mogrify` `#ImageMagick` `#Neofetch`|
-| [Undetected (**private**)](https://m3n0sd0n4ld.github.io/htb/Undetected/) | `Medium` | `Linux` | --- |
+| [Undetected](https://m3n0sd0n4ld.github.io/htb/Undetected/) | `Medium` | `Linux` | `#PHPUnit` `#RCE` `#XOR` `#Reversing` |
 | [Timing](https://m3n0sd0n4ld.github.io/htb/Timing/) | `Medium` | `Linux` | `#PHPWrappers #PHPTime #Git` |
 | [AdmirerToo](https://m3n0sd0n4ld.github.io/htb/AdmirerToo/) | `Hard` | `Linux` | `#Adminer` `#SSRF` `#OpenTSDB` `#OpenCATS` `#Fail2Ban` |
 | [Catch (**private**)](https://m3n0sd0n4ld.github.io/htb/Catch/) | `Medium` | `Linux` | --- |
@@ -154,6 +155,7 @@
 * [Black Fraude: cómo evitar las estafas en rebajas](https://www.sothis.tech/black-fraude-como-evitar-las-estafas-en-rebajas/)
 * [El Coronavirus, una excusa más para los ciberdelincuentes](https://www.sothis.tech/ciberseguridad-aplicada-al-coronavirus/)
 * [GooFuzz: la herramienta para la enumeración de directorios y ficheros de forma pasiva](https://www.hackplayers.com/2022/06/goofuzz-tool-enum-pasiva.html)
+* [Company’s Recruitment Management System 1.0 - Remote Readable Administrator Credentials (Unauthenticated)](https://m3n0sd0n4ld.github.io/articles/Company-Recruitment-Management-System_1.0_Remote_Readable_Administrator_Credentials%20(Unauthenticated)/)
 
 ---
 ## Events & Conferences
