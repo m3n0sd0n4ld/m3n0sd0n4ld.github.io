@@ -46,7 +46,7 @@
 | [Timelapse (**private**)](https://m3n0sd0n4ld.github.io/htb/Timelapse/) | `Easy` | `Windows` | --- |
 | [Pandora](https://m3n0sd0n4ld.github.io/htb/Pandora/) | `Easy` | `Linux` | `#SNMP` `#PandoraFMS` `#PathHijacking` |
 | [Unicode](https://m3n0sd0n4ld.github.io/htb/Unicode/) | `Medium` | `Linux` | `#JWT` `#RSA` `#ByPass` `#cURL`|
-| [RouterSpace (**private**)](https://m3n0sd0n4ld.github.io/htb/RouterSpace/) | `Easy` | `Linux` | --- |
+| [RouterSpace](https://m3n0sd0n4ld.github.io/htb/RouterSpace/) | `Easy` | `Linux` | `#apk #anbox #cmdinjection #SUDO` |
 | [Meta](https://m3n0sd0n4ld.github.io/htb/Meta/) | `Medium` | `Linux` | `#Exiftool` `#RCE` `#Mogrify` `#ImageMagick` `#Neofetch`|
 | [Undetected](https://m3n0sd0n4ld.github.io/htb/Undetected/) | `Medium` | `Linux` | `#PHPUnit` `#RCE` `#XOR` `#Reversing` |
 | [Timing](https://m3n0sd0n4ld.github.io/htb/Timing/) | `Medium` | `Linux` | `#PHPWrappers #PHPTime #Git` |
