@@ -22,7 +22,7 @@
 <img src='imgs/hackthebox.png' width='200' align='center'>
 
 | Name | Level | OS | Tags |
-| --- | :---: | :---: | :---: |
+| --- | :---: | :---: | :----: |
 | [Resolute](https://github.com/m3n0sd0n4ld/writeups/blob/master/pdfs/Resolute%20-%20hackthebox.pdf) | `Medium`  | `Windows` | `#smb #evil-winrm #password-spray` |
 | [Monteverde](https://www.hackingarticles.in/hack-the-box-monteverde-walkthrough) | `Medium`  | `Windows` | `#enum4linux #powershell #AzureAD` |
 | [Sauna](https://www.hackingarticles.in/hackthebox-sauna-walkthrough/) | `Easy`  | `Windows` | `#GetNPUsers #mimikatz #winPEAS` |
@@ -59,6 +59,7 @@
 | [Trick (**private**)](https://m3n0sd0n4ld.github.io/htb/Trick/) | `Easy` | `Linux` | --- |
 | [Faculty (**private**)](https://m3n0sd0n4ld.github.io/htb/Faculty/) | `Medium` | `Linux` | --- |
 | [Late (**private**)](https://m3n0sd0n4ld.github.io/htb/Late/) | `Easy` | `Linux` | --- |
+| [RedPanda (**private**)](https://m3n0sd0n4ld.github.io/htb/RedPanda/) | `Easy` | `Linux` | --- |
 
 <img src='imgs/tryhackme.png' width='200' align='center'>
 
