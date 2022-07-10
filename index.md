@@ -58,6 +58,7 @@
 | [OpenSource (**private**)](https://m3n0sd0n4ld.github.io/htb/OpenSource/) | `Easy` | `Linux` | --- |
 | [Trick (**private**)](https://m3n0sd0n4ld.github.io/htb/Trick/) | `Easy` | `Linux` | --- |
 | [Faculty (**private**)](https://m3n0sd0n4ld.github.io/htb/Faculty/) | `Medium` | `Linux` | --- |
+| [Late (**private**)](https://m3n0sd0n4ld.github.io/htb/Late/) | `Easy` | `Linux` | --- |
 
 <img src='imgs/tryhackme.png' width='200' align='center'>
 
