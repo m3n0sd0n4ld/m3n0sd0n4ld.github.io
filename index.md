@@ -22,7 +22,7 @@
 <img src='imgs/hackthebox.png' width='200' align='center'>
 
 | Name | Level | OS | Tags |
-| --- | :---: | :---: | :----: |
+| :--- | :---: | :---: | :--: |
 | [Resolute](https://github.com/m3n0sd0n4ld/writeups/blob/master/pdfs/Resolute%20-%20hackthebox.pdf) | `Medium`  | `Windows` | `#smb #evil-winrm #password-spray` |
 | [Monteverde](https://www.hackingarticles.in/hack-the-box-monteverde-walkthrough) | `Medium`  | `Windows` | `#enum4linux #powershell #AzureAD` |
 | [Sauna](https://www.hackingarticles.in/hackthebox-sauna-walkthrough/) | `Easy`  | `Windows` | `#GetNPUsers #mimikatz #winPEAS` |
