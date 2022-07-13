@@ -170,6 +170,7 @@
 * [Conference: uDork - Google Hacking Tool v2.0 - BitUP 2020](https://youtu.be/zzcUdmpo6ow)
 * [Conference: MailDay - Hackterriza como puedas - BitUP 2021](https://youtu.be/efpL9KAW3Fo?t=33410)
 * [Conference: IES Rafael Alberti (Cádiz) - IoT Pentesting - 2022](https://drive.google.com/file/d/1tsBq_GMotar9mNxnPM3Ibe9iNw-uNZe2/view)
+* [Conference: GooFuzz - Securiters Twitch- 2022](https://www.twitch.tv/videos/1517579986)
 
 ---
 ## About
