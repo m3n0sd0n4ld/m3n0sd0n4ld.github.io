@@ -1,10 +1,10 @@
-# NAMEBOX PLATFORM Writeup
+# Acute HackTheBox Writeup
 ### Level: `Hard` | OS: `Windows`
 
 ![logo](1.png)
 
 ## Scanning
-We run nmap on port 80 with scripts and software versions.
+We run nmap on port 443 with scripts and software versions.
 
 ![](2.png)
 
