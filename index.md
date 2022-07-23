@@ -51,7 +51,7 @@
 | [Undetected](https://m3n0sd0n4ld.github.io/htb/Undetected/) | `Medium` | `Linux` | `#PHPUnit` `#RCE` `#XOR` `#Reversing` |
 | [Timing](https://m3n0sd0n4ld.github.io/htb/Timing/) | `Medium` | `Linux` | `#PHPWrappers #PHPTime #Git` |
 | [AdmirerToo](https://m3n0sd0n4ld.github.io/htb/AdmirerToo/) | `Hard` | `Linux` | `#Adminer` `#SSRF` `#OpenTSDB` `#OpenCATS` `#Fail2Ban` |
-| [Catch (**private**)](https://m3n0sd0n4ld.github.io/htb/Catch/) | `Medium` | `Linux` | --- |
+| [Catch](https://m3n0sd0n4ld.github.io/htb/Catch/) | `Medium` | `Linux` | `#APK` `#Cachet` `#SQLi` `#jarsigner` |
 | [Noter (**private**)](https://m3n0sd0n4ld.github.io/htb/Noter/) | `Medium` | `Linux` | --- |
 | [Acute](https://m3n0sd0n4ld.github.io/htb/Acute/) | `Hard` | `Windows` | `#PowershellWeb` `#AV` `#Invoke-Command` |
 | [Phoenix](https://m3n0sd0n4ld.github.io/htb/Phoenix/) | `Hard` | `Linux` | `#WP` `#plugins` `#google-authenticator` `#rsync` |
