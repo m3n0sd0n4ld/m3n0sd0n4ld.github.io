@@ -16,10 +16,10 @@ $> **{{ site.author.name }}** (M3n0sD0n4ld)<br>
 
 ## Tools
 
-1.[uCVE](https://github.com/m3n0sd0n4ld/uCVE): uCVE is a tool written in GO that allows to extract CVE's related to a specific software and version, obtaining a report in HTML format with the result and/or exporting it to the pentesting report.
-2.[GooFuzz](https://github.com/m3n0sd0n4ld/GooFuzz): GooFuzz is a tool to perform fuzzing with an OSINT approach, managing to enumerate directories, files, subdomains or parameters without leaving evidence on the target’s server and by means of advanced Google searches (Google Dorking).
-3.[uDork](https://github.com/m3n0sd0n4ld/uDork): uDork is a script written in Bash Scripting that uses advanced Google search techniques to obtain sensitive information in files or directories, find IoT devices, detect versions of web application.
-4.[uNominaCracker](https://github.com/m3n0sd0n4ld/uNominaCracker): It is a script written in Python that performs brute force on workers’ payroll files through the use of their DNI (National Identity Document).
+1. [uCVE](https://github.com/m3n0sd0n4ld/uCVE): uCVE is a tool written in GO that allows to extract CVE's related to a specific software and version, obtaining a report in HTML format with the result and/or exporting it to the pentesting report.
+2. [GooFuzz](https://github.com/m3n0sd0n4ld/GooFuzz): GooFuzz is a tool to perform fuzzing with an OSINT approach, managing to enumerate directories, files, subdomains or parameters without leaving evidence on the target’s server and by means of advanced Google searches (Google Dorking).
+3. [uDork](https://github.com/m3n0sd0n4ld/uDork): uDork is a script written in Bash Scripting that uses advanced Google search techniques to obtain sensitive information in files or directories, find IoT devices, detect versions of web application.
+4. [uNominaCracker](https://github.com/m3n0sd0n4ld/uNominaCracker): It is a script written in Python that performs brute force on workers’ payroll files through the use of their DNI (National Identity Document).
 
 ## Exploits
 
