@@ -1,9 +1,10 @@
 ### Site Settings ###
 title               : m3n0sd0n4ld
 description         : Personal blog | Writeups HTB, THM, VulnHub and others.
-baseurl             : ""  # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
-repository          : m3n0sd0n4ld/m3n0sd0n4ld.github.io # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
+baseurl             : ""                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
+repository          : m3n0sd0n4ld/m3n0sd0n4ld.github.io     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
 remote_theme        : YoussefRaafatNasry/portfolYOU
+open_new_tab        : false                             # Opens external URLs in new tab (works for posts, projects and navbar only)
 
 
 ### Plugins ###
@@ -23,14 +24,25 @@ nav_exclude:                                            # The following paths ar
 author:
   name              : David Utón
   image             : https://avatars.githubusercontent.com/u/54067582?v=4
-#  email             : 
-#  discord           : 
-  linkedin          : david-uton
+#  behance           : your_username
+# dribbble          : your_username
+#  email             : username@domain.com
+#  facebook          : your_username
   github            : m3n0sd0n4ld
+# gitlab            : your_username
+# instagram         : your_username
+# kaggle            : your_username
+  linkedin          : david-uton
+#  medium            : your_username
+# soundcloud        : your_username
+# spotify           : your_username
+# stackoverflow     : your_user_id
+# tumblr            : your_username.tumblr.com
+# twitch            : your_username
   twitter           : David_Uton
-#  mastodon          : 
-#  keybase           : 
-#  instagram         : 
+# vimeo             : your_username
+# youtube           : your_channel_name
+# keybase           : your_username
 
 
 ### Posts ###
@@ -75,6 +87,7 @@ defaults:
       type: "posts"
     values:
       comments: false                                   # Set to true to enable disqus comments
+
 
 ### Exclude from processing ###
 exclude:

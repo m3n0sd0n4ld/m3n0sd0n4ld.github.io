@@ -11,12 +11,6 @@ dribbble:
   icon  : fab fa-dribbble
   color : 444444
 
-
-discord:
-  url   : https://discord.com/
-  icon  : fab fa-discord
-  color:  5865f2
-
 email:
   url   : "mailto:"
   icon  : fas fa-envelope
@@ -51,11 +45,6 @@ linkedin:
   url   : https://www.linkedin.com/in/
   icon  : fab fa-linkedin-in
   color : 007bb5
-
-mastodon:
-  url   : https://infosec.exchange/@
-  icon  : fab fa-mastodon
-  color : 5865f2
 
 medium:
   url   : https://medium.com/@
