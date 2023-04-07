@@ -27,7 +27,7 @@ $> **{{ site.author.name }}** (M3n0sD0n4ld)<br>
 - [SUDO - CVE-2021-3156 (Checker)](https://github.com/m3n0sd0n4ld/CVE-Exploits/tree/main/CVE-2021-3156)
 - [Strapi < 3.0.0-beta.17.7 (Authenticated) - CVE-2019-19609](https://www.exploit-db.com/exploits/50238)
 - [Simple Image Gallery System 1.0 - SQL Injection (Time-Based blind)](https://m3n0sd0n4ld.blogspot.com/2022/03/simple-image-gallery-system-10-sql.html)
-- [Company’s Recruitment Management System 1.0 - Remote Readable Administrator Credentials - Unauthenticated](https://m3n0sd0n4ld.blogspot.com/2022/07/companys-recruitment-management-system.html)
+- [Company’s Recruitment Management System 1.0 - Remote Readable Administrator Credentials Unauthenticated](https://m3n0sd0n4ld.blogspot.com/2022/07/companys-recruitment-management-system.html)
 
 ## CVE
 
