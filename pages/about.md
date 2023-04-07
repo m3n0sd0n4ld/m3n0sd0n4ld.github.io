@@ -23,37 +23,37 @@ $> **{{ site.author.name }}** (M3n0sD0n4ld)<br>
 
 ## Exploits
 
-*   [WordPress 5.7 - ‘Media Library’ XML External Entity Injection (XXE) (Authenticated) - CVE-2021-29447](https://www.exploit-db.com/exploits/50304)
-*   [SUDO - CVE-2021-3156 (Checker)](https://github.com/m3n0sd0n4ld/CVE-Exploits/tree/main/CVE-2021-3156)
-*   [Strapi < 3.0.0-beta.17.7 (Authenticated) - CVE-2019-19609](https://www.exploit-db.com/exploits/50238)
-*   [Simple Image Gallery System 1.0 - SQL Injection (Time-Based blind)](https://m3n0sd0n4ld.blogspot.com/2022/03/simple-image-gallery-system-10-sql.html)
-*   [Company’s Recruitment Management System 1.0 - Remote Readable Administrator Credentials (Unauthenticated)](https://m3n0sd0n4ld.blogspot.com/2022/07/companys-recruitment-management-system.html)
+- [WordPress 5.7 - ‘Media Library’ XML External Entity Injection (XXE) (Authenticated) - CVE-2021-29447](https://www.exploit-db.com/exploits/50304)
+- [SUDO - CVE-2021-3156 (Checker)](https://github.com/m3n0sd0n4ld/CVE-Exploits/tree/main/CVE-2021-3156)
+- [Strapi < 3.0.0-beta.17.7 (Authenticated) - CVE-2019-19609](https://www.exploit-db.com/exploits/50238)
+- [Simple Image Gallery System 1.0 - SQL Injection (Time-Based blind)](https://m3n0sd0n4ld.blogspot.com/2022/03/simple-image-gallery-system-10-sql.html)
+- [Company’s Recruitment Management System 1.0 - Remote Readable Administrator Credentials(Unauthenticated)](https://m3n0sd0n4ld.blogspot.com/2022/07/companys-recruitment-management-system.html)
 
 ## CVE
 
-*   [Scada-LTS - Privilege escalation (CVE-2022-41976)](https://m3n0sd0n4ld.github.io/blog/cve-2022-41976)
+- [Scada-LTS - Privilege escalation (CVE-2022-41976)](https://m3n0sd0n4ld.github.io/blog/cve-2022-41976)
 
 ## External articles
 
-*   [PenTest Magazine: Open-Source Pentesting Toolkit](https://pentestmag.com/product/pentest-open-source-pentesting-toolkit/)
-*   [Company’s Recruitment Management System 1.0 - Remote Readable Administrator Credentials (Unauthenticated)](https://m3n0sd0n4ld.blogspot.com/2022/07/companys-recruitment-management-system.html)
-*   [GooFuzz: la herramienta para la enumeración de directorios y ficheros de forma pasiva](https://www.hackplayers.com/2022/06/goofuzz-tool-enum-pasiva.html)
-*   [Cracking of payroll files](https://m3n0sd0n4ld.blogspot.com/2020/10/cracking-of-payroll-files.html)
-*   [CTF: Aprende «hacking» jugando](https://www.sothis.tech/capture-the-flag-aprende-hacking-jugando/)
-*   [Por el router muere el pez](https://www.sothis.tech/por-el-router-muere-el-pez/)
-*   [Ciberataques físicos: cuando el peligro está en un USB](https://www.sothis.tech/sistemas-de-control-industrial/)
-*   [Black Fraude: cómo evitar las estafas en rebajas](https://www.sothis.tech/black-fraude-como-evitar-las-estafas-en-rebajas/)
-*   [El Coronavirus, una excusa más para los ciberdelincuentes](https://www.sothis.tech/ciberseguridad-aplicada-al-coronavirus/)
+- [PenTest Magazine: Open-Source Pentesting Toolkit](https://pentestmag.com/product/pentest-open-source-pentesting-toolkit/)
+- [Company’s Recruitment Management System 1.0 - Remote Readable Administrator Credentials (Unauthenticated)](https://m3n0sd0n4ld.blogspot.com/2022/07/companys-recruitment-management-system.html)
+- [GooFuzz: la herramienta para la enumeración de directorios y ficheros de forma pasiva](https://www.hackplayers.com/2022/06/goofuzz-tool-enum-pasiva.html)
+- [Cracking of payroll files](https://m3n0sd0n4ld.blogspot.com/2020/10/cracking-of-payroll-files.html)
+- [CTF: Aprende «hacking» jugando](https://www.sothis.tech/capture-the-flag-aprende-hacking-jugando/)
+- [Por el router muere el pez](https://www.sothis.tech/por-el-router-muere-el-pez/)
+- [Ciberataques físicos: cuando el peligro está en un USB](https://www.sothis.tech/sistemas-de-control-industrial/)
+- [Black Fraude: cómo evitar las estafas en rebajas](https://www.sothis.tech/black-fraude-como-evitar-las-estafas-en-rebajas/)
+- [El Coronavirus, una excusa más para los ciberdelincuentes](https://www.sothis.tech/ciberseguridad-aplicada-al-coronavirus/)
 
 ## Events & Conferences
 
-*   [Interview: Digitalización industrial en CCI (Centro de Ciberseguridad Industrial)](https://vimeo.com/431392473)
-*   [Conference: Voz de la industria sobre la integración de Redes IT/OT - Ciberseguridad Industrial](https://t.co/dXTbGuI56n?amp=1)
-*   [Conference: uDork - Google Hacking Tool - Hack&Beers Remake vol 5](https://t.co/ZlkglPYsvN?amp=1)
-*   [Conference: uDork - Google Hacking Tool v2.0 - BitUP 2020](https://youtu.be/zzcUdmpo6ow)
-*   [Conference: MailDay - Hackterriza como puedas - BitUP 2021](https://youtu.be/efpL9KAW3Fo?t=33410)
-*   [Conference: IES Rafael Alberti (Cádiz) - IoT Pentesting - 2022](https://youtu.be/K1lTgYDF4lE)
-*   [Conference: GooFuzz - Securiters Twitch- 2022](https://www.twitch.tv/videos/1517579986)
+- [Interview: Digitalización industrial en CCI (Centro de Ciberseguridad Industrial)](https://vimeo.com/431392473)
+- [Conference: Voz de la industria sobre la integración de Redes IT/OT - Ciberseguridad Industrial](https://t.co/dXTbGuI56n?amp=1)
+- [Conference: uDork - Google Hacking Tool - Hack&Beers Remake vol 5](https://t.co/ZlkglPYsvN?amp=1)
+- [Conference: uDork - Google Hacking Tool v2.0 - BitUP 2020](https://youtu.be/zzcUdmpo6ow)
+- [Conference: MailDay - Hackterriza como puedas - BitUP 2021](https://youtu.be/efpL9KAW3Fo?t=33410)
+- [Conference: IES Rafael Alberti (Cádiz) - IoT Pentesting - 2022](https://youtu.be/K1lTgYDF4lE)
+- [Conference: GooFuzz - Securiters Twitch- 2022](https://www.twitch.tv/videos/1517579986)
 
 
 <!--<div class="row">
