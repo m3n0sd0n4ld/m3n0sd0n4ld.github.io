@@ -7,14 +7,18 @@ weight: 3
 
 # **About Me**
 
-Hi I am **{{ site.author.name }}** :wave:,<br>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+$> **{{ site.author.name }}** (M3n0sD0n4ld)<br>
 
-<div class="row">
+- More than 10 years as a computer technician and technical service in microelectronics.
+- 12 years playing with Industrial technology.
+- Passionate about Cybersecurity and hacking challenges.
+- Currently working in [Telefónica Tech](https://telefonicatech.com/) in Offensive Security area.
+
+<!--<div class="row">
 {% include about/skills.html title="Programming Skills" source=site.data.programming-skills %}
 {% include about/skills.html title="Other Skills" source=site.data.other-skills %}
 </div>
 
 <div class="row">
 {% include about/timeline.html %}
-</div>
+</div> -->
