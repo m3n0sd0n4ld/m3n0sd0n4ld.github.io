@@ -1,11 +1,10 @@
 ---
 title: Noter HackTheBox Writeup
-tags: [writeup,rest,python,hackthebox,linux,api,suid]
+tags: []
 style: border
 color: success
 description: ""
 ---
-
 
 ![](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Noter/1.png)
 
