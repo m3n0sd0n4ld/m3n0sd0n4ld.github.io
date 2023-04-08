@@ -1,6 +1,6 @@
 ---
 title: ConvertMyVideo TryHackMe Writeup
-tags: [writeup,rest,python,tryhackme,linux,api,suid]
+tags: [writeup,tryhackme,linux]
 style: border
 color: success
 description: ""
