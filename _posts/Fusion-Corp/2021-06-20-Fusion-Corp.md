@@ -1,6 +1,6 @@
 ---
 title: Fusion-Corp TryHackMe Writeup
-tags: [writeup,rest,python,tryhackme,linux,api,suid]
+tags: [writeup,tryhackme,ldap,active-directory,kerbrute,windows,asreproast]
 style: border
 color: success
 description: ""

@@ -1,6 +1,6 @@
 ---
 title: EnterPrize TryHackMe Writeup
-tags: [writeup,rest,python,tryhackme,linux,api,suid]
+tags: [writeup,norootsquash,tryhackme,typo3,linux,libcustom.so]
 style: border
 color: success
 description: ""
