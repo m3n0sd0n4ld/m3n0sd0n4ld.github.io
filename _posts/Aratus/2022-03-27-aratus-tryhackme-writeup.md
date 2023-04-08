@@ -6,7 +6,7 @@ color: success
 description: Aratus TryHackMe Writeup
 ---
 
-![logo](1.png)
+![logo](../Aratus/1.png)
 
 ## Scanning
 We run nmap on all ports with scripts and software versions.
@@ -123,13 +123,3 @@ We put a netcat listening on our attacker's machine and run the script with **SU
 We wait for the remote connection, run our command list and read the flag from the "*root.txt*" file.
 
 ![](27.png)
-
----
-## About
-
-David Utón is Penetration Tester and security auditor for web and mobiles applications, perimeter networks, internal and industrial corporate infrastructures, and wireless networks.
-
-#### Contacted on:
-
-<img src='https://m3n0sd0n4ld.github.io/imgs/linkedin.png' width='40' align='center'> [David-Uton](https://www.linkedin.com/in/david-uton/)
-<img src='https://m3n0sd0n4ld.github.io/imgs/twitter.png' width='43' align='center'> [@David_Uton](https://twitter.com/David_Uton)
