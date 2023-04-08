@@ -36,7 +36,7 @@ $> **{{ site.author.name }}** (M3n0sD0n4ld)<br>
 ## External articles
 
 - [PenTest Magazine: Open-Source Pentesting Toolkit](https://pentestmag.com/product/pentest-open-source-pentesting-toolkit/)
-- [Company’s Recruitment Management System 1.0 - Remote Readable Administrator Credentials (Unauthenticated)](https://m3n0sd0n4ld.blogspot.com/2022/07/companys-recruitment-management-system.html)
+- [Company’s Recruitment Management System 1.0 - Remote Readable Administrator Credentials](https://m3n0sd0n4ld.blogspot.com/2022/07/companys-recruitment-management-system.html)
 - [GooFuzz: la herramienta para la enumeración de directorios y ficheros de forma pasiva](https://www.hackplayers.com/2022/06/goofuzz-tool-enum-pasiva.html)
 - [Cracking of payroll files](https://m3n0sd0n4ld.blogspot.com/2020/10/cracking-of-payroll-files.html)
 - [CTF: Aprende «hacking» jugando](https://www.sothis.tech/capture-the-flag-aprende-hacking-jugando/)
