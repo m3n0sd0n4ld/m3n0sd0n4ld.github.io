@@ -3,7 +3,7 @@ title: Bookstore TryHackMe Writeup
 tags: [writeup,rest,python,tryhackme,linux,api,suid]
 style: border
 color: success
-description: Bookstore TryHackMe Writeup
+description: 
 ---
 
 ![logo](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Bookstore/logo.jpeg)
