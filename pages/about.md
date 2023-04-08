@@ -71,37 +71,6 @@ $> **{{ site.author.name }}** (M3n0sD0n4ld)<br>
 | [Forest](https://www.hackingarticles.in/forest-hackthebox-walkthrough/) | `Easy`  | `Windows` | `#Exchange #Secretsdump` |
 | [Doctor](https://www.hackingarticles.in/doctor-hackthebox-walkthrough/) | `Easy`  | `Linux` | `#SSTI #RCE #Splunk` |
 | [Chaos](https://www.hackingarticles.in/chaos-hackthebox-walkthrough/) | `Medium`  | `Linux` | `#WP #Roundcube #Firefox` |
-| [Armageddon](https://m3n0sd0n4ld.github.io/htb/Armageddon/) | `Easy`  | `Linux` | `#Drupal #Snap` |
-| [Knife](https://m3n0sd0n4ld.github.io/htb/Knife/) | `Easy`  | `Linux` | `#PHP8 #RCE #Knife` |
-| [BountyHunter](https://m3n0sd0n4ld.github.io/htb/BountyHunter/) | `Easy`  | `Linux` | `#XXE #RCE #MDFiles` |
-| Explore (**private**) | `Easy` | `Android` | --- | 
-| Previse (**private**) | `Easy` | `Linux` | --- |
-| [Driver](https://m3n0sd0n4ld.github.io/htb/Driver/)| `Easy` | `Windows` | `#Drivers #MFP #RCE` |
-| [Bolt](https://m3n0sd0n4ld.github.io/htb/Bolt/) | `Medium`| `Linux`| `#Passbolt #AdminLTE3 #GPG` |
-| [Secret](https://m3n0sd0n4ld.github.io/htb/Secret/) | `Easy` | `Linux` | `#JWT #Cmd-Injection` |
-| [Shibboleth](https://m3n0sd0n4ld.github.io/htb/Shibboleth/) | `Medium` | `Linux` | `#IPMI #Zabbix #MariaDB ` |
-| [Paper](https://m3n0sd0n4ld.github.io/htb/Paper/) | `Easy` | `Linux` | `WordPress` `#rocketchat` `#Polkit`|
-| [Timelapse (**private**)](https://m3n0sd0n4ld.github.io/htb/Timelapse/) | `Easy` | `Windows` | --- |
-| [Pandora](https://m3n0sd0n4ld.github.io/htb/Pandora/) | `Easy` | `Linux` | `#SNMP` `#PandoraFMS` `#PathHijacking` |
-| [Unicode](https://m3n0sd0n4ld.github.io/htb/Unicode/) | `Medium` | `Linux` | `#JWT` `#RSA` `#ByPass` `#cURL`|
-| [RouterSpace](https://m3n0sd0n4ld.github.io/htb/RouterSpace/) | `Easy` | `Linux` | `#apk #anbox #cmdinjection #SUDO` |
-| [Meta](https://m3n0sd0n4ld.github.io/htb/Meta/) | `Medium` | `Linux` | `#Exiftool` `#RCE` `#Mogrify` `#ImageMagick` `#Neofetch`|
-| [Undetected](https://m3n0sd0n4ld.github.io/htb/Undetected/) | `Medium` | `Linux` | `#PHPUnit` `#RCE` `#XOR` `#Reversing` |
-| [Timing](https://m3n0sd0n4ld.github.io/htb/Timing/) | `Medium` | `Linux` | `#PHPWrappers #PHPTime #Git` |
-| [AdmirerToo](https://m3n0sd0n4ld.github.io/htb/AdmirerToo/) | `Hard` | `Linux` | `#Adminer` `#SSRF` `#OpenTSDB` `#OpenCATS` `#Fail2Ban` |
-| [Catch](https://m3n0sd0n4ld.github.io/htb/Catch/) | `Medium` | `Linux` | `#APK` `#Cachet` `#SQLi` `#jarsigner` |
-| [Noter (**private**)](https://m3n0sd0n4ld.github.io/htb/Noter/) | `Medium` | `Linux` | --- |
-| [Acute](https://m3n0sd0n4ld.github.io/htb/Acute/) | `Hard` | `Windows` | `#PowershellWeb` `#AV` `#Invoke-Command` |
-| [Phoenix](https://m3n0sd0n4ld.github.io/htb/Phoenix/) | `Hard` | `Linux` | `#WP` `#plugins` `#google-authenticator` `#rsync` |
-| [OpenSource (**private**)](https://m3n0sd0n4ld.github.io/htb/OpenSource/) | `Easy` | `Linux` | --- |
-| [Trick (**private**)](https://m3n0sd0n4ld.github.io/htb/Trick/) | `Easy` | `Linux` | --- |
-| [Faculty (**private**)](https://m3n0sd0n4ld.github.io/htb/Faculty/) | `Medium` | `Linux` | --- |
-| [Late](https://m3n0sd0n4ld.github.io/htb/Late/) | `Easy` | `Linux` | `#SSTI` `#Jinja2` `#misconfiguration` |
-| [RedPanda (**private**)](https://m3n0sd0n4ld.github.io/htb/RedPanda/) | `Easy` | `Linux` | --- |
-| [StreamIO (**private**)](https://m3n0sd0n4ld.github.io/htb/StreamIO/) | `Medium` | `Windows` | --- |
-| [Talkative](https://m3n0sd0n4ld.github.io/htb/Talkative/) | `Hard` | `Linux` | `#rocketchat` `#jamovi` `#boltcms` `#mongodb` `#cap-dac-read-search` |
-| [Support (**private**)](https://m3n0sd0n4ld.github.io/htb/Support/) | `Easy` | `Windows` | --- |
-| [Shared (**private**)](https://m3n0sd0n4ld.github.io/htb/Shared/) | `Medium` | `Linux` | --- |
 
 ### TryHackMe
 
@@ -115,34 +84,6 @@ $> **{{ site.author.name }}** (M3n0sD0n4ld)<br>
 | [0day](https://www.hackingarticles.in/0day-tryhackme-walkthrough) | `Medium`  | `Linux` | `#shellshock #overlays` |
 | [Ghizer](https://www.hackingarticles.in/ghizer-tryhackme-walkthrough) | `Medium`  | `Linux` | `#debug #RCE #Limesurvey #ghidra` |
 | [Iron Corp](https://www.hackingarticles.in/iron-corp-tryhackme-walkthrough) | `Hard`  | `Windows` | `#hydra #dig #SSRF #ACL` |
-| [Bookstore](https://m3n0sd0n4ld.github.io/thm/Bookstore) | `Medium`  | `Linux` | `#rest #api #python #SUID` |
-| [USTOUN](https://m3n0sd0n4ld.github.io/thm/USTOUN/) | `Medium` | `Windows` | `#AD #RID #crackmapexec #mssqlclient` |
-| [GoldenEye](https://m3n0sd0n4ld.github.io/thm/GoldenEye/) | `Medium` | `Linux` | `#hydra #telnet #pop3 #aspell #overlays` |
-| [Lunizz CTF (Patched)](https://m3n0sd0n4ld.github.io/thm/LunizzCTF/) | `Medium` | `Linux` | `#Cmd-inject #mysql #bcrypt #cipher` |
-| [Cat Pictures](https://m3n0sd0n4ld.github.io/thm/CatPictures/) | `Easy` | `Linux` | `#phpbb #docker #cron` |
-| [Wgel CTF](https://m3n0sd0n4ld.github.io/thm/WgelCTF/) | `Easy` | `Linux` | `#wget #passwd #SUDO` |
-| [Jack-of-All-Trades](https://m3n0sd0n4ld.github.io/thm/Jack-of-All-Trades/) | `Easy` | `Linux` | `#crypto #stego #strings` |
-| [VulnNet: dotjar](https://m3n0sd0n4ld.github.io/thm/VulnNet-dotjar/) | `Medium` | `Linux` | `#ghostcat #war #tomcat #SUDO #jar` |
-| [KoTH Food CTF](https://m3n0sd0n4ld.github.io/thm/KoTH-Food-CTF/) | `Easy` | `Linux` | `#mysql #SETUID #screen` |
-| [KoTH Hackers](https://m3n0sd0n4ld.github.io/thm/KoTH-Hackers/) | `Medium` | `Linux` | `#ssh #privatekeys #SUDO #nano` |
-| [The Blob Blog](https://m3n0sd0n4ld.github.io/thm/The-Blob-Blog/) | `Medium` | `Linux` | `#brainfuck #steghide #reversing` |
-| [Mustacchio](https://m3n0sd0n4ld.github.io/thm/Mustacchio/) | `Easy` | `Linux` | `#XXE #pathabsolute #tail` |
-| [Harder](https://m3n0sd0n4ld.github.io/thm/Harder/) | `Medium` | `Linux` | `#git #alpine #gpg` |
-| [Fusion Corp](https://m3n0sd0n4ld.github.io/thm/Fusion-Corp/) | `Hard` | `Windows` | `#kerbrute #ASReproast #LDAP #AD` |
-| [EnterPrize](https://m3n0sd0n4ld.github.io/thm/EnterPrize/) | `Hard` | `Linux` | `#typo3 #libcustom.so #norootsquash` |
-| [Mnemonic](https://m3n0sd0n4ld.github.io/thm/Mnemonic/) | `Medium` | `Linux` | `#cracking #python #script` |
-| [Undiscovered](https://m3n0sd0n4ld.github.io/thm/Undiscovered/) | `Medium` | `Linux` | `#riteCMS #RCE #norootsquash` |
-| [Couch](https://m3n0sd0n4ld.github.io/thm/Couch/) | `Easy` | `Linux` | `#CouchDB #docker` |
-| [Empline](https://m3n0sd0n4ld.github.io/thm/Empline/) |  `Medium` | `Linux` | `#opencats #XXE #capabilities #ruby` |
-| [IDE](https://m3n0sd0n4ld.github.io/thm/IDE/) |  `Easy` | `Linux` | `#Codiad #RCE #services` |
-| [Zeno](https://m3n0sd0n4ld.github.io/thm/zeno/) | `Medium` | `Linux` | `#Restaurant #SQLi #RCE #services #reboot` |
-| [Minotaur’s Labyrinth](https://m3n0sd0n4ld.github.io/thm/Minotaurs-Labyrinth/) | `Medium` | `Linux`| `#API #SQLi #Time-based #Cmd-Injection` |
-| [Lumberjack Turtle](https://m3n0sd0n4ld.github.io/thm/Lumberjack-Turtle/) | `Medium` | `Linux`| `#Log4j #Nagios #NSCA #Escape-Docker` |
-| [Flatline](https://m3n0sd0n4ld.github.io/thm/Flatline/) | `Easy` | `Windows`| `#FreeSWITCH #OpenClinic` |
-| [Oh My WebServer](https://m3n0sd0n4ld.github.io/thm/Oh-My-WebServer/) | `Medium` | `Linux`| `#Apache #CVE-2021-41773 #OMIGOD` |
-| [Aratus](https://m3n0sd0n4ld.github.io/thm/Aratus/) | `Medium` | `Linux`| `#tcpdump #capabilities #ansible` |
-| [Ollie](https://m3n0sd0n4ld.github.io/thm/Ollie/) | `Medium` | `Linux`| `#phpIPAM #sqli` |
-| [Plotted-LMS](https://m3n0sd0n4ld.github.io/thm/Plotted-LMS/) | `Hard` | `Linux`| `#Moodle #RCE #Logrotate` |
 
 ### VulnHub
 
@@ -181,19 +122,11 @@ $> **{{ site.author.name }}** (M3n0sD0n4ld)<br>
 | [KB-Vulns: 3](https://www.hackingarticles.in/kb-vuln-3-vulnhub-walkthrough/) | `Easy` | `Linux` | `#smb #SiteMagicCMS #SETUID #systemctl` |
 | [Cybox: 1](https://www.hackingarticles.in/cybox-1-vulnhub-walkthrough/) | `Medium` | `Linux` | `#LFI #RCE #Apache #poison #SETUID #uncommon` |
 
-### Offensive Security
-
-| Name | Level | OS | Tags |
-| :--- | :---: | :---: | :---: |
-| [DC5](https://m3n0sd0n4ld.github.io/OSC/DC5/) | `Easy` | `Linux` | `#LFI #RCE #Nginx #log #poison #SETUID #screen` |
-
 ### UAM
 
 | Name | Level | OS | Tags |
 | :--- | :---: | :---: | :---: |
 | [El coche fantástico](https://github.com/m3n0sd0n4ld/writeups/blob/master/pdfs/UAM%20-%20El%20coche%20fant%C3%A1stico%20-%20Episodio%201.pdf) | `Easy` | `Linux` | `#web #waf #xor #RCE` |
-
-
 
 <!--<div class="row">
 {% include about/skills.html title="Programming Skills" source=site.data.programming-skills %}
