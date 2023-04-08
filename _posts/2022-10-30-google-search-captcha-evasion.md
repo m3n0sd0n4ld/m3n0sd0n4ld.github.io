@@ -1,9 +1,9 @@
 ---
-title: Cracking of payroll files
-tags: [article, cracking, dni, payroll, tool, unominacracker]
+title: Google Search captcha evasion + GooFuzz tool
+tags: [article, bypass, captcha, google, evasion,goofuzz]
 style: 
 color: 
-description: Cracking of payroll files
+description: Google Search captcha evasion + GooFuzz tool
 ---
 
 ![](../assets/img/google-search-captcha-evasion/1.png)
