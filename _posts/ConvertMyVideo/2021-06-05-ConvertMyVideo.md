@@ -1,6 +1,6 @@
 ---
 title: ConvertMyVideo TryHackMe Writeup
-tags: [writeup,tryhackme,linux]
+tags: [writeup,tryhackme,linux,ctf,web]
 style: border
 color: success
 description: ""
