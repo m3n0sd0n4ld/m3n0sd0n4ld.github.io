@@ -3,7 +3,7 @@ title: Harder TryHackMe Writeup
 tags: [writeup, tryhackme, git, linux, alpine, gpg]
 style: border
 color: success
-description: DC5 Offensive Security Writeup
+description: Harder TryHackMe Writeup
 ---
 
 ![logo](../assets/img/harder-tryhackme-writeup/1.png)
