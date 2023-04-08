@@ -6,7 +6,7 @@ color: success
 description: Aratus TryHackMe Writeup
 ---
 
-![logo](../Aratus/1.png)
+![logo](/_posts/Aratus/1.png)
 
 ## Scanning
 We run nmap on all ports with scripts and software versions.
