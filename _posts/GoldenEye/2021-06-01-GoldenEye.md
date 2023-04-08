@@ -1,6 +1,6 @@
 ---
 title: GoldenEye TryHackMe Writeup
-tags: [writeup,rest,python,tryhackme,linux,api,suid]
+tags: [hydra,writeup,tryhackme,telnet,pop3,linux,overlays,aspell]
 style: border
 color: success
 description: ""

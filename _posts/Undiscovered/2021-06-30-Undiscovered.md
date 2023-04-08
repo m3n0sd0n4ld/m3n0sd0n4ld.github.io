@@ -1,6 +1,6 @@
 ---
 title: Undiscovered TryHackMe Writeup
-tags: [writeup,rest,python,tryhackme,linux,api,suid]
+tags: [writeup,norootsquash,tryhackme,ritecms,rce,linux]
 style: border
 color: success
 description: ""

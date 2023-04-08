@@ -1,6 +1,6 @@
 ---
 title: KoTH-Hackers TryHackMe Writeup
-tags: [writeup,rest,python,tryhackme,linux,api,suid]
+tags: [writeup,tryhackme,linux,nano,ssh,privatekeys,sudo]
 style: border
 color: success
 description: ""

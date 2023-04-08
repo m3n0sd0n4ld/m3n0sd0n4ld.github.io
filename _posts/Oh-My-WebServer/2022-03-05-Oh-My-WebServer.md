@@ -1,6 +1,6 @@
 ---
 title: Oh-My-WebServer TryHackMe Writeup
-tags: [writeup,rest,python,tryhackme,linux,api,suid]
+tags: [writeup,tryhackme,apache,linux,omigod,cve-2021-41773]
 style: border
 color: success
 description: ""

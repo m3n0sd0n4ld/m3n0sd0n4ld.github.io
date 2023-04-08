@@ -1,6 +1,6 @@
 ---
 title: Plotted-LMS TryHackMe Writeup
-tags: [writeup,rest,python,tryhackme,linux,api,suid]
+tags: [moodle,writeup,logrotate,tryhackme,rce,linux]
 style: border
 color: success
 description: ""

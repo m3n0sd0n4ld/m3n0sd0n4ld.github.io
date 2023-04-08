@@ -1,6 +1,6 @@
 ---
 title: Minotaurs-Labyrinth TryHackMe Writeup
-tags: [writeup,rest,python,tryhackme,linux,api,suid]
+tags: [writeup,tryhackme,linux,time-based,api,command-injection,sql-injection]
 style: border
 color: success
 description: ""

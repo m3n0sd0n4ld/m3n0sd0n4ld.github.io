@@ -1,6 +1,6 @@
 ---
 title: KoTH-Food-CTF TryHackMe Writeup
-tags: [writeup,rest,python,tryhackme,linux,api,suid]
+tags: [writeup,tryhackme,linux,screen,mysql,setuid]
 style: border
 color: success
 description: ""

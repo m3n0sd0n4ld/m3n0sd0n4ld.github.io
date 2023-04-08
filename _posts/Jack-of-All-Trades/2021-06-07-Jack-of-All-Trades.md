@@ -1,6 +1,6 @@
 ---
 title: Jack-of-All-Trades TryHackMe Writeup
-tags: [writeup,rest,python,tryhackme,linux,api,suid]
+tags: [writeup,tryhackme,strings,stego,linux,crypto]
 style: border
 color: success
 description: ""

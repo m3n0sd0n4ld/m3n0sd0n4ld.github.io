@@ -1,6 +1,6 @@
 ---
 title: Mustacchio TryHackMe Writeup
-tags: [writeup,rest,python,tryhackme,linux,api,suid]
+tags: [writeup,tryhackme,xxe,tail,linux,path-absolute]
 style: border
 color: success
 description: ""

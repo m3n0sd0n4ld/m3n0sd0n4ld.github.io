@@ -1,6 +1,6 @@
 ---
 title: VulnNet-dotjar TryHackMe Writeup
-tags: [writeup,rest,python,tryhackme,linux,api,suid]
+tags: [writeup,ghostcat,tryhackme,tomcat,linux,war,jar,sudo]
 style: border
 color: success
 description: ""

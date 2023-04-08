@@ -1,6 +1,6 @@
 ---
 title: Lumberjack-Turtle TryHackMe Writeup
-tags: [writeup,rest,python,tryhackme,linux,api,suid]
+tags: [nsca,writeup,tryhackme,nagios,linux,escape-docker,log4j,docker]
 style: border
 color: success
 description: ""

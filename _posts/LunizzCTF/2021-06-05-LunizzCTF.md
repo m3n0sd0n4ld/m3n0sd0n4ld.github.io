@@ -1,6 +1,6 @@
 ---
 title: LunizzCTF TryHackMe Writeup
-tags: [writeup,rest,python,tryhackme,linux,api,suid]
+tags: [cipher,tryhackme,linux,mysql,command-injection,bcrypt]
 style: border
 color: success
 description: ""

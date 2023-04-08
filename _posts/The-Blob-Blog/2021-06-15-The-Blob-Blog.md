@@ -1,6 +1,6 @@
 ---
 title: The-Blob-Blog TryHackMe Writeup
-tags: [writeup,rest,python,tryhackme,linux,api,suid]
+tags: [writeup,tryhackme,linux,steghide,reversing,brainfuck]
 style: border
 color: success
 description: ""
