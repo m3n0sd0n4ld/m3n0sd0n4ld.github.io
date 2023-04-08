@@ -61,7 +61,7 @@ From the name of the machine, I assumed that the entry point or vulnerability wo
   
 As we saw before, it makes a _GET_ to download the photo, so even if we see the code, we could try to escape and execute malicious code..
 
-### Petición legítima:
+### Request:
 
 [![](https://blogger.googleusercontent.com/img/a/AVvXsEgggVq3gqlLJk6K8SiTu5BTPRImY-ypLkUhlhH2beFP5kv_JliwkSykeUC7ugHEQnd7D-AZALnzldwGYeqQ356MaxAwFLGK7cPs5MZVVoyQWVWBakVXf254FGitZgg_bWYFSIa9MTQwKWNz01AMRtRNy-MCZcVPptjVy1ruK5ozp-dwnwtNqNXcJJpMsA=w640-h282)](https://blogger.googleusercontent.com/img/a/AVvXsEgggVq3gqlLJk6K8SiTu5BTPRImY-ypLkUhlhH2beFP5kv_JliwkSykeUC7ugHEQnd7D-AZALnzldwGYeqQ356MaxAwFLGK7cPs5MZVVoyQWVWBakVXf254FGitZgg_bWYFSIa9MTQwKWNz01AMRtRNy-MCZcVPptjVy1ruK5ozp-dwnwtNqNXcJJpMsA)
 
