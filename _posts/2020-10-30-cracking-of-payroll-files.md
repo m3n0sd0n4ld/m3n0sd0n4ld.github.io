@@ -28,9 +28,9 @@ Now, the attacker would retrieve the **request to send** the email to obtain the
 
 You can see from the **server's response** that this is a payroll:
 
-[![](../assets/img/cracking-of-payroll-files/5.png) 
+![](../assets/img/cracking-of-payroll-files/5.png) 
 
-### Display of the content in HTML format:
+#### Display of the content in HTML format:
 
 ![](../assets/img/cracking-of-payroll-files/6.png)
 
@@ -44,7 +44,7 @@ I got down to work and programmed a small _script_ in **Python** to carry out th
 
 After obtaining the remainder of the division, we would know the letter by its position number (e.g., if the remainder is "**4**", the letter would be "**A**").
 
-### Table with letters of the DNI:
+#### Table with letters of the DNI:
 
 ![](../assets/img/cracking-of-payroll-files/9.png)
 
