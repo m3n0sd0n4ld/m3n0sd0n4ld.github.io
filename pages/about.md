@@ -57,10 +57,10 @@ $> **{{ site.author.name }}** (M3n0sD0n4ld)<br>
 
 ## Old Writeups
 
-<img src='../assets/img//hackthebox.png' width='200' align='center'>
+<img src='../assets/img//hackthebox.png' width='200' align='left'>
 
 | Name | Level | OS | Tags |
-| :--- | :---: | :---: | :--: |
+| :--- | :---: | :---: | :---: |
 | [Resolute](https://github.com/m3n0sd0n4ld/writeups/blob/master/pdfs/Resolute%20-%20hackthebox.pdf) | `Medium`  | `Windows` | `#smb #evil-winrm #password-spray` |
 | [Monteverde](https://www.hackingarticles.in/hack-the-box-monteverde-walkthrough) | `Medium`  | `Windows` | `#enum4linux #powershell #AzureAD` |
 | [Sauna](https://www.hackingarticles.in/hackthebox-sauna-walkthrough/) | `Easy`  | `Windows` | `#GetNPUsers #mimikatz #winPEAS` |
@@ -103,7 +103,7 @@ $> **{{ site.author.name }}** (M3n0sD0n4ld)<br>
 | [Support (**private**)](https://m3n0sd0n4ld.github.io/htb/Support/) | `Easy` | `Windows` | --- |
 | [Shared (**private**)](https://m3n0sd0n4ld.github.io/htb/Shared/) | `Medium` | `Linux` | --- |
 
-<img src='../assets/img/tryhackme.png' width='200' align='center'>
+<img src='../assets/img/tryhackme.png' width='200' align='left'>
 
 | Name | Level | OS | Tags |
 | :--- | :---: | :---: | :---: |
@@ -143,7 +143,7 @@ $> **{{ site.author.name }}** (M3n0sD0n4ld)<br>
 | [Ollie](https://m3n0sd0n4ld.github.io/thm/Ollie/) | `Medium` | `Linux`| `#phpIPAM #sqli` |
 | [Plotted-LMS](https://m3n0sd0n4ld.github.io/thm/Plotted-LMS/) | `Hard` | `Linux`| `#Moodle #RCE #Logrotate` |
 
-<img src='../assets/img/vulnhub.png' width='200' align='center'>
+<img src='../assets/img/vulnhub.png' width='200' align='left'>
 
 | Name | Level | OS | Tags |
 | :--- | :---: | :---: | :---: |
@@ -180,13 +180,13 @@ $> **{{ site.author.name }}** (M3n0sD0n4ld)<br>
 | [KB-Vulns: 3](https://www.hackingarticles.in/kb-vuln-3-vulnhub-walkthrough/) | `Easy` | `Linux` | `#smb #SiteMagicCMS #SETUID #systemctl` |
 | [Cybox: 1](https://www.hackingarticles.in/cybox-1-vulnhub-walkthrough/) | `Medium` | `Linux` | `#LFI #RCE #Apache #poison #SETUID #uncommon` |
 
-<img src='../assets/img/offensivesecurity.png' width='250' align='center'>
+<img src='../assets/img/offensivesecurity.png' width='250' align='left'>
 
 | Name | Level | OS | Tags |
 | :--- | :---: | :---: | :---: |
 | [DC5](https://m3n0sd0n4ld.github.io/OSC/DC5/) | `Easy` | `Linux` | `#LFI #RCE #Nginx #log #poison #SETUID #screen` |
 
-<img src='../assets/img/uam.png' width='200' align='center'>
+<img src='../assets/img/uam.png' width='200' align='left'>
 
 | Name | Level | OS | Tags |
 | :--- | :---: | :---: | :---: |
