@@ -1,6 +1,6 @@
 ---
 title: Google Search captcha evasion + GooFuzz tool
-tags: [bypass,captcha,google,evasion,article,goofuzz]
+tags: [bypass, captcha, google, evasion, article,goofuzz]
 style: border
 color: warning
 description: Google Search captcha evasion + GooFuzz tool
