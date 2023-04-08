@@ -1,9 +1,10 @@
+---
 title: CatPictures TryHackMe Writeup
-tags: [writeup,rest,python,tryhackme,linux,api,suid]
+tags: [writeup,cron,docker,phpbb]
 style: border
 color: success
 description: ""
-
+---
 
 ![](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/CatPictures/1.jpeg)
 
