@@ -3,7 +3,7 @@ title: Cracking of payroll files
 tags: [article, cracking, dni, payroll, tool, unominacracker]
 style: 
 color: 
-description: Cracking of payroll files
+description: ""
 ---
 
 ![](../assets/img/cracking-of-payroll-files/1.png)

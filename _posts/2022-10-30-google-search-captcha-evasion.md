@@ -3,7 +3,7 @@ title: Google Search captcha evasion + GooFuzz tool
 tags: [article, bypass, captcha, google, evasion,goofuzz]
 style: 
 color: 
-description: Google Search captcha evasion + GooFuzz tool
+description: ""
 ---
 
 ![](../assets/img/google-search-captcha-evasion/1.png)

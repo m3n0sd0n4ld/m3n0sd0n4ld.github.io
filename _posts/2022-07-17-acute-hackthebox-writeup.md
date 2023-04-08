@@ -3,7 +3,7 @@ title: Acute HackTheBox Writeup
 tags: [antivirus, evasion, hackthebox, invoke-command, powershellweb, windows, writeup]
 style: border
 color: success
-description: Acute HackTheBox Writeup
+description: ""
 ---
 
 ![logo](../assets/img/acute/1.png)

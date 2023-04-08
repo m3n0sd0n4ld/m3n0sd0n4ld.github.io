@@ -3,7 +3,7 @@ title: Harder TryHackMe Writeup
 tags: [writeup, tryhackme, git, linux, alpine, gpg]
 style: border
 color: success
-description: Harder TryHackMe Writeup
+description: ""
 ---
 
 ![logo](../assets/img/harder-tryhackme-writeup/1.png)

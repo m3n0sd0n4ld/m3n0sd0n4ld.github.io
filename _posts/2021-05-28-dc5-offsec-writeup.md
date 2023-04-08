@@ -3,7 +3,7 @@ title: DC5 Offensive Security Writeup
 tags: [writeup, offsec, LFI, RCE, Nginx, log, poison,SETUID, screen]
 style: border
 color: success
-description: DC5 Offensive Security Writeup
+description: ""
 ---
 
 ![logo](../assets/img/dc5-offsec-writeup/1.png)
