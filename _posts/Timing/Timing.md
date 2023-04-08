@@ -1,0 +1,214 @@
+---
+title: Timing HackTheBox Writeup
+tags: [writeup,rest,python,hackthebox,linux,api,suid]
+style: border
+color: success
+description: ""
+---
+
+
+![](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Timing/1.png)
+
+## Scanning
+We run nmap on all ports with scripts and software versions.
+
+![](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Timing/2.png)
+
+## Enumeration
+We access the website, try default passwords, but nothing works. There is no registration form either, so for the moment we do nothing.
+
+![](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Timing/3.png)
+
+We use **dirsearch** to list html and php files, we find the file "*images.php*".
+
+![](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Timing/4.png)
+
+We launch **wfuzz**, try to enumerate some possible variable and "*img*" appears:
+
+![](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Timing/5.png)
+
+It appears that the site has some protection that prevents us from exploiting the vulnerability.
+
+![](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Timing/6.png)
+
+
+## Exploitation
+We test with PHP wrappers and see that it works when converting the file to base64:
+
+![](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Timing/7.png)
+
+We see the "*header.php*" and find another file "*auth_check.php*" and session data for administrator authentication.
+
+![](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Timing/8.png)
+
+We find the DB file in the file "*login.php*":
+
+![](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Timing/9.png)
+
+We call the file "*db_conn.php*" and list the database credentials:
+
+![](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Timing/10.png)
+
+We tried reading the "*/etc/hosts*" file, listed the user "*aaron*" and tried the credentials through the **SSH** service, but they do not work.
+
+![](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Timing/11.png)
+
+If we look at the content of the file "*header.php*", we can see a hidden menu for role 1 (admin) that would allow us to get to the file "*avatar_uploader.php*".
+
+![](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Timing/12.png)
+
+We review the code of "*avatar_uploader.php*" and find more files to review, we see that it allows you to upload an image (it could be a potential way to host a malicious file).
+
+![](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Timing/13.png)
+
+Indeed, we need to achieve role = 1 to gain access to this section.
+
+![](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Timing/14.png)
+
+Testing with guessing on the listed user "*aaron*", we managed to access the application as the user with ID 2:
+
+![](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Timing/15.png)
+
+Go to the profile editing form, you will find the following fields
+
+![](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Timing/16.png)
+
+Let's see how we can update the profile (normal):
+
+![](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Timing/17.png)
+
+But in many cases, applications do not control the type of authorization, so it would still be possible to modify the id, adding new fields.
+
+![](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Timing/18.png)
+
+If we trick the application and put "*6*", we see how the return is executed and returns the info of our profile and we see that the role is *0*.
+
+![](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Timing/19.png)
+
+#### Add role=1:
+
+![](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Timing/20.png)
+
+We update and see the new "*Admin panel*" section:
+
+![](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Timing/21.png)
+
+We access the new resource, see a file upload, try a test image and see that it does not accept some extensions.
+
+![](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Timing/22.png)
+
+We rename the image extension and upload it, intercept the request with **Burp** and see that it is sent correctly.
+
+![](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Timing/23.png)
+
+I tried to put some PHP code inside the image, to check if it could be interpreted by the server.
+
+![](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Timing/25.png)
+
+#### File upload with PHP code
+
+![](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Timing/26.png)
+
+Now the question is... Where are these files being hosted? I reviewed the code of the php files and found the "*upload.php*", there we see the path where the files are hosted, a function called **time()** (curiously like the machine...) and the extension filter of the graphic files.
+
+![](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Timing/24.png)
+
+
+Now, we will have to manage to recover the id of the file, since it is fulfilling these conditions:
+
+```php
+$file_name = md5('$file_hash' . time()) . '_' . basename($_FILES["fileToUpload"]["name"]);
+```
+
+It will be necessary to make a script that checks every second if the file we uploaded exists.
+
+![](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Timing/27.png)
+
+#### PoC
+![](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Timing/28.png)
+
+### Script completed
+
+![](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Timing/29.png)
+
+### Exploit.php
+```php
+<?php
+$file_hash = uniqid();
+echo md5('$file_hash' . time()) . '_' . 'd0n4ld.jpg';
+?>
+```
+
+### Exploit.sh
+```bash
+#!/bin/bash
+
+linkCheck="404"
+
+while [ $linkCheck -ne "200" ]; do 
+        file=$(php exploit.php)
+
+        linkCheck=$(curl -s --write-out '%{http_code}' --output /dev/null http://10.10.11.135/image.php?img=images/uploads/$file)
+
+        if [ $linkCheck == 200 ]; then
+                echo "Link: http://10.10.11.135/image.php?img=/images/uploads/$file"
+        #else
+        #       echo "Not found: http://10.10.11.135/image.php?img=images/uploads/$file"
+        fi
+        sleep 1
+done
+```
+
+Now I added the "**id**" command and edited the exploit to show me the command execution.
+
+![](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Timing/30.png)
+
+It didn't work for me to run a reverse shell, so I went running commands to list and enumerate internal files, found the file "*source-files-backup.zip*" and downloaded it abusing the LFI + wrappers.
+
+![](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Timing/31.png)
+
+Extract the base64 file, decode and extract the zip content:
+
+![](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Timing/32.png)
+
+We list with hidden files and find a directory "*.git*".
+
+![](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Timing/33.png)
+
+Dump the *.git files* to check for possible files with relevant content.
+
+![](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Timing/34.png)
+
+We compare the "*db_conn.php*" files and we see that there is another password different from the production one.
+
+![](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Timing/35.png)
+
+We try to reuse the password via **SSH** with the user "*aaron*", we read the user flag and check if we can execute any file with **SUDO**.
+
+![](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Timing/36.png)
+
+
+## Privilege Escalation
+We tried running the binary, it seems to allow uploading or downloading files with **FTP** and **HTTP**. I try to download the *root flag*, but it doesn't seem to find it.
+
+![](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Timing/37.png)
+
+We see that we would be able to download a file from our machine. This is interesting, since we are running the binary as root, so we would have permissions to be able to replace some system file and gain access.
+
+![](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Timing/38.png)
+
+#### PoC
+
+![](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Timing/39.png)
+
+We see that there is a symbolic link to the *authorized_keys*, let's try to load a file "*keys*" with our public key, if we succeed, we should be able to access as root.
+
+![](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Timing/40.png)
+
+Now we connect via **SSH**, get root access and read the flag from *root.txt*:
+
+![](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Timing/41.png)
+
+
+
+
