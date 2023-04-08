@@ -1,6 +1,6 @@
 ---
 title: Undetected HackTheBox Writeup
-tags: [writeup,rest,python,hackthebox,linux,api,suid]
+tags: [writeup,hackthebox,rce,linux,xor,reversing,phpunit]
 style: border
 color: success
 description: ""

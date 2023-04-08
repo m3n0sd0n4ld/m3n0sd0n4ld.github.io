@@ -1,6 +1,6 @@
 ---
 title: RouterSpace HackTheBox Writeup
-tags: [writeup,rest,python,hackthebox,linux,api,suid]
+tags: [writeup,anbox,command-injection,sudo,apk,hackthebox]
 style: border
 color: success
 description: ""

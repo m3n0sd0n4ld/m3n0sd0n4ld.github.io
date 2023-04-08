@@ -1,6 +1,6 @@
 ---
 title: Talkative HackTheBox Writeup
-tags: [writeup,rest,python,hackthebox,linux,api,suid]
+tags: [boltcms,writeup,hackthebox,rocketchat,cap-dac-read-search,jamovi,mongodb]
 style: border
 color: success
 description: ""

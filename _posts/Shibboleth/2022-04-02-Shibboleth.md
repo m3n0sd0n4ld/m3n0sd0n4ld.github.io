@@ -1,6 +1,6 @@
 ---
 title: Shibboleth HackTheBox Writeup
-tags: [writeup,rest,python,hackthebox,linux,api,suid]
+tags: [mariadb,writeup,ipmi,zabbix,hackthebox,linux]
 style: border
 color: success
 description: ""
