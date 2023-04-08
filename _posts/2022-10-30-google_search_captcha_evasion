@@ -52,12 +52,11 @@ By taking advantage of the "*ByPass*" functionality, we can use a **dictionary o
 
 ### Proof of concept video with avoidance option:
 
-  
-  
+{% include _posts/2022-10-30-google_search_captcha_evasion id="TyiQTFv4v1w" %}
+
 ## What does Google think about this?
 
 This was discovered a few years ago, where **they mentioned that it was not a vulnerability**, but I have to say that they have been silently solving it (another case of "*Bad bounty*").  
-  
   
 ## Conclusions
 
