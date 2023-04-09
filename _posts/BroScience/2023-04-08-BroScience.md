@@ -12,7 +12,7 @@ description: ""
 
 We launch **nmap** tool with scripts and versions on all ports.
 
-```bash
+```
 PORT    STATE SERVICE  VERSION
 22/tcp  open  ssh      OpenSSH 8.4p1 Debian 5+deb11u1 (protocol 2.0)
 | ssh-hostkey: 
