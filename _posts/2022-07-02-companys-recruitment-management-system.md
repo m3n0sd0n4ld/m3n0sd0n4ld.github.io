@@ -41,7 +41,7 @@ The vulnerability could be exploited by unauthenticated remote attackers to:
 - Privilege escalation.
 - Theft of administrative credentials.
 
-### Exploitation
+## Exploitation
 Although the attacker would have access to certain information, there are areas of the application that are only shown to **authenticated administrator users**, but are they really protected for the rest of the users? 
 The following evidence shows that the **attacker would manage to enumerate or alter the administrator users**, this is due to a deficiency in the authorization and authentication controls.
 
