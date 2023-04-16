@@ -32,6 +32,7 @@ $> **{{ site.author.name }}** (M3n0sD0n4ld)<br>
 ## CVE
 
 - [Scada-LTS - Privilege escalation (CVE-2022-41976)](https://m3n0sd0n4ld.github.io/blog/cve-2022-41976)
+- [CVE-2022-41869](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-41869)
 
 ## External articles
 
