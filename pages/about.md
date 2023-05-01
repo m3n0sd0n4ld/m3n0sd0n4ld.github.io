@@ -45,6 +45,7 @@ $> **{{ site.author.name }}** (M3n0sD0n4ld)<br>
 - [Ciberataques físicos: cuando el peligro está en un USB](https://www.sothis.tech/sistemas-de-control-industrial/)
 - [Black Fraude: cómo evitar las estafas en rebajas](https://www.sothis.tech/black-fraude-como-evitar-las-estafas-en-rebajas/)
 - [El Coronavirus, una excusa más para los ciberdelincuentes](https://www.sothis.tech/ciberseguridad-aplicada-al-coronavirus/)
+- [Red Segura: Ciberseguridad aplicada al Coronavirus](https://www.redseguridad.com/especialidades-tic/activos-de-informacion/ciberseguridad-aplicada-al-coronavirus_20200402.html/amp/)
 
 ## Events & Conferences
 
