@@ -1,6 +1,6 @@
 ---
 title: Capture TryHackMe Writeup
-tags: [writeup, tryhackme, , linux, python]
+tags: [writeup, tryhackme, bypass, captcha, bruteforce, python]
 style: border
 color: success
 description: ""
