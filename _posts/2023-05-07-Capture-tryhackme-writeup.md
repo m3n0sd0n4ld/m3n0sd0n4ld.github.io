@@ -96,7 +96,9 @@ It seems easy, but things get complicated because the application has an arbitra
 In my case, I assemble a simple Python script with a function to calculate the captcha and make the request, the script is divided into two parts:
 1. First it detects the existing user.
 2. If the user exists, it will start to get the password and as soon as it detects it, it will stop.
+
 #### Script coding
+
 ```python
 #!/usr/bin/env python3
 
