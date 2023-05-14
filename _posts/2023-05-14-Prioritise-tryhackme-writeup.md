@@ -1,5 +1,5 @@
 ---
-title: Prioritse TryHackMe Writeup
+title: Prioritise TryHackMe Writeup
 tags: [writeup, tryhackme, sqli, wfuzz, orderby]
 style: border
 color: success
