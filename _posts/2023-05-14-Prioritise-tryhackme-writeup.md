@@ -89,7 +89,7 @@ Here the filter is shown, there are not many objects on the website, so the *SQL
 
 ![](../assets/img/prioritise-tryhackme-writeup/3.png)
 
-After several tests (which were not few), we found a possible exploitation based on error and from the parameter "*order*" (*Think of this 'order', as an "order by <item>"*).
+After several tests (which were not few), we found a possible exploitation based on error and from the parameter "*order*" (Think of this 'order', as an "order by <item>").
 
 ![](../assets/img/prioritise-tryhackme-writeup/4.png)
 
