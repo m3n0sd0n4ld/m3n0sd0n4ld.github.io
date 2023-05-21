@@ -129,9 +129,9 @@ We can see the same files previous:
 
 We look for possible exploits for RCE (*Remote Code Execution*), we find this interesting links:
 
-- https://github.com/google/security-research/security/advisories/GHSA-c469-p3jp-2vhx
-- https://blog.jupyter.org/cve-2021-32797-and-cve-2021-32798-remote-code-execution-in-jupyterlab-and-jupyter-notebook-a70fae0d3239
-- https://security.snyk.io/vuln/SNYK-PYTHON-IPYCACHE-173995
+- [https://github.com/google/security-research/security/advisories/GHSA-c469-p3jp-2vhx](https://github.com/google/security-research/security/advisories/GHSA-c469-p3jp-2vhx)
+- [https://blog.jupyter.org/cve-2021-32797-and-cve-2021-32798-remote-code-execution-in-jupyterlab-and-jupyter-notebook-a70fae0d3239](https://blog.jupyter.org/cve-2021-32797-and-cve-2021-32798-remote-code-execution-in-jupyterlab-and-jupyter-notebook-a70fae0d323)
+- [https://security.snyk.io/vuln/SNYK-PYTHON-IPYCACHE-173995](https://security.snyk.io/vuln/SNYK-PYTHON-IPYCACHE-173995)
 
 Finally, we can use the terminal option for system access, we can execute a reverse shell to work for comfortably:
 
@@ -331,7 +331,7 @@ But well, if we are root, we have read and write permissions to the */etc/shadow
 We download a copy of the shadow file, generate a hash and insert it in the shadow, then upload and replace it (I will show only the generation of the hash, the rest we should already know).
 
 ```
- mkpasswd -m SHA-512 **********
+> mkpasswd -m SHA-512 **********
 
 $6$EcqHi9.Vr***********************************************1If7s0
 
