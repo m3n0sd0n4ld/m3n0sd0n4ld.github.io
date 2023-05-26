@@ -1,5 +1,4 @@
-
-<!DOCTYPE html>
+<html>
 <html class="staticrypt-html">
     <head>
         <meta charset="utf-8" />
