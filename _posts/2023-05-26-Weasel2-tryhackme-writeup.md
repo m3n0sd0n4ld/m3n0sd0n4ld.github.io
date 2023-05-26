@@ -30,7 +30,7 @@
             .staticrypt-form {
                 position: relative;
                 z-index: 1;
-                background: #cccccc;
+                background: #dddddd;
                 max-width: 360px;
                 margin: 0 auto 100px;
                 padding: 45px;
