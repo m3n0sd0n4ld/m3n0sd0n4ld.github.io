@@ -1,6 +1,6 @@
 ---
 title: Valley TryHackMe Writeup
-tags: [writeup, tryhackme, linux, ctf, upx, reversing python-library]
+tags: [writeup, tryhackme, linux, ctf, upx, reversing, python-library]
 style: border
 color: success
 description: ""
