@@ -36,7 +36,7 @@ $> **{{ site.author.name }}** (M3n0sD0n4ld)<br>
 - [CVE-2022-2033](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-2033)
 - [CVE-2023-31505](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-31505)
 - [CVE-2023-31506](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-31506)
-- [CVE-2023-2681](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-2681)
+- [Jorani - SQL Injection (CVE-2023-2681)](https://m3n0sd0n4ld.github.io/blog/cve-2023-2681)
 - [CVE-2023-33357](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-33357)
 
 ## External articles
