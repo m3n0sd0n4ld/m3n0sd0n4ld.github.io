@@ -12,7 +12,7 @@ $> **{{ site.author.name }}** (M3n0sD0n4ld)<br>
 - More than 10 years as a computer technician and technical service in microelectronics.
 - 12 years playing with Industrial technology.
 - Passionate about Cybersecurity and hacking challenges.
-- Currently working in [Telefónica Tech](https://telefonicatech.com/) in Offensive Security area.
+- Currently working in Offensive Security area.
 
 ## Tools
 
