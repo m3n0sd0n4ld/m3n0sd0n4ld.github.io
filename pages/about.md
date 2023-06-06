@@ -40,6 +40,7 @@ $> **{{ site.author.name }}** (M3n0sD0n4ld)<br>
 - [CVE-2023-33357](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-33357)
 - [CVE-2023-3037](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-3037)
 - [CVE-2023-3039](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-3039)
+- [CVE-2023-3101](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-3101)
 
 ## External articles
 
