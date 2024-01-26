@@ -1,6 +1,6 @@
 ### Site Settings ###
 title               : m3n0sd0n4ld
-description         : Personal blog | Writeups HTB, THM, VulnHub and others.
+description         : Blog personal.
 baseurl             : ""                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
 repository          : m3n0sd0n4ld/m3n0sd0n4ld.github.io     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
 remote_theme        : YoussefRaafatNasry/portfolYOU
