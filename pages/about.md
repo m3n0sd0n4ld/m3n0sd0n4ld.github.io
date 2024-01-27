@@ -1,17 +1,18 @@
 ---
 layout: page
-title: Sobre mí
+title: Sobre mi pedigree
 permalink: /about/
 weight: 3
 ---
 
-# **Sobre mí**
+# **Sobre mi pedigree**
 
 $> **{{ site.author.name }}** (M3n0sD0n4ld)<br>
 
+- Gaditano 100% (50% "Gadi" y 50% "tano")
 - Más de 10 años como técnico informático y servicio técnico en microelectrónica.
 - 12 años jugando con tecnología Industrial.
-- Apasionado de la Ciberseguridad.
+- Apasionado de la Ciberseguridad y retos de hacking.
 - Actualmente trabajando en el área de Seguridad Ofensiva.
 
 ## Mickey-Herramientas
