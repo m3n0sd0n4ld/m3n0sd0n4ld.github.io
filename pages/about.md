@@ -5,21 +5,21 @@ permalink: /about/
 weight: 3
 ---
 
-# **About Me**
+# **Sobre mí**
 
 $> **{{ site.author.name }}** (M3n0sD0n4ld)<br>
 
-- More than 10 years as a computer technician and technical service in microelectronics.
-- 12 years playing with Industrial technology.
-- Passionate about Cybersecurity and hacking challenges.
-- Currently working in Offensive Security area.
+- Más de 10 años como técnico informático y servicio técnico en microelectrónica.
+- 12 años jugando con tecnología Industrial.
+- Apasionado de la Ciberseguridad y los retos del hacking.
+- Actualmente trabajando en el área de Seguridad Ofensiva.
 
-## Tools
+## Herramientas
 
-1. [uCVE](https://github.com/m3n0sd0n4ld/uCVE): uCVE is a tool written in GO that allows to extract CVE's related to a specific software and version, obtaining a report in HTML format with the result and/or exporting it to the pentesting report.
-2. [GooFuzz](https://github.com/m3n0sd0n4ld/GooFuzz): GooFuzz is a tool to perform fuzzing with an OSINT approach, managing to enumerate directories, files, subdomains or parameters without leaving evidence on the target’s server and by means of advanced Google searches (Google Dorking).
-3. [uDork](https://github.com/m3n0sd0n4ld/uDork): uDork is a script written in Bash Scripting that uses advanced Google search techniques to obtain sensitive information in files or directories, find IoT devices, detect versions of web application.
-4. [uNominaCracker](https://github.com/m3n0sd0n4ld/uNominaCracker): It is a script written in Python that performs brute force on workers’ payroll files through the use of their DNI (National Identity Document).
+1. [uCVE](https://github.com/m3n0sd0n4ld/uCVE): Herramienta escrita en GO que permite extraer CVE's relacionados con un determinado software y versión, obteniendo un informe en formato HTML con el resultado y/o exportándolo al informe de pentesting.
+2. [GooFuzz](https://github.com/m3n0sd0n4ld/GooFuzz): Herramienta para realizar fuzzing con un enfoque OSINT, consiguiendo enumerar directorios, archivos, subdominios o parámetros sin dejar evidencias en el servidor del objetivo y mediante búsquedas avanzadas en Google (Google Dorking).
+3. [uDork](https://github.com/m3n0sd0n4ld/uDork): Script escrito en Bash Scripting que utiliza técnicas avanzadas de búsqueda en Google para obtener información sensible en archivos o directorios, encontrar dispositivos IoT, detectar versiones de aplicaciones web... (Descontinuada)
+4. [uNominaCracker](https://github.com/m3n0sd0n4ld/uNominaCracker): Se trata de un script escrito en Python que realiza fuerza bruta en los ficheros ZIP con nóminas de los trabajadores mediante el uso de su DNI (Documento Nacional de Identidad).
 
 ## Exploits
 
@@ -38,12 +38,15 @@ $> **{{ site.author.name }}** (M3n0sD0n4ld)<br>
 - [CVE-2023-31506](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-31506)
 - [Jorani - SQL Injection (CVE-2023-2681)](https://m3n0sd0n4ld.github.io/blog/cve-2023-2681)
 - [CVE-2023-33357](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-33357)
-- [CVE-2023-3037](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-3037)
-- [CVE-2023-3039](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-3039)
+- [HelpDezk Community - Improper Authorization (CVE-2023-3037)](https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-helpdezk-community)
+- [HelpDezk Community - SQL Injection (CVE-2023-3039)](https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-helpdezk-community)
 - [CVE-2023-3101](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-3101)
-- [CVE-2023-3744](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-3744)
+- [SLiMS - Server-Side Request Forgery (CVE-2023-3744)](https://www.incibe.es/en/incibe-cert/notices/aviso/server-side-request-forgery-slims)
+- [ZKTeco ZEM800 - Insecure Direct Object Reference (CVE-2023-4587)](https://www.incibe.es/en/incibe-cert/notices/aviso/insecure-direct-object-reference-zkteco-zem800)
+- [Amazing Little Poll - Authentication Bypass (CVE-2023-6768)](https://www.incibe.es/en/incibe-cert/notices/aviso/multiple-vulnerabilities-amazing-little-poll)
+- [Amazin Little Poll - Stored Cross-Site Scripting (CVE-2023-6769)](https://www.incibe.es/en/incibe-cert/notices/aviso/multiple-vulnerabilities-amazing-little-poll)
 
-## External articles
+## Artículos externos
 
 - [PenTest Magazine: Open-Source Pentesting Toolkit](https://pentestmag.com/product/pentest-open-source-pentesting-toolkit/)
 - [Company’s Recruitment Management System 1.0 - Remote Readable Administrator Credentials](https://m3n0sd0n4ld.blogspot.com/2022/07/companys-recruitment-management-system.html)
@@ -56,7 +59,7 @@ $> **{{ site.author.name }}** (M3n0sD0n4ld)<br>
 - [El Coronavirus, una excusa más para los ciberdelincuentes](https://www.sothis.tech/ciberseguridad-aplicada-al-coronavirus/)
 - [Red Segura: Ciberseguridad aplicada al Coronavirus](https://www.redseguridad.com/especialidades-tic/activos-de-informacion/ciberseguridad-aplicada-al-coronavirus_20200402.html/amp/)
 
-## Events & Conferences
+## Eventos y ponencias
 
 - [Interview: Digitalización industrial en CCI (Centro de Ciberseguridad Industrial)](https://vimeo.com/431392473)
 - [Conference: Voz de la industria sobre la integración de Redes IT/OT - Ciberseguridad Industrial](https://t.co/dXTbGuI56n?amp=1)
@@ -66,7 +69,7 @@ $> **{{ site.author.name }}** (M3n0sD0n4ld)<br>
 - [Conference: IES Rafael Alberti (Cádiz) - IoT Pentesting - 2022](https://youtu.be/K1lTgYDF4lE)
 - [Conference: GooFuzz - Securiters Twitch- 2022](https://www.twitch.tv/videos/1517579986)
 
-## Old Writeups
+## Viejos artículos
 
 ### HackTheBox
 
