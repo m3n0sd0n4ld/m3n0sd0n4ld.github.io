@@ -7,8 +7,6 @@ weight: 3
 
 # **Sobre mi pedigree**
 
-<img src="https://avatars.githubusercontent.com/u/54067582?v=4" width="50%" height=auto alt="m3n0sd0n4ld" class="circle-image wow  zoomIn animated" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s; animation-name: zoomIn;">
-
 $> **{{ site.author.name }}** (M3n0sD0n4ld)<br>
 
 - Gaditano 100% (50% "Gadi" y 50% "tano")
