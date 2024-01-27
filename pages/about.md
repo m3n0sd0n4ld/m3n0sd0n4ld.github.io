@@ -7,6 +7,8 @@ weight: 3
 
 # **Sobre mi pedigree**
 
+<img src="https://assets.stickpng.com/images/589711c4cba9841eabab6113.png" alt="test" width="300" height="auto">
+
 $> **{{ site.author.name }}** (M3n0sD0n4ld)<br>
 
 - Gaditano 100% (50% "Gadi" y 50% "tano")
