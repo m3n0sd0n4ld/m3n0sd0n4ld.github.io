@@ -46,14 +46,14 @@ author:
 
 
 ### Posts ###
-permalink: /blog/:title
+permalink: /patoaventuras/:title
 
 
 ### Collections ###
 collections:
   projects:
     output: true
-    permalink: /projects/:name
+    permalink: /mickey-tools/:name
   elements:                                             # For Documentation Only
     output: true                                        # For Documentation Only
 
