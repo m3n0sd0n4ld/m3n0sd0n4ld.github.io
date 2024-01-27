@@ -7,7 +7,7 @@ weight: 3
 
 # **Sobre mi pedigree**
 
-<img src="https://avatars.githubusercontent.com/u/54067582" alt="test" width="300" height="auto">
+<img src="https://avatars.githubusercontent.com/u/54067582" alt="m3n0sd0n4ld" width="300" class="circle-image wow  zoomIn animated" height="auto">
 
 $> **{{ site.author.name }}** (M3n0sD0n4ld)<br>
 
