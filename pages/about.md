@@ -7,12 +7,7 @@ weight: 3
 
 # **Sobre mi pedigree**
 
-<div id="container" class="my-2">
-      <div id="dummy"></div>
-      <div id="element">
-        <img src="https://avatars.githubusercontent.com/u/54067582?v=4" width="auto" height="40%" alt="m3n0sd0n4ld" class="circle-image wow  zoomIn animated" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s; animation-name: zoomIn;">
-      </div>
-</div>
+<img src="https://avatars.githubusercontent.com/u/54067582?v=4" width="auto" height="40%" alt="m3n0sd0n4ld" class="circle-image wow  zoomIn animated" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s; animation-name: zoomIn;">
 
 $> **{{ site.author.name }}** (M3n0sD0n4ld)<br>
 
