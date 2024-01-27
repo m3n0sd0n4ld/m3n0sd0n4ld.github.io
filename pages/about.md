@@ -11,7 +11,7 @@ $> **{{ site.author.name }}** (M3n0sD0n4ld)<br>
 
 - Más de 10 años como técnico informático y servicio técnico en microelectrónica.
 - 12 años jugando con tecnología Industrial.
-- Apasionado de la Ciberseguridad y los retos del hacking.
+- Apasionado de la Ciberseguridad.
 - Actualmente trabajando en el área de Seguridad Ofensiva.
 
 ## Herramientas
