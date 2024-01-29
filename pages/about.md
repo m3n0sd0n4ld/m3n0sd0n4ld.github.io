@@ -44,7 +44,7 @@ $> **{{ site.author.name }}** (M3n0sD0n4ld)<br>
 - [Scada-LTS - Privilege escalation (CVE-2022-41976)](https://m3n0sd0n4ld.github.io/blog/cve-2022-41976)
 - [CVE-2022-41869](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-41869)
 - [CVE-2022-2033](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-2033)
-- [Schlix CMS v2.2.8-1 - Remote Code Execution (CVE-2023-31505)](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-31505)
+- [Schlix CMS v2.2.8-1 - Remote Code Execution (CVE-2023-31505)](https://m3n0sd0n4ld.github.io/patoHackventuras/cve-2023-31505)
 - [CVE-2023-31506](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-31506)
 - [Jorani - SQL Injection (CVE-2023-2681)](https://m3n0sd0n4ld.github.io/blog/cve-2023-2681)
 - [CVE-2023-33357](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-33357)
