@@ -55,6 +55,13 @@ $> **{{ site.author.name }}** (M3n0sD0n4ld)<br>
 - [ZKTeco ZEM800 - Insecure Direct Object Reference (CVE-2023-4587)](https://www.incibe.es/en/incibe-cert/notices/aviso/insecure-direct-object-reference-zkteco-zem800)
 - [Amazing Little Poll - Authentication Bypass (CVE-2023-6768)](https://www.incibe.es/en/incibe-cert/notices/aviso/multiple-vulnerabilities-amazing-little-poll)
 - [Amazin Little Poll - Stored Cross-Site Scripting (CVE-2023-6769)](https://www.incibe.es/en/incibe-cert/notices/aviso/multiple-vulnerabilities-amazing-little-poll)
+CVE-2024-1144
+CVE-2024-1145
+CVE-2024-1146
+- [CVE-2024-1144](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-1144)
+- [CVE-2024-1145](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-1145)
+- [CVE-2024-1146](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-1146)
+
 
 ## Artículos externos
 
