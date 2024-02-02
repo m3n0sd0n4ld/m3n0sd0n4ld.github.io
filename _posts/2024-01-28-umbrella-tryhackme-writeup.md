@@ -1,6 +1,6 @@
 ---
 title: Umbrella TryHackMe Writeup
-tags: [writeup, tryhackme, bypass, captcha, bruteforce, python]
+tags: [writeup, tryhackme, docker, web, registry, eval]
 style: border
 color: success
 description: ""
@@ -92,7 +92,7 @@ Para adelantar, hice uso de esta herramienta [DockerRegistryGrabber](https://git
     [+] Downloading : 3f4ca61aafcd4fc07267a105067db35c0f0ac630e1970f3cd0c7bf552780e985
 ```
 
-Si buscamos el fichero de configuración "app.js", vemos que la contraseña está en una variable de entorno, por lo que vamos a tener que obtenarla desde el aplicativo.
+Si buscamos el fichero de configuración "app.js", vemos que la contraseña está en una variable de entorno, por lo que vamos a tener que obtenerla desde el aplicativo.
 
 ```
 > cat usr/src/app/app.js
@@ -164,7 +164,7 @@ Lanzamos scripts de reconocimiento, pero no encontramos nada útil, así que vol
 
 ![](../assets/img/umbrella-tryhackme-writeup/3.png)
 
-Aprovechamos que tenemos acceso a la máquina, buscamos por "*time*" sobre la carpeta del aplicativo "timeTracker" y encuentramos varios ficheros relacionados.
+Aprovechamos que tenemos acceso a la máquina, buscamos por "*time*" sobre la carpeta del aplicativo "timeTracker" y encontramos varios ficheros relacionados.
 
 ```
 claire-r@ctf:~/timeTracker-src$ grep -r -i time
