@@ -1,6 +1,6 @@
 ---
-title: UpDown HackTheBox Writeup
-tags: [writeup,python,git,hackthebox,linux,easy-install,php,.phar,proc_open]
+title: Shoppy HackTheBox Writeup
+tags: [writeup,hackthebox,linux, fuzzing, mattermost]
 style: border
 color: success
 description: ""
