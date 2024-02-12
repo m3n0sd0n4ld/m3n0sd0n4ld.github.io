@@ -56,6 +56,7 @@ $> **{{ site.author.name }}** (M3n0sD0n4ld)<br>
 - [CVE-2024-1144](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-1144)
 - [CVE-2024-1145](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-1145)
 - [CVE-2024-1146](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-1146)
+- [Moodle LMS - Improper Access Control (CVE-2024-1439)](https://nvd.nist.gov/vuln/detail/CVE-2024-1439)
 
 
 ## Artículos externos
