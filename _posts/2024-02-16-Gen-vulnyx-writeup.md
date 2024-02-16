@@ -80,7 +80,7 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2024-02-16 18:58:
 Nos conectamos por SSH con las credenciales de Mark, pero estamos bajo una shell restringida, no nos permite ejecutar ningún comando:
 ![](../assets/img/gen-vulnyx-writeup/4.png)
 
-Probamos a intentar escapar de la restricción con diferentes tipos de pruebas desde SSH, pero sin éxito. Probamos a hacer port fordwarding al SSH, pero no nos permite conectar, pero vemos que devuelve unos errores... 
+Probamos a intentar escapar de la restricción con diferentes tipos de pruebas desde SSH, pero sin éxito. Probamos a hacer port fordwarding al SSH, pero no nos permite conectar, pero vemos que devuelve unos errores:
 ![](../assets/img/gen-vulnyx-writeup/5.png)
 
 Así que recordamos la pista de la nota que nos dejaron, el puerto 9999!!!
@@ -128,31 +128,21 @@ Encryption: none
 Comment: peter@gen
 Public-Lines: 9
 AAAAB3NzaC1yc2EAAAADAQABAAABgQCXderHTJk9bVra4jc/M2n19+YfuaXgkRot
-LhHcfttXfRTt1qasgiRSmIV28gCjN0J5eOJkln6Y1880Mq5oQippl5+WAC3/qzB6
-tXLrqwiY0f4YjJaxvuWw0xfp/++RKFxwon6muoTJ/UcHScyXqvIu5XDb0/JGXGKG
-ifeUcqdeRjAoU7Ey4fjhDF6mbuZaF5D6CSGDJ3z6aw8qk3hACV/+rUSPcKkf3SEf
-ekC1xPgb5iSCgr51kNdIKdJHiy2qGylIifA1CsDFObD1KZn/uHXOohci3F8E8Xxq
-M2Y1Z383B44Qsp2L6O2VAuw2THPQB267zc7AdH/E6WQ8LLT05TPMmBZM5IGD534M
-BDsNhI94qZ7kqugYE+Hw3SFT/0wId95NYnaNrnfsbqERo/OncsoN0dLLrfC/56PJ
-2qWBRfSvN8XbenPiAaxp8cjUuC1bpMXbSO1uZwZ0mq4bJW1+AJ6lRbJJkE0+Rc7z
-XGnfMSnpQjYRkcbvdUqao8+ItRz3dy0=
-Private-Lines: 21
-AAABgAZr2uTRNAv9J2VxQstcqCjj9i8xJT20mSoCMoKpJC584JbGy3Ez4UtZKQtm
-bi19ScWxoNOH590eBSxe27MS3w5z/bGT119oCBmjuLgSG76y5HVw/HCTudQ51uE2
-VxdN4UFrOjhiXv/bS5gdAl4JwtPHKXZAcZyXDRxMHCGAjOT7z83d4nzYRL9x0U94
-Ey8NoblgCrovQeayBEYXU3lPjHDVMrtsGNd/fgiCG904+RXht3mLBn0gg2gNUdtz
-pJ96IEC/LerQhsbV0A/I0+lWJ7NqJ4vLYDT6nbsnUyAFblNSeDOiul7oWKP3dJtC
-hnPTGLHc4MxEeMpfmUY7UYTExG4TNMiMViSN2cs8giEVzWT8AcgwKi2yaeqihuAM
-5juHEkBbQj57Z1yZF4j28c/AMFdd8OU3iaa+aYNYpZJS/Y8M58kq6/0yBt06WguE
-ClfWSv5jDHqk79Nug+C4px1i8lJGX+xmZ4JeDYuGmLb6qBXA8U2ZvAa2ZXyN0u+B
-9mJNhwAAAMEAxXfxzglffXNvOW9rrHs4QIDCxCTb7aZlow7h6TJDef9yfGH5tWX5
-fbuXTtF0C/m9tcDBarKPAtTfQxk5CKd7UN+XW9lBcQ2M8nPY+aVlBlvMC4oDBmx2
-NL7Bt2EJKZxs0F7k+B5rEvAX5ignXsJiY68QMbkzgm54Klq9Qi4b+MtTVIunnqCX
-L4zS9Lw+DBnehnnniyBQLs6zb8fQTlH3GHietjZJgFDngZLCXUDhOQEibrM5KAQu
-vEz/Y9vNzFLTAAAAwQDEWtu2tVAzrjgBBhU/vw6DaOB3sWKIxnCV79XaLzZq0bL+
-yOB/PRwkKzkyjyhGAcISkyQr211azkxTLTaJToRlFrfP6PVE7Yjizq3xa059yLVk
-iQVUTlCYpsesHiqB3SsOloQzyvCEgMfox2qOQHN/uildVi9qtM4I+w36lZOy7P4D
-qnbvNiRcazNXhdRTfe2UeIUEi4pV+zdpTSMCnz+lbe1/gx2bcivNW58pi8HyorxV
+LhHcfttXfRTt1qasgiRSmIV28gCjN0J5eOJkln6Y1880Mq5oQippl5********************************************
+********************************************
+********************************************
+********************************************
+********************************************
+********************************************
+********************************************
+********************************************
+********************************************
+********************************************
+********************************************
+********************************************
+********************************************
+********************************************
+UeIUEi4pV+zdpTSMCnz+lbe1/gx2bcivNW58pi8HyorxV
 VVoA5VH0+dlH6oCqzf8AAADBAIQM2zEECWKCjr9HBGehy6/HbLyjRhRsHBpi1dpD
 FxdVZh9vtL6qs/b54xohXtPYB5cku/AiTtEfHHVSbIWaZXTu9MDtemOHfMiBv0T7
 ihwFrG8QG1m0uttH4W05hRRKWBMU71NNwhSV/wM8AO2nyL6GHhaebXB4I56yTq3q
