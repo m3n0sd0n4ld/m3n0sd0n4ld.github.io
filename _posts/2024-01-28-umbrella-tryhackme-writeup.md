@@ -158,7 +158,7 @@ claire-r@ctf:~$ cat user.txt
 THM{****************************}
 ```
 
-# Escalada de privilegios
+## Escalada de privilegios
 
 Lanzamos scripts de reconocimiento, pero no encontramos nada útil, así que volvemos al aplicativo, vemos que solo hay una opción llamada "*time*", escribimos un texto arbitrario para probarlo y comprobamos que el aplicativo "explota":
 
