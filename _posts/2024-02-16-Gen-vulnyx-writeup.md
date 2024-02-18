@@ -80,7 +80,7 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2024-02-16 18:58:
 Nos conectamos por SSH con las credenciales de Mark, pero estamos bajo una shell restringida, no nos permite ejecutar ningún comando:
 ![](../assets/img/gen-vulnyx-writeup/4.png)
 
-Probamos a intentar escapar de la restricción con diferentes tipos de pruebas desde SSH, pero sin éxito. Probamos a hacer port fordwarding al SSH, pero no nos permite conectar, pero vemos que devuelve unos errores:
+Probamos a intentar escapar de la restricción con diferentes tipos de pruebas desde SSH, pero sin éxito. Probamos a hacer port forwarding al SSH, pero no nos permite conectar, pero vemos que devuelve unos errores:
 ![](../assets/img/gen-vulnyx-writeup/5.png)
 
 Así que recordamos la pista de la nota que nos dejaron, el puerto 9999!!!
@@ -90,7 +90,7 @@ Así que recordamos la pista de la nota que nos dejaron, el puerto 9999!!!
 Preguntamos a chatGPT sobre extentiones para claves privadas en el uso de SSH:
 ![](../assets/img/gen-vulnyx-writeup/7.png)
 
-Lanzamos **Wfuzz** con las extensiones y la palabra "*id_rsa*" y encontramos una combinación que nos devuelve un código 200:
+Lanzamos **Wfuzz** con las extensiones y la palabra "*id_rsa*", encontramos una combinación que nos devuelve un código 200:
 ```
 > wfuzz -c -z list,pem-ppk-key-p12-pfx-cer http://127.0.0.1:9999/id_rsa.FUZZ
 ********************************************************
@@ -151,7 +151,7 @@ lioGlE0sewIS0VjBaBRe6dqEGA==
 Private-MAC: ddf613a5fe1b8e368671e046193ec282600331b31e39f575a344c3bb23248d6b
 ```
 
-En mi caso que utilizado kali linux, hice estos pasos:
+En mi caso, utilizando kali linux, hice estos pasos:
 
 ```bash
 sudo apt-get update
@@ -228,7 +228,8 @@ User mark may run the following commands on gen:
     (root) NOPASSWD: /usr/bin/puttygen
 ```
 
-Tras varías pruebas y mucha lectura, no logramos hacer legible el fichero "randomseed", así que, teniendo acceso a puttygen, repetimos la jugada anterior, esta vez crearemos una llave .ppk, la pasaremos a formato OpenSSH y compartirmos como SUDO nuestra clave pública sobre el fichero /root/.ssh/authorized_keys: 
+Tras varías pruebas y mucha lectura, no logramos hacer legible el fichero "randomseed", así que, teniendo acceso a puttygen, repetimos la jugada anterior, esta vez crearemos una llave .ppk, la pasaremos a formato OpenSSH y compartiremos como SUDO nuestra clave pública sobre el fichero /root/.ssh/authorized_keys.
+
 Le preguntamos a chatGPT cómo podemos hacerlo:
 ![](../assets/img/gen-vulnyx-writeup/10.png)
 
