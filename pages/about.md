@@ -41,24 +41,23 @@ $> **{{ site.author.name }}** (M3n0sD0n4ld)<br>
 
 ## CVE
 
-- [Scada-LTS - Privilege escalation (CVE-2022-41976)](https://m3n0sd0n4ld.github.io/blog/cve-2022-41976)
-- [Schlix CMS v2.2.8-1 - Remote Code Execution (CVE-2023-31505)](https://m3n0sd0n4ld.github.io/patoHackventuras/cve-2023-31505)
-- [Grav <= 1.7.44 - Stored XSS (Authenticated) (CVE-2023-31506)](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-31506)
-- [Jorani - SQL Injection (CVE-2023-2681)](https://m3n0sd0n4ld.github.io/blog/cve-2023-2681)
-- [CVE-2023-33357](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-33357)
-- [HelpDezk Community - Improper Authorization (CVE-2023-3037)](https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-helpdezk-community)
-- [HelpDezk Community - SQL Injection (CVE-2023-3039)](https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-helpdezk-community)
-- [CVE-2023-3101](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-3101)
-- [SLiMS - Server-Side Request Forgery (CVE-2023-3744)](https://www.incibe.es/en/incibe-cert/notices/aviso/server-side-request-forgery-slims)
-- [ZKTeco ZEM800 - Insecure Direct Object Reference (CVE-2023-4587)](https://www.incibe.es/en/incibe-cert/notices/aviso/insecure-direct-object-reference-zkteco-zem800)
-- [Amazing Little Poll - Authentication Bypass (CVE-2023-6768)](https://www.incibe.es/en/incibe-cert/notices/aviso/multiple-vulnerabilities-amazing-little-poll)
-- [Amazin Little Poll - Stored Cross-Site Scripting (CVE-2023-6769)](https://www.incibe.es/en/incibe-cert/notices/aviso/multiple-vulnerabilities-amazing-little-poll)
+- [Router FAST3686 V2 Vodafone/Sagemcom - Insufficient session timeout (CVE-2024-1623)](https://www.incibe.es/en/incibe-cert/notices/aviso/insufficient-session-timeout-vulnerability-sagemcom-router)
+- [Moodle LMS - Improper Access Control (CVE-2024-1439)](https://nvd.nist.gov/vuln/detail/CVE-2024-1439)
 - [CVE-2024-1144](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-1144)
 - [CVE-2024-1145](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-1145)
 - [CVE-2024-1146](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-1146)
-- [Moodle LMS - Improper Access Control (CVE-2024-1439)](https://nvd.nist.gov/vuln/detail/CVE-2024-1439)
-- [Router FAST3686 V2 Vodafone/Sagemcom - Insufficient session timeout (CVE-2024-1623)](https://www.incibe.es/en/incibe-cert/notices/aviso/insufficient-session-timeout-vulnerability-sagemcom-router)
-
+- [Amazing Little Poll - Authentication Bypass (CVE-2023-6768)](https://www.incibe.es/en/incibe-cert/notices/aviso/multiple-vulnerabilities-amazing-little-poll)
+- [Amazin Little Poll - Stored Cross-Site Scripting (CVE-2023-6769)](https://www.incibe.es/en/incibe-cert/notices/aviso/multiple-vulnerabilities-amazing-little-poll)
+- [ZKTeco ZEM800 - Insecure Direct Object Reference (CVE-2023-4587)](https://www.incibe.es/en/incibe-cert/notices/aviso/insecure-direct-object-reference-zkteco-zem800)
+- [SLiMS - Server-Side Request Forgery (CVE-2023-3744)](https://www.incibe.es/en/incibe-cert/notices/aviso/server-side-request-forgery-slims)
+- [CVE-2023-3101](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-3101)
+- [HelpDezk Community - Improper Authorization (CVE-2023-3037)](https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-helpdezk-community)
+- [HelpDezk Community - SQL Injection (CVE-2023-3039)](https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-helpdezk-community)
+- [CVE-2023-33357](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-33357)
+- [Jorani - SQL Injection (CVE-2023-2681)](https://m3n0sd0n4ld.github.io/blog/cve-2023-2681)
+- [Grav <= 1.7.44 - Stored XSS (Authenticated) (CVE-2023-31506)](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-31506)
+- [Schlix CMS v2.2.8-1 - Remote Code Execution (CVE-2023-31505)](https://m3n0sd0n4ld.github.io/patoHackventuras/cve-2023-31505)
+- [Scada-LTS - Privilege escalation (CVE-2022-41976)](https://m3n0sd0n4ld.github.io/blog/cve-2022-41976)
 
 ## Artículos externos
 
