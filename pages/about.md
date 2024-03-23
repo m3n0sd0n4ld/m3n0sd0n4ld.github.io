@@ -43,9 +43,9 @@ $> **{{ site.author.name }}** (M3n0sD0n4ld)<br>
 
 - [Router FAST3686 V2 Vodafone/Sagemcom - Insufficient session timeout (CVE-2024-1623)](https://www.incibe.es/en/incibe-cert/notices/aviso/insufficient-session-timeout-vulnerability-sagemcom-router)
 - [Moodle LMS - Improper Access Control (CVE-2024-1439)](https://nvd.nist.gov/vuln/detail/CVE-2024-1439)
-- [CVE-2024-1144](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-1144)
-- [CVE-2024-1145](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-1145)
-- [CVE-2024-1146](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-1146)
+- [Devklan's Alma Blog - Improper Access Control (CVE-2024-1144)](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-1144)
+- [Devklan's Alma Blog - User Enumeration (CVE-2024-1145)](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-1145)
+- [Devklan's Alma Blog - Cross-Site Scripting (CVE-2024-1146)](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-1146)
 - [Amazing Little Poll - Authentication Bypass (CVE-2023-6768)](https://www.incibe.es/en/incibe-cert/notices/aviso/multiple-vulnerabilities-amazing-little-poll)
 - [Amazin Little Poll - Stored Cross-Site Scripting (CVE-2023-6769)](https://www.incibe.es/en/incibe-cert/notices/aviso/multiple-vulnerabilities-amazing-little-poll)
 - [ZKTeco ZEM800 - Insecure Direct Object Reference (CVE-2023-4587)](https://www.incibe.es/en/incibe-cert/notices/aviso/insecure-direct-object-reference-zkteco-zem800)
