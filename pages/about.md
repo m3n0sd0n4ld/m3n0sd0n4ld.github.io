@@ -41,6 +41,9 @@ $> **{{ site.author.name }}** (M3n0sD0n4ld)<br>
 
 ## CVE
 
+- [Astrotalks - SQL Injection (CVE-2024-5523)](https://nvd.nist.gov/vuln/detail/CVE-2024-5523)
+- [Astrotalks - Improper Access Control (CVE-2024-5524)](https://nvd.nist.gov/vuln/detail/CVE-2024-5524)
+- [Astrotalks - Privilege Escalation (CVE-2024-5525)](https://nvd.nist.gov/vuln/detail/CVE-2024-5525)
 - [HubBank - Unrestricted Upload to Remote Code Execution (CVE-2024-4306)](https://nvd.nist.gov/vuln/detail/CVE-2024-4306)
 - [HubBank - SQL Injection (CVE-2024-4307)](https://nvd.nist.gov/vuln/detail/CVE-2024-4307)
 - [HubBank - SQL Injection (CVE-2024-4308)](https://nvd.nist.gov/vuln/detail/CVE-2024-4308)
