@@ -65,7 +65,7 @@ $> **{{ site.author.name }}** (M3n0sD0n4ld)<br>
 - [Jorani - SQL Injection (CVE-2023-2681)](https://m3n0sd0n4ld.github.io/patoHackventuras/cve-2023-2681)
 - [Grav <= 1.7.44 - Stored XSS (Authenticated) (CVE-2023-31506)](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-31506)
 - [Schlix CMS v2.2.8-1 - Remote Code Execution (CVE-2023-31505)](https://m3n0sd0n4ld.github.io/patoHackventuras/cve-2023-31505)
-- [Scada-LTS - Privilege escalation (CVE-2022-41976)](https://m3n0sd0n4ld.github.io/blog/cve-2022-41976)
+- [Scada-LTS - Privilege escalation (CVE-2022-41976)](https://m3n0sd0n4ld.github.io/patoHackventuras/cve-2022-41976)
 
 ## Artículos externos
 
