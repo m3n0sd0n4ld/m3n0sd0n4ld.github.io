@@ -41,6 +41,14 @@ $> **{{ site.author.name }}** (M3n0sD0n4ld)<br>
 
 ## CVE
 
+- [Astrotalks - SQL Injection (CVE-2024-5523)](https://nvd.nist.gov/vuln/detail/CVE-2024-5523)
+- [Astrotalks - Improper Access Control (CVE-2024-5524)](https://nvd.nist.gov/vuln/detail/CVE-2024-5524)
+- [Astrotalks - Privilege Escalation (CVE-2024-5525)](https://nvd.nist.gov/vuln/detail/CVE-2024-5525)
+- [HubBank - Unrestricted Upload to Remote Code Execution (CVE-2024-4306)](https://nvd.nist.gov/vuln/detail/CVE-2024-4306)
+- [HubBank - SQL Injection (CVE-2024-4307)](https://nvd.nist.gov/vuln/detail/CVE-2024-4307)
+- [HubBank - SQL Injection (CVE-2024-4308)](https://nvd.nist.gov/vuln/detail/CVE-2024-4308)
+- [HubBank - SQL Injection (CVE-2024-4309)](https://nvd.nist.gov/vuln/detail/CVE-2024-4309)
+- [HubBank - Cross-site Scripting (XSS) (CVE-2024-4310)](https://nvd.nist.gov/vuln/detail/CVE-2024-4310)
 - [Router FAST3686 V2 Vodafone/Sagemcom - Insufficient session timeout (CVE-2024-1623)](https://www.incibe.es/en/incibe-cert/notices/aviso/insufficient-session-timeout-vulnerability-sagemcom-router)
 - [Moodle LMS - Improper Access Control (CVE-2024-1439)](https://nvd.nist.gov/vuln/detail/CVE-2024-1439)
 - [Devklan's Alma Blog - Improper Access Control (CVE-2024-1144)](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-1144)
