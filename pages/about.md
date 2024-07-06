@@ -41,6 +41,10 @@ $> **{{ site.author.name }}** (M3n0sD0n4ld)<br>
 
 ## CVE
 
+- [MESbook - Server-Side Request Forgery (SSRF) (CVE-2024-6424)](https://nvd.nist.gov/vuln/detail/CVE-2024-6424)
+- [MESbook - Incorrect Provision of Specified Functionality (CVE-2024-6425)](https://nvd.nist.gov/vuln/detail/CVE-2024-6425)
+- [MESbook - Exposure of Sensitive Information (CVE-2024-6426)](https://nvd.nist.gov/vuln/detail/CVE-2024-6426)
+- [MESbook - Uncontrolled Resource Consumption (CVE-2024-6427)](https://nvd.nist.gov/vuln/detail/CVE-2024-6427)
 - [Astrotalks - SQL Injection (CVE-2024-5523)](https://nvd.nist.gov/vuln/detail/CVE-2024-5523)
 - [Astrotalks - Improper Access Control (CVE-2024-5524)](https://nvd.nist.gov/vuln/detail/CVE-2024-5524)
 - [Astrotalks - Privilege Escalation (CVE-2024-5525)](https://nvd.nist.gov/vuln/detail/CVE-2024-5525)
