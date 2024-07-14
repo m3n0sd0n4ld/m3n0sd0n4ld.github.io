@@ -213,7 +213,7 @@ Compartimos nuestra clave pública en el fichero *authorized_keys* del directori
 ```
 # echo 'ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBV2m/q3jym/x/CGxBZFJO+htVx4R25nzjXWTQER9FWJ' >> authorized_keys
 ```
-Posteriormente, conectamos por **SSH** como root, indicando con *-i* la ruta a nuestra clave privada (*siempre y cuando no se encuentre en el directorio raíz de nuestro usuario*):
+Posteriormente, conectamos por **SSH** como root, indicando con *-i*  la ruta a nuestra clave privada (*siempre y cuando no se encuentre en el directorio raíz de nuestro usuario*):
 ```
 > ssh root@10.10.155.195 -i clave_privada
 Welcome to Ubuntu 20.04.1 LTS (GNU/Linux 5.4.0-1029-aws x86_64)
