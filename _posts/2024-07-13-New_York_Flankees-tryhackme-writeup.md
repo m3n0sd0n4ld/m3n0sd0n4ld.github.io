@@ -105,7 +105,7 @@ Con las credenciales de acceso en nuestro poder, nos autenticamos en el panel de
 También encontramos la siguiente parte del reto, un formulario donde permite ejecutar comandos del sistema:
 ![](../assets/img/new_york_flankees-tryhackme-writeup/5.png)
 
-Hacemos una prueba con el comando "***id***", vemos que devuelve un "*Ok*", pero también detectamos que no están permitidos la ejecución de todos los comandos, tampoco se nos muestra la información por la pantalla (solo el mensaje *"Ok"*), por lo que la respuesta es "*ciega*" y tendremos que averiguar alguna forma de saber si se está ejecuando en la máquina víctima:
+Hacemos una prueba con el comando "***id***", vemos que devuelve un "*Ok*", pero también detectamos que no están permitidos la ejecución de todos los comandos, tampoco se nos muestra la información por la pantalla (solo el mensaje *"Ok"*), por lo que la respuesta es "*ciega*" y tendremos que averiguar alguna forma de saber si se está ejecutando en la máquina víctima:
 ![](../assets/img/new_york_flankees-tryhackme-writeup/6.png)
 
 Levantamos un servidor HTTP con **Python** y probamos a descargar algo con el binario **wget**, donde se puede evidenciar que funciona, siendo una posible vía de explotación:
