@@ -1,6 +1,6 @@
 ---
 title: New York Flankees TryHackMe Writeup
-tags: [writeup, tryhackme, padding, command-injection, docker, web, registry, eval]
+tags: [writeup, tryhackme, padding-oracle, padbuster, command-injection, docker]
 style: border
 color: success
 description: ""
