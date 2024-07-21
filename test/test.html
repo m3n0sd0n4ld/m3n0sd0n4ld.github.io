@@ -13,7 +13,7 @@
         <button type="submit">Ver contenido</button>
     </form>
     <pre id="content" style="display: none;"></pre>
-    <p id="error" style="color: red; display: none;">Contraseña incorrecta</p>
+    <p id="error" style="color: red; display: none;">Contraseña incorrecta o datos corruptos</p>
 
     <!-- Incluir CryptoJS -->
     <script src="crypto-js.min.js"></script>
@@ -25,23 +25,36 @@
             fetch('test.md.enc')
                 .then(response => response.arrayBuffer())
                 .then(encryptedData => {
+                    // Convertir ArrayBuffer a WordArray
+                    const wordArray = CryptoJS.lib.WordArray.create(encryptedData);
+                    
+                    // Generar la clave de descifrado
                     const key = CryptoJS.SHA256(password);
-                    const encryptedWordArray = CryptoJS.lib.WordArray.create(encryptedData);
-                    const decrypted = CryptoJS.AES.decrypt({ ciphertext: encryptedWordArray }, key, {
+
+                    // Descifrar los datos
+                    const decrypted = CryptoJS.AES.decrypt({ ciphertext: wordArray }, key, {
                         mode: CryptoJS.mode.ECB,
                         padding: CryptoJS.pad.Pkcs7
                     });
 
-                    const decryptedStr = CryptoJS.enc.Utf8.stringify(decrypted);
-                    if (decryptedStr) {
-                        document.getElementById('content').textContent = decryptedStr;
-                        document.getElementById('content').style.display = 'block';
-                        document.getElementById('error').style.display = 'none';
-                    } else {
+                    try {
+                        // Convertir el texto descifrado a una cadena UTF-8
+                        const decryptedStr = CryptoJS.enc.Utf8.stringify(decrypted);
+                        if (decryptedStr) {
+                            document.getElementById('content').textContent = decryptedStr;
+                            document.getElementById('content').style.display = 'block';
+                            document.getElementById('error').style.display = 'none';
+                        } else {
+                            throw new Error("Descifrado fallido");
+                        }
+                    } catch (e) {
                         document.getElementById('error').style.display = 'block';
                     }
                 })
-                .catch(error => console.error('Error:', error));
+                .catch(error => {
+                    console.error('Error:', error);
+                    document.getElementById('error').style.display = 'block';
+                });
         });
     </script>
 </body>
