@@ -18,29 +18,53 @@
     <!-- Incluir CryptoJS -->
     <script src="crypto-js.min.js"></script>
     <script>
-        document.getElementById('decryptForm').addEventListener('submit', function(event) {
+        async function deriveKey(password, salt) {
+            const enc = new TextEncoder();
+            const keyMaterial = await crypto.subtle.importKey(
+                'raw',
+                enc.encode(password),
+                'PBKDF2',
+                false,
+                ['deriveKey']
+            );
+            return crypto.subtle.deriveKey(
+                {
+                    name: 'PBKDF2',
+                    salt: salt,
+                    iterations: 100000,
+                    hash: 'SHA-256'
+                },
+                keyMaterial,
+                { name: 'AES-GCM', length: 256 },
+                false,
+                ['decrypt']
+            );
+        }
+
+        document.getElementById('decryptForm').addEventListener('submit', async function(event) {
             event.preventDefault();
             const password = document.getElementById('password').value;
 
             fetch('test.md.enc')
                 .then(response => response.arrayBuffer())
-                .then(encryptedData => {
-                    // Convertir ArrayBuffer a WordArray
-                    const wordArray = CryptoJS.lib.WordArray.create(new Uint8Array(encryptedData));
+                .then(async encryptedData => {
+                    const salt = new Uint8Array(encryptedData.slice(0, 16));
+                    const data = new Uint8Array(encryptedData.slice(16));
 
-                    // Generar la clave de descifrado
-                    const key = CryptoJS.enc.Base64.stringify(CryptoJS.SHA256(password));
-
-                    // Descifrar los datos
-                    const decrypted = CryptoJS.AES.decrypt(
-                        { ciphertext: wordArray }, 
-                        CryptoJS.enc.Base64.parse(key), 
-                        { mode: CryptoJS.mode.ECB, padding: CryptoJS.pad.Pkcs7 }
-                    );
-
+                    const key = await deriveKey(password, salt);
+                    
                     try {
-                        // Convertir el texto descifrado a una cadena UTF-8
-                        const decryptedStr = CryptoJS.enc.Utf8.stringify(decrypted);
+                        const decrypted = await crypto.subtle.decrypt(
+                            {
+                                name: 'AES-GCM',
+                                iv: new Uint8Array(12)  // AES-GCM requiere un IV de 12 bytes, pero esto debe ser consistente con el cifrado
+                            },
+                            key,
+                            data
+                        );
+
+                        const dec = new TextDecoder();
+                        const decryptedStr = dec.decode(decrypted);
                         if (decryptedStr) {
                             document.getElementById('content').textContent = decryptedStr;
                             document.getElementById('content').style.display = 'block';
