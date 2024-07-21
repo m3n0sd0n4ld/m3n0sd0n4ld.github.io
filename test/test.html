@@ -22,7 +22,7 @@
             event.preventDefault();
             const password = document.getElementById('password').value;
 
-            fetch('archivo_markdown.md.enc')
+            fetch('test.md.enc')
                 .then(response => response.arrayBuffer())
                 .then(encryptedData => {
                     const key = CryptoJS.SHA256(password);
