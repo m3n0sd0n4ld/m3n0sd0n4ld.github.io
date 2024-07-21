@@ -1,1 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown Viewer</title>
+</head>
+<body>
+    <h1>Markdown Viewer</h1>
+    <form id="decryptForm">
+        <label for="password">Introduce la contraseña:</label>
+        <input type="password" id="password" name="password" required>
+        <button type="submit">Ver contenido</button>
+    </form>
+    <pre id="content" style="display: none;"></pre>
+    <p id="error" style="color: red; display: none;">Contraseña incorrecta</p>
 
+    <!-- Incluir CryptoJS -->
+    <script src="crypto-js.min.js"></script>
+    <script>
+        document.getElementById('decryptForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const password = document.getElementById('password').value;
+
+            fetch('archivo_markdown.md.enc')
+                .then(response => response.arrayBuffer())
+                .then(encryptedData => {
+                    const key = CryptoJS.SHA256(password);
+                    const encryptedWordArray = CryptoJS.lib.WordArray.create(encryptedData);
+                    const decrypted = CryptoJS.AES.decrypt({ ciphertext: encryptedWordArray }, key, {
+                        mode: CryptoJS.mode.ECB,
+                        padding: CryptoJS.pad.Pkcs7
+                    });
+
+                    const decryptedStr = CryptoJS.enc.Utf8.stringify(decrypted);
+                    if (decryptedStr) {
+                        document.getElementById('content').textContent = decryptedStr;
+                        document.getElementById('content').style.display = 'block';
+                        document.getElementById('error').style.display = 'none';
+                    } else {
+                        document.getElementById('error').style.display = 'block';
+                    }
+                })
+                .catch(error => console.error('Error:', error));
+        });
+    </script>
+</body>
+</html>
