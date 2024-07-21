@@ -16,55 +16,30 @@
     <p id="error" style="color: red; display: none;">Contraseña incorrecta o datos corruptos</p>
 
     <!-- Incluir CryptoJS -->
-    <script src="crypto-js.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
     <script>
-        async function deriveKey(password, salt) {
-            const enc = new TextEncoder();
-            const keyMaterial = await crypto.subtle.importKey(
-                'raw',
-                enc.encode(password),
-                'PBKDF2',
-                false,
-                ['deriveKey']
-            );
-            return crypto.subtle.deriveKey(
-                {
-                    name: 'PBKDF2',
-                    salt: salt,
-                    iterations: 100000,
-                    hash: 'SHA-256'
-                },
-                keyMaterial,
-                { name: 'AES-GCM', length: 256 },
-                false,
-                ['decrypt']
-            );
-        }
-
-        document.getElementById('decryptForm').addEventListener('submit', async function(event) {
+        document.getElementById('decryptForm').addEventListener('submit', function(event) {
             event.preventDefault();
             const password = document.getElementById('password').value;
 
             fetch('test.md.enc')
                 .then(response => response.arrayBuffer())
-                .then(async encryptedData => {
-                    const salt = new Uint8Array(encryptedData.slice(0, 16));
+                .then(encryptedData => {
+                    const iv = new Uint8Array(encryptedData.slice(0, 16));
                     const data = new Uint8Array(encryptedData.slice(16));
 
-                    const key = await deriveKey(password, salt);
-                    
-                    try {
-                        const decrypted = await crypto.subtle.decrypt(
-                            {
-                                name: 'AES-GCM',
-                                iv: new Uint8Array(12)  // AES-GCM requiere un IV de 12 bytes, pero esto debe ser consistente con el cifrado
-                            },
-                            key,
-                            data
-                        );
+                    const key = CryptoJS.SHA256(password).toString(CryptoJS.enc.Hex);
+                    const encryptedHex = CryptoJS.enc.Hex.parse(CryptoJS.enc.Hex.stringify(CryptoJS.lib.WordArray.create(data)));
+                    const ivHex = CryptoJS.enc.Hex.parse(CryptoJS.enc.Hex.stringify(CryptoJS.lib.WordArray.create(iv)));
 
-                        const dec = new TextDecoder();
-                        const decryptedStr = dec.decode(decrypted);
+                    const decrypted = CryptoJS.AES.decrypt(
+                        { ciphertext: encryptedHex }, 
+                        CryptoJS.enc.Hex.parse(key), 
+                        { iv: ivHex, mode: CryptoJS.mode.CBC, padding: CryptoJS.pad.Pkcs7 }
+                    );
+
+                    try {
+                        const decryptedStr = CryptoJS.enc.Utf8.stringify(decrypted);
                         if (decryptedStr) {
                             document.getElementById('content').textContent = decryptedStr;
                             document.getElementById('content').style.display = 'block';
