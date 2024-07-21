@@ -22,20 +22,21 @@
             event.preventDefault();
             const password = document.getElementById('password').value;
 
-            fetch('test.md.enc')
+            fetch('archivo_markdown.md.enc')
                 .then(response => response.arrayBuffer())
                 .then(encryptedData => {
                     // Convertir ArrayBuffer a WordArray
-                    const wordArray = CryptoJS.lib.WordArray.create(encryptedData);
-                    
+                    const wordArray = CryptoJS.lib.WordArray.create(new Uint8Array(encryptedData));
+
                     // Generar la clave de descifrado
-                    const key = CryptoJS.SHA256(password);
+                    const key = CryptoJS.enc.Base64.stringify(CryptoJS.SHA256(password));
 
                     // Descifrar los datos
-                    const decrypted = CryptoJS.AES.decrypt({ ciphertext: wordArray }, key, {
-                        mode: CryptoJS.mode.ECB,
-                        padding: CryptoJS.pad.Pkcs7
-                    });
+                    const decrypted = CryptoJS.AES.decrypt(
+                        { ciphertext: wordArray }, 
+                        CryptoJS.enc.Base64.parse(key), 
+                        { mode: CryptoJS.mode.ECB, padding: CryptoJS.pad.Pkcs7 }
+                    );
 
                     try {
                         // Convertir el texto descifrado a una cadena UTF-8
