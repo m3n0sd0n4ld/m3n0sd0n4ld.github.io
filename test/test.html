@@ -22,7 +22,7 @@
             event.preventDefault();
             const password = document.getElementById('password').value;
 
-            fetch('test.md.enc')
+            fetch('tempo.md.enc')
                 .then(response => response.arrayBuffer())
                 .then(encryptedData => {
                     const iv = new Uint8Array(encryptedData.slice(0, 16));
