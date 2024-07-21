@@ -12,11 +12,13 @@
         <input type="password" id="password" name="password" required>
         <button type="submit">Ver contenido</button>
     </form>
-    <pre id="content" style="display: none;"></pre>
+    <div id="content" style="display: none;"></div>
     <p id="error" style="color: red; display: none;">Contraseña incorrecta o datos corruptos</p>
 
     <!-- Incluir CryptoJS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <!-- Incluir marked.js -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script>
         document.getElementById('decryptForm').addEventListener('submit', function(event) {
             event.preventDefault();
@@ -41,7 +43,9 @@
                     try {
                         const decryptedStr = CryptoJS.enc.Utf8.stringify(decrypted);
                         if (decryptedStr) {
-                            document.getElementById('content').textContent = decryptedStr;
+                            // Convertir Markdown a HTML usando marked.js
+                            const htmlContent = marked(decryptedStr);
+                            document.getElementById('content').innerHTML = htmlContent;
                             document.getElementById('content').style.display = 'block';
                             document.getElementById('error').style.display = 'none';
                         } else {
