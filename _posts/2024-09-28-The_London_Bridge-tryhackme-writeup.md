@@ -217,7 +217,7 @@ __pycache__/user.txt:THM{****************}
 ## Escalada de privilegios
 En la cabecera de conexión **SSH**, vemos que estamos ante un **Ubuntu 18.04.5 LTS** con *kernel 4.15.0-112-generic*, esta versión está obsoleta y con varios exploits públicos.
 
-Esta comprobación la podemos realizar con scripts como [**linux-exploit-suggester**](https://github.com/The-Z-Labs/linux-exploit-suggester)):
+Esta comprobación la podemos realizar con scripts como [**linux-exploit-suggester**](https://github.com/The-Z-Labs/linux-exploit-suggester):
 
 ```
 Possible Exploits:
