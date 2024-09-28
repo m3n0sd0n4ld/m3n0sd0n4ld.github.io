@@ -1,5 +1,5 @@
 ---
-title: The London Brigde TryHackMe Writeup
+title: The London Bridge TryHackMe Writeup
 tags: [writeup, tryhackme, ssrf, bypass, CVE-2018-18955, firefox]
 style: border
 color: success
