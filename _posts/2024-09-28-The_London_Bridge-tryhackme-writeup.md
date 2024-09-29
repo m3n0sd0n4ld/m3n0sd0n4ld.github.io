@@ -9,7 +9,7 @@ description: ""
 ![logo](../assets/img/the_london_bridge-tryhackme-writeup/GYVyj82W0AAmSb4.png)
 
 ## Reconocimiento
-Lanzamos nmap a todos los puertos, con scripts y versiones de software:
+Lanzamos **nmap** a todos los puertos, con scripts y versiones de software:
 ```
 > nmap -p- -sVC --min-rate 5000 10.10.110.17 -Pn -n -oN recon/nmap.txt
 Starting Nmap 7.94SVN ( https://nmap.org ) at 2024-09-28 20:43 CEST
@@ -78,7 +78,7 @@ Igualmente, dejé una *PatoPrueba* que refleja claramente mi cara de decepción 
 Como dice el principio de la *Navaja de Ockham: la solución más simple suele ser la solución más acertada*:
 ![](../assets/img/the_london_bridge-tryhackme-writeup/4.png)
 
-Estaba claro que no era coincidencia de que ese comentario estuviera en el apartado de subida de ficheros, como tampoco que los apartados del menú no estuviesen acabados, por lo que intuimos que existen otros apartados ocultos o en desarrollo en el sitio.
+Estaba claro que no era coincidencia que ese comentario estuviera en el apartado de subida de ficheros, como tampoco que los apartados del menú no estuviesen acabados, por lo que intuimos que existen otros apartados ocultos o en desarrollo en el sitio.
 
 Lanzamos la herramienta **wfuzz** con un diccionario de directorios y logramos enumerar el fichero *view_image*:
 ```python
@@ -124,10 +124,10 @@ ID           Response   Lines    Word       Chars       Payload
 ```
 
 ## Explotación
-Tras identificar el parámetro *www*, vemos que el servidor nos permite explotar el *SSRF*:
+Tras identificar el parámetro *www*, vemos que el servidor nos permite explotar el *SSRF*, pero al parecer está restringido:
 ![](../assets/img/the_london_bridge-tryhackme-writeup/7.png)
 
-Probamos con algúnos de los *Bypass* de *localhost/127.0.0.1* conocidos y logramos evadir la restricción:
+Probamos con algunos de los *Bypass* de *localhost/127.0.0.1* conocidos y logramos evadir la restricción:
 ```
 http://2130706433/
 ```
@@ -286,7 +286,7 @@ THM{**************}
 ## "Robando la cartera" a Charles
 Esta máquina tiene una 3ª misión, hay que conseguir la contraseña de Charles!!!
 
-Como ya somos *root*, accedemos a su directorio y encontramos una carpeta de **firefox**, nos llama la atención, ya que es poco habitual y conocido en otras máquinas (Y puede caerte en una conocida certificación guiño, guiño) donde se puede extraer la contraseña en plano del almacen de contraseña del famoso navegador.
+Como ya somos *root*, accedemos a su directorio y encontramos una carpeta de **firefox**, nos llama la atención, ya que es poco habitual y conocido en otras máquinas (Y puede caerte en una conocida certificación guiño, guiño) donde se puede extraer la contraseña en plano del almacén de contraseña del famoso navegador.
 ```
 root@london:/tmp# cd /home/charles/
 root@london:/home/charles# ls -lna
