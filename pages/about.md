@@ -41,6 +41,7 @@ $> **{{ site.author.name }}** (M3n0sD0n4ld)<br>
 
 ## CVE
 
+- [Pluck CMS v.4.7.18 - Local File Inclusion unauthenticated (CVE-2024-9405)](https://nvd.nist.gov/vuln/detail/CVE-2024-9405)
 - [MESbook - Server-Side Request Forgery (SSRF) (CVE-2024-6424)](https://nvd.nist.gov/vuln/detail/CVE-2024-6424)
 - [MESbook - Incorrect Provision of Specified Functionality (CVE-2024-6425)](https://nvd.nist.gov/vuln/detail/CVE-2024-6425)
 - [MESbook - Exposure of Sensitive Information (CVE-2024-6426)](https://nvd.nist.gov/vuln/detail/CVE-2024-6426)
@@ -90,6 +91,7 @@ $> **{{ site.author.name }}** (M3n0sD0n4ld)<br>
 - [Conference: Voz de la industria sobre la integración de Redes IT/OT - Ciberseguridad Industrial](https://t.co/dXTbGuI56n?amp=1)
 - [Conference: uDork - Google Hacking Tool - Hack&Beers Remake vol 5](https://t.co/ZlkglPYsvN?amp=1)
 - [Conference: uDork - Google Hacking Tool v2.0 - BitUP 2020](https://youtu.be/zzcUdmpo6ow)
+- [Conference: Ingeniería social: Ataque silencioso - 8punto8 Regional Sur - 2021 con **MMontesDias**]
 - [Conference: MailDay - Hackterriza como puedas - BitUP 2021](https://youtu.be/efpL9KAW3Fo?t=33410)
 - [Conference: IES Rafael Alberti (Cádiz) - IoT Pentesting - 2022](https://youtu.be/K1lTgYDF4lE)
 - [Conference: GooFuzz - Securiters Twitch- 2022](https://www.twitch.tv/videos/1517579986)
