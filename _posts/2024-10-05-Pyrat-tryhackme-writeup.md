@@ -1,6 +1,6 @@
 ---
 title: Pyrat TryHackMe Writeup
-tags: [writeup, tryhackme, ]
+tags: [writeup, tryhackme, simpleHTTP, python, rce, sockets, exploiting]
 style: border
 color: success
 description: ""
