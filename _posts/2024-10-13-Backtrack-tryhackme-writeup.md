@@ -1,6 +1,6 @@
 ---
 title: Backtrack TryHackMe Writeup
-tags: [writeup, tryhackme, aria2,ansible-playbook, fileupload, bypass, TTY-Pushback]
+tags: [writeup, tryhackme, aria2, ansible-playbook, fileupload, bypass, TTY-Pushback]
 style: border
 color: success
 description: ""
