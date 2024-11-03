@@ -35,7 +35,7 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ```
 
 Si intentamos acceder con la dirección IP por el puerto 80, nos redirecciona al dominio *cyprusbank.thm*, metemos el dominio en el fichero *hosts* y podremos observar la web del Banco Nacional de Chipre en modo mantenimiento:
-![](../assets/img/whiterose-tryhackme-writeup/1.png)
+![](../assets/img/whiterose-tryhackme-writeup/3.png)
 
 Probamos a fuzzear con **dirsearch**, pero no encontramos nada, seguidamente lanzamos **wfuzz** para enumerar posibles subdominios y logramos enumerar un panel administrativo:
 ```
