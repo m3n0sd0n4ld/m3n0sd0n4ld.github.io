@@ -10,7 +10,7 @@ description: ""
 
 ## Reconocimiento
 La máquina está basada en un capítulo de la serie [**Mr.Robot**](https://es.wikipedia.org/wiki/Mr._Robot), empezamos con unas credenciales, pero no sabemos dónde las podemos utilizar:
-![](../assets/img/whiterose-tryhackme-writeup/3.png)
+![](../assets/img/whiterose-tryhackme-writeup/1.png)
 
 Lanzamos **nmap** a todos los puertos, con scripts y versiones de software:
 ```
