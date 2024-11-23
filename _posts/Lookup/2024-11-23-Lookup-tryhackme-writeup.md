@@ -6,7 +6,7 @@ color: success
 description: ""
 ---
 
-![logo](/_posts/Lookup/GdAsgYEXcAAaKPJ.png)
+![logo](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Lookup/GdAsgYEXcAAaKPJ.png)
 
 ## Reconocimiento
 Lanzamos **nmap** a todos los puertos, con scripts y versiones de software:
@@ -36,10 +36,10 @@ En la dirección web, nos aguarda un formulario de autenticación:
 La primera vulnerabilidad que identificamos es la posibilidad de enumerar usuarios a través de los mensajes de error. Esto ocurre porque, al enviar un nombre de usuario inexistente, el sistema devuelve un mensaje de error diferente al que se genera cuando el usuario está registrado en la base de datos.
 
 #### Evidencia de un usuario inexistente
-![](/_posts/Lookup/2.png)
+![](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Lookup/2.png)
 
 #### Evidencia de un usuario existente
-![](/_posts/Lookup/3.png)
+![](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Lookup/3.png)
 
 Esto nos llama la atención, por lo que el siguiente paso deberá ser la enumeración de usuarios registrados en la base de datos, para posteriormente realizar ataques automatizados de contraseñas y ganar acceso al aplicativo.
 
@@ -128,10 +128,10 @@ Tras unos minutos, logramos obtener las credenciales:
 ```
 
 Utilizamos las credenciales, enumeramos el subdominio "*files.lookup.thm*", lo insertamos en nuestro fichero hosts y conseguiremos acceder a un servidor de ficheros con contenido bastante interesante:
-![](/_posts/Lookup/4.png)
+![](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Lookup/4.png)
 
 Revisamos el nombre y versión del aplicativo, enumeramos *elFinder 2.1.47*, con la idea de buscar información y vulnerabilidades sobre el software:
-![](/_posts/Lookup/5.png)
+![](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Lookup/5.png)
 
 Encontramos el siguiente exploit:
 - [elFinder 2.1.47 - 'PHP connector' Command Injection
@@ -395,7 +395,7 @@ User think may run the following commands on lookup:
 think@lookup:~$ 
 ```
 Buscamos en la web [gtfobins.github.io](https://gtfobins.github.io/), logramos identificar como podemos abusar del binario para escalar privilegios a root:
-![](/_posts/Lookup/8.png)
+![](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Lookup/8.png)
 
 #### Sin escalada a root
 
