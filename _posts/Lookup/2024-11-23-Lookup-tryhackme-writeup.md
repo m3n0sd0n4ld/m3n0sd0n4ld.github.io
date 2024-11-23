@@ -1,6 +1,6 @@
 ---
 title: Lookup TryHackMe Writeup
-tags: [writeup, tryhackme, ]
+tags: [writeup, tryhackme, bruteforce, elFinder, command-injection, path-hijacking, look]
 style: border
 color: success
 description: ""
