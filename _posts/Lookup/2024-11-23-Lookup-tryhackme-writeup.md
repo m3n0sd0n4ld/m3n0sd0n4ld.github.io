@@ -31,7 +31,7 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 En la respuesta de **nmap**, vemos que hace una redirección al dominio *"lookup.thm"*, lo insertamos en nuestro fichero hosts y accedemos al sitio web.
 
 En la dirección web, nos aguarda un formulario de autenticación:
-![](/_posts/Lookup/1.png)
+![](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Lookup/1.png)
 
 La primera vulnerabilidad que identificamos es la posibilidad de enumerar usuarios a través de los mensajes de error. Esto ocurre porque, al enviar un nombre de usuario inexistente, el sistema devuelve un mensaje de error diferente al que se genera cuando el usuario está registrado en la base de datos.
 
