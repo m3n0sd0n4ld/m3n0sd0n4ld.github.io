@@ -57,8 +57,8 @@ ID           Response   Lines    Word       Chars       Payload
 
 Accedemos al sitio web, encontramos desplegado un *Cacti 1.2.26*, buscando en internet, encontramos exploits públicos que permiten ejecutar código remoto con usuarios autenticados.
 #### Exploits
-- https://github.com/thisisveryfunny/CVE-2024-25641-RCE-Automated-Exploit-Cacti-1.2.26  
-- https://github.com/Safarchand/CVE-2024-25641
+- [https://github.com/thisisveryfunny/CVE-2024-25641-RCE-Automated-Exploit-Cacti-1.2.26](https://github.com/thisisveryfunny/CVE-2024-25641-RCE-Automated-Exploit-Cacti-1.2.26)
+- [https://github.com/Safarchand/CVE-2024-25641](https://github.com/Safarchand/CVE-2024-25641)
 
 Solo tenemos un pequeño problema, y es que no tenemos credenciales :(, probamos credenciales por defecto para acceder pero sin éxito:
 ![](../assets/img/monitorsthree-hackthebox-writeup/4.png)
@@ -93,7 +93,7 @@ Tras la enumeración de la base de datos *monitorsthree_db*, y dentro de la tabl
 Probamos a reutilizar las credenciales sobre el panel de *Cacti* con éxito, así que, continuamos por esta vía con la intención de explotar el RCE y conseguir una conexión interactiva con la máquina remota:
 ![](../assets/img/monitorsthree-hackthebox-writeup/9.png)
 
-Utilizamos el exploit https://github.com/Safarchand/CVE-2024-25641, éste require de tener una terminal en escucha para recibir la conexión de la máquina víctima.
+Utilizamos el exploit [https://github.com/Safarchand/CVE-2024-25641](https://github.com/Safarchand/CVE-2024-25641), éste require de tener una terminal en escucha para recibir la conexión de la máquina víctima.
 
 Nos ponemos en escucha y ejecutamos el exploit:
 ```python
@@ -228,7 +228,7 @@ Accedemos a él, vemos un simple formulario de *Duplicati*, buscando informació
 ![](../assets/img/monitorsthree-hackthebox-writeup/11.png)
 
 También encontramos un artículo que explica como evadir el sistema de autenticación:
-- https://medium.com/@STarXT/duplicati-bypassing-login-authentication-with-server-passphrase-024d6991e9ee
+- [https://medium.com/@STarXT/duplicati-bypassing-login-authentication-with-server-passphrase-024d6991e9ee](https://medium.com/@STarXT/duplicati-bypassing-login-authentication-with-server-passphrase-024d6991e9ee)
 
 Así que seguimos los pasos que explica el artículo anterior, logramos enumerar y descargar una base de datos en SQLite, y logramos visualizar el hash *server-passphrase* y *server-passphrase-salt*:
 ![](../assets/img/monitorsthree-hackthebox-writeup/12.png)
