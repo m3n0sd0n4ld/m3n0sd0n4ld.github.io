@@ -41,6 +41,7 @@ $> **{{ site.author.name }}** (M3n0sD0n4ld)<br>
 
 ## CVE
 
+- [Beta10 - Inadequate access control (CVE-2025-0637)](https://nvd.nist.gov/vuln/detail/CVE-2025-0637)
 - [Pluck CMS v.4.7.18 - Local File Inclusion unauthenticated (CVE-2024-9405)](https://nvd.nist.gov/vuln/detail/CVE-2024-9405)
 - [MESbook - Server-Side Request Forgery (SSRF) (CVE-2024-6424)](https://nvd.nist.gov/vuln/detail/CVE-2024-6424)
 - [MESbook - Incorrect Provision of Specified Functionality (CVE-2024-6425)](https://nvd.nist.gov/vuln/detail/CVE-2024-6425)
