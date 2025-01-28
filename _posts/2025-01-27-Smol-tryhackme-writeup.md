@@ -47,7 +47,7 @@ Lanzamos un escaneo con **WPScan**, con la idea de encontrar plugins vulnerables
 
 Logramos enumerar un SSRF en el plugin "*JSmol2WP*", curiosamente el nombre de la máquina se llama igual, y no creo en casualidades :D
 ```
-wpscan --url http://www.smol.thm -e u,ap --api-tpken ************************
+wpscan --url http://www.smol.thm -e u,ap --api-token ************************
 <SNIP>
 [i] Plugin(s) Identified:
 
@@ -190,7 +190,7 @@ diego@smol:~$ cat user.txt
 ```
 
 ## Escalada de privilegios
-Revisando en los home de los usuarios, encontramos una copia de seguridad de *WordPress*, pero no tenemos acceso con el actual usuario y requerimos acceso con el usuario "*gege*":
+Revisando en los home de los usuarios, encontramos una copia de seguridad de *WordPress*, pero no tenemos acceso con el actual usuario y requerimos acceso con el usuario *gege*:
 ```
 diego@smol:/home/gege$ ls -lna
 total 31532
