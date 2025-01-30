@@ -41,6 +41,16 @@ $> **{{ site.author.name }}** (M3n0sD0n4ld)<br>
 
 ## CVE
 
+- [EmbedAI - Inadequate Access Control Vulnerability (CVE-2025-0739)](https://nvd.nist.gov/vuln/detail/CVE-2025-0739)
+- [EmbedAI - Insecure Direct Object Reference (CVE-2025-0740)](https://nvd.nist.gov/vuln/detail/CVE-2025-0740)
+- [EmbedAI - Insecure Direct Object Reference (CVE-2025-0741)](https://nvd.nist.gov/vuln/detail/CVE-2025-0741)
+- [EmbedAI - Insecure Direct Object Reference (CVE-2025-0742)](https://nvd.nist.gov/vuln/detail/CVE-2025-0742)
+- [EmbedAI - Insecure Direct Object Reference (CVE-2025-0743)](https://nvd.nist.gov/vuln/detail/CVE-2025-0743)
+- [EmbedAI - Broken Access Control & Fraud (CVE-2025-0744)](https://nvd.nist.gov/vuln/detail/CVE-2025-0744)
+- [EmbedAI - Insecure Direct Object Reference (CVE-2025-0744)](https://nvd.nist.gov/vuln/detail/CVE-2025-0744)
+- [EmbedAI - Insecure Direct Object Reference (CVE-2025-0745)](https://nvd.nist.gov/vuln/detail/CVE-2025-0745)
+- [EmbedAI - Reflected Cross-Site Scripting (XSS) (CVE-2025-0746)](https://nvd.nist.gov/vuln/detail/CVE-2025-0746)
+- [EmbedAI - Stored Cross-Site Scripting (XSS) (CVE-2025-0747)](https://nvd.nist.gov/vuln/detail/CVE-2025-0747)
 - [Beta10 - Inadequate access control (CVE-2025-0637)](https://nvd.nist.gov/vuln/detail/CVE-2025-0637)
 - [Pluck CMS v.4.7.18 - Local File Inclusion unauthenticated (CVE-2024-9405)](https://nvd.nist.gov/vuln/detail/CVE-2024-9405)
 - [MESbook - Server-Side Request Forgery (SSRF) (CVE-2024-6424)](https://nvd.nist.gov/vuln/detail/CVE-2024-6424)
