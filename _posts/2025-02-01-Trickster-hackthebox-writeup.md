@@ -4,6 +4,7 @@ tags: [writeup, hackthebox, Prestashop, git, CVE-2024-34716, xss, PrusaSlicer, C
 style: border
 color: success
 description: ""
+image: "../assets/img/trickster-hackthebox-writeup/Trickster.png"
 ---
 
 ![logo](../assets/img/trickster-hackthebox-writeup/Trickster.png)
