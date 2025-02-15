@@ -21,6 +21,6 @@ imgs/list-demo.html
 _posts/2025-02-01-EscapeTwo-hackthebox-writeup.md
 assets/img/escapetwo-hackthebox-writeup/*.png
 _posts/plantilla.md
-_posts/2025-02-15-Cicada-hackthebox-writeup.md
-assets/img/cicada-hackthebox-writeup/1.png
-assets/img/cicada-hackthebox-writeup/Cicada.png
+assets/img/ghost-hackthebox-writeup/*.png
+.gitignore
+_posts/2025-02-15-Ghost-hackthebox-writeup.md
