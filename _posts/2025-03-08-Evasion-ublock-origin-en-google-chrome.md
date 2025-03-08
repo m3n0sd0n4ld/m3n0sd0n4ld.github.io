@@ -42,7 +42,7 @@ Tras la instalación, este debería de ser el aspecto:
 Me surgió la duda de si realmente no era compatible, pero al parecer sigue siendo funcional. En la siguiente ilustración, los anuncios publicitarios no aparecen porque *uBlock Origin* los está bloqueando:
 ![](../assets/img/Evasion-ublock-origin-en-google-chrome/9.png)
 
-## Actualización
+## Persistencia (Actualización)
 Al cerrar y volver a abrir el navegador, aparecerá el siguiente mensaje nuevamente:
 ![](../assets/img/Evasion-ublock-origin-en-google-chrome/2.png)
 
