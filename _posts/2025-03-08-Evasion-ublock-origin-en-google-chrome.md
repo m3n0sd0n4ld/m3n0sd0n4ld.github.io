@@ -7,7 +7,7 @@ description: ""
 ---
 
 ![](../assets/img/Evasion-ublock-origin-en-google-chrome/1.png)
-(Imagen extraída del artículo de [Genbeta.com](https://www.genbeta.com/actualidad/usas-ublock-origin-google-chrome-pronto-tendras-que-cambiar-navegador-bloqueador-anuncios))
+<center>(Imagen extraída del artículo de [Genbeta.com](https://www.genbeta.com/actualidad/usas-ublock-origin-google-chrome-pronto-tendras-que-cambiar-navegador-bloqueador-anuncios))</center>
 
 ## Descripción del problema
 Utilizo diferentes navegadores en mi día a día, para el trabajo me gusta utilizar *Brave* o *Microsoft Edge*, para las pruebas de Pentesting (Hacking Ético) si que prefiero *Mozilla Firefox*, pero en mi equipo personal sí que utilizo *Google Chrome*, por el simple hecho de que soy usuario Linux y utilizo varias herramientas de *Google* con sincronización en mis dispositivos personales.
