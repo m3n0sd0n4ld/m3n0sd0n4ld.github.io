@@ -42,6 +42,13 @@ Tras la instalación, este debería de ser el aspecto:
 Me surgió la duda de si realmente no era compatible, pero al parecer sigue siendo funcional. En la siguiente ilustración, los anuncios publicitarios no aparecen porque *uBlock Origin* los está bloqueando:
 ![](../assets/img/Evasion-ublock-origin-en-google-chrome/9.png)
 
+## Actualización
+Al cerrar y volver a abrir el navegador, aparecerá el siguiente mensaje nuevamente:
+![](../assets/img/Evasion-ublock-origin-en-google-chrome/2.png)
+
+Esto se debe a que *Google Chrome* ya trabaja con *Manifest V3* y *uBlock Origin* aún se mantiene en la *V2*, para evitar la desactivación y el mensaje de error, deberemos de deshabilitar la opción "*Extension Manifest V2 Deprecation Unsupport Stage*" accediendo desde una pestaña a "*chrome://flags*":
+![](../assets/img/Evasion-ublock-origin-en-google-chrome/10.png)
+
 ## Conclusiones
 Este es un claro ejemplo de que nadie está exento de los riesgos de amenazas y ataques a los activos de una organización, incluso en grandes empresas como *Google*, *Microsoft* o *Amazon*. Por ello, es crucial realizar auditorías de *Hacking Ético*, ya que no solo afecta al negocio y la reputación, sino también al usuario final.
 
