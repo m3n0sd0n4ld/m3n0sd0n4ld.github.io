@@ -107,9 +107,9 @@ Comenzamos a "jugar" con el servicio de mensajería del chatbot (*LLM*), e ident
 Logramos hacer funcionar el servicio, vemos que se imprime el usuario que especifiquemos:
 
 Tras realizar varias pruebas, identificamos que el chatbot es vulnerable a ataques *Server-Side Template Injection* (SSTI). Este tipo de vulnerabilidad permite a un atacante inyectar código malicioso dentro de las plantillas del servidor, lo que podría resultar en la ejecución de comandos arbitrarios en el servidor, divulgación de información sensible o incluso la ejecución remota de código:
-```json
+```console
 {
-  "username":"{{9*9}}"
+  "username":"{{ '{{' }}9*9{{ '}}' }}"
 }
 ```
 ![](../assets/img/Rabbit_store-tryhackme-writeup/18.png)
