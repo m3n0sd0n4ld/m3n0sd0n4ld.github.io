@@ -31,6 +31,10 @@ $> **{{ site.author.name }}** (M3n0sD0n4ld)<br>
 3. [uDork](https://github.com/m3n0sd0n4ld/uDork): Script escrito en Bash Scripting que utiliza técnicas avanzadas de búsqueda en Google para obtener información sensible en archivos o directorios, encontrar dispositivos IoT, detectar versiones de aplicaciones web... (Descontinuada)
 4. [uNominaCracker](https://github.com/m3n0sd0n4ld/uNominaCracker): Se trata de un script escrito en Python que realiza fuerza bruta en los ficheros ZIP con nóminas de los trabajadores mediante el uso de su DNI (Documento Nacional de Identidad).
 
+## Community contribution
+- [OWASP - RSQL Injection](https://owasp.org/www-community/attacks/RSQL_Injection)
+- [Hacktricks - RSQL Injection](https://book.hacktricks.wiki/en/pentesting-web/rsql-injection.html?highlight=rsql)
+
 ## Exploits
 
 - [WordPress 5.7 - ‘Media Library’ XML External Entity Injection (XXE) (Authenticated) - CVE-2021-29447](https://www.exploit-db.com/exploits/50304)
@@ -39,8 +43,10 @@ $> **{{ site.author.name }}** (M3n0sD0n4ld)<br>
 - [Simple Image Gallery System 1.0 - SQL Injection (Time-Based blind)](https://m3n0sd0n4ld.blogspot.com/2022/03/simple-image-gallery-system-10-sql.html)
 - [Company’s Recruitment Management System 1.0 - Remote Readable Administrator Credentials](https://m3n0sd0n4ld.blogspot.com/2022/07/companys-recruitment-management-system.html)
 
-## CVE
+## CVEs
 
+- [Aidex <= 1.7 - LLM06: Sensitive Information Disclosure](CVE-2025-3578)](https://nvd.nist.gov/vuln/detail/CVE-2025-3578)
+- [Aidex <= 1.7 - LLM01: Prompt Injection (RCE) (CVE-2025-3579)](https://nvd.nist.gov/vuln/detail/CVE-2025-3579)
 - [EmbedAI - Inadequate Access Control Vulnerability (CVE-2025-0739)](https://nvd.nist.gov/vuln/detail/CVE-2025-0739)
 - [EmbedAI - Insecure Direct Object Reference (CVE-2025-0740)](https://nvd.nist.gov/vuln/detail/CVE-2025-0740)
 - [EmbedAI - Insecure Direct Object Reference (CVE-2025-0741)](https://nvd.nist.gov/vuln/detail/CVE-2025-0741)
