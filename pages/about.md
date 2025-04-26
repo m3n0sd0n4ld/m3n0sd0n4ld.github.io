@@ -31,7 +31,8 @@ $> **{{ site.author.name }}** (M3n0sD0n4ld)<br>
 3. [uDork](https://github.com/m3n0sd0n4ld/uDork): Script escrito en Bash Scripting que utiliza técnicas avanzadas de búsqueda en Google para obtener información sensible en archivos o directorios, encontrar dispositivos IoT, detectar versiones de aplicaciones web... (Descontinuada)
 4. [uNominaCracker](https://github.com/m3n0sd0n4ld/uNominaCracker): Se trata de un script escrito en Python que realiza fuerza bruta en los ficheros ZIP con nóminas de los trabajadores mediante el uso de su DNI (Documento Nacional de Identidad).
 
-## Community contribution
+## Aporte a la comunidad
+
 - [OWASP - RSQL Injection](https://owasp.org/www-community/attacks/RSQL_Injection)
 - [Hacktricks - RSQL Injection](https://book.hacktricks.wiki/en/pentesting-web/rsql-injection.html?highlight=rsql)
 
