@@ -59,7 +59,6 @@ $> **{{ site.author.name }}** (M3n0sD0n4ld)<br>
 - [EmbedAI - Insecure Direct Object Reference (CVE-2025-0742)](https://nvd.nist.gov/vuln/detail/CVE-2025-0742)
 - [EmbedAI - Insecure Direct Object Reference (CVE-2025-0743)](https://nvd.nist.gov/vuln/detail/CVE-2025-0743)
 - [EmbedAI - Broken Access Control & Fraud (CVE-2025-0744)](https://nvd.nist.gov/vuln/detail/CVE-2025-0744)
-- [EmbedAI - Insecure Direct Object Reference (CVE-2025-0744)](https://nvd.nist.gov/vuln/detail/CVE-2025-0744)
 - [EmbedAI - Insecure Direct Object Reference (CVE-2025-0745)](https://nvd.nist.gov/vuln/detail/CVE-2025-0745)
 - [EmbedAI - Reflected Cross-Site Scripting (XSS) (CVE-2025-0746)](https://nvd.nist.gov/vuln/detail/CVE-2025-0746)
 - [EmbedAI - Stored Cross-Site Scripting (XSS) (CVE-2025-0747)](https://nvd.nist.gov/vuln/detail/CVE-2025-0747)
