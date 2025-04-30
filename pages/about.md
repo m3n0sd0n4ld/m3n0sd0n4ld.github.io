@@ -46,7 +46,12 @@ $> **{{ site.author.name }}** (M3n0sD0n4ld)<br>
 
 ## CVEs
 
-- [Aidex <= 1.7 - LLM06: Sensitive Information Disclosure(CVE-2025-3578)](https://nvd.nist.gov/vuln/detail/CVE-2025-3578)
+- [Bookgy - Cross-Site Scripting (XSS) (CVE-2025-40615)](https://nvd.nist.gov/vuln/detail/CVE-2025-40615)
+- [Bookgy - Cross-Site Scripting (XSS) (CVE-2025-40616)](https://nvd.nist.gov/vuln/detail/CVE-2025-40616)
+- [Bookgy - SQL Injection (CVE-2025-40617)](https://nvd.nist.gov/vuln/detail/CVE-2025-40617)
+- [Bookgy - SQL Injection (CVE-2025-40618)](https://nvd.nist.gov/vuln/detail/CVE-2025-40618)
+- [Bookgy - Improper Access Control (CVE-2025-40619)](https://nvd.nist.gov/vuln/detail/CVE-2025-40619)
+- [Aidex <= 1.7 - LLM06: Sensitive Information Disclosure (CVE-2025-3578)](https://nvd.nist.gov/vuln/detail/CVE-2025-3578)
 - [Aidex <= 1.7 - LLM01: Prompt Injection (RCE) (CVE-2025-3579)](https://nvd.nist.gov/vuln/detail/CVE-2025-3579)
 - [EmbedAI - Inadequate Access Control Vulnerability (CVE-2025-0739)](https://nvd.nist.gov/vuln/detail/CVE-2025-0739)
 - [EmbedAI - Insecure Direct Object Reference (CVE-2025-0740)](https://nvd.nist.gov/vuln/detail/CVE-2025-0740)
