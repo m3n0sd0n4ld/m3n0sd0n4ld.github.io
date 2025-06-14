@@ -17,7 +17,7 @@ We run **nmap** on all ports, with scripts and versions.
 ## Enumeration
 We access the web service, find a website with what looks like a *"hint"*.
 
-![](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Undiscovered/3.png)
+![](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Undiscovered/3(1).png)
 
 We launch the **wfuzz** tool to list possible subdomains enabled on *vhost*.
 
