@@ -46,14 +46,14 @@ $> **{{ site.author.name }}** (M3n0sD0n4ld)<br>
 
 ## CVEs
 
-- [Gandia Integra Total - SQL Injection (Unauthenticated) (CVE-2025-41370)](https://nvd.nist.gov/vuln/detail/CVE-2025-41370)
-- [Gandia Integra Total - SQL Injection (Unauthenticated) (CVE-2025-41371)](https://nvd.nist.gov/vuln/detail/CVE-2025-41371)
-- [Gandia Integra Total - SQL Injection (Authenticated) (CVE-2025-41372)](https://nvd.nist.gov/vuln/detail/CVE-2025-41372)
-- [Gandia Integra Total - SQL Injection (Authenticated) (CVE-2025-41373)](https://nvd.nist.gov/vuln/detail/CVE-2025-41373)
-- [Gandia Integra Total - SQL Injection (Authenticated) (CVE-2025-41374)](https://nvd.nist.gov/vuln/detail/CVE-2025-41374)
-- [Gandia Integra Total - SQL Injection (Authenticated) (CVE-2025-41375)](https://nvd.nist.gov/vuln/detail/CVE-2025-41375)
-- [Gandia Integra Total - SQL Injection (Authenticated) (CVE-2025-41376)](https://nvd.nist.gov/vuln/detail/CVE-2025-41376)
-- [Gandia Integra Total - SQL Injection (Authenticated) (CVE-2025-41377)](https://nvd.nist.gov/vuln/detail/CVE-2025-41377)
+- [TESI - Gandia Integra Total - SQL Injection (Unauthenticated) (CVE-2025-41370)](https://nvd.nist.gov/vuln/detail/CVE-2025-41370)
+- [TESI - Gandia Integra Total - SQL Injection (Unauthenticated) (CVE-2025-41371)](https://nvd.nist.gov/vuln/detail/CVE-2025-41371)
+- [TESI - Gandia Integra Total - SQL Injection (Authenticated) (CVE-2025-41372)](https://nvd.nist.gov/vuln/detail/CVE-2025-41372)
+- [TESI - Gandia Integra Total - SQL Injection (Authenticated) (CVE-2025-41373)](https://nvd.nist.gov/vuln/detail/CVE-2025-41373)
+- [TESI - Gandia Integra Total - SQL Injection (Authenticated) (CVE-2025-41374)](https://nvd.nist.gov/vuln/detail/CVE-2025-41374)
+- [TESI - Gandia Integra Total - SQL Injection (Authenticated) (CVE-2025-41375)](https://nvd.nist.gov/vuln/detail/CVE-2025-41375)
+- [TESI - Gandia Integra Total - SQL Injection (Authenticated) (CVE-2025-41376)](https://nvd.nist.gov/vuln/detail/CVE-2025-41376)
+- [TESI - Gandia Integra Total - SQL Injection (Authenticated) (CVE-2025-41377)](https://nvd.nist.gov/vuln/detail/CVE-2025-41377)
 - [Bookgy - Cross-Site Scripting (XSS) (CVE-2025-40615)](https://nvd.nist.gov/vuln/detail/CVE-2025-40615)
 - [Bookgy - Cross-Site Scripting (XSS) (CVE-2025-40616)](https://nvd.nist.gov/vuln/detail/CVE-2025-40616)
 - [Bookgy - SQL Injection (CVE-2025-40617)](https://nvd.nist.gov/vuln/detail/CVE-2025-40617)
