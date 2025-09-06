@@ -24,3 +24,7 @@ _posts/plantilla.md
 assets/img/ghost-hackthebox-writeup/*.png
 .gitignore
 _posts/2025-02-15-Ghost-hackthebox-writeup.md
+_posts/2025-08-29-Whats-up-pisha-grok-jailbreak.md
+.gitignore
+assets/img/whats-*/*.png
+assets/img/whats-*/*.jpg
