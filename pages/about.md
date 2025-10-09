@@ -46,6 +46,7 @@ $> **{{ site.author.name }}** (M3n0sD0n4ld)<br>
 
 ## CVEs
 
+- [TESI - Gandia Integra Total - Path Traversal (CVE-2025-41073)](https://nvd.nist.gov/vuln/detail/CVE-2025-41073)
 - [TESI - Gandia Integra Total - SQL Injection (Unauthenticated) (CVE-2025-41370)](https://nvd.nist.gov/vuln/detail/CVE-2025-41370)
 - [TESI - Gandia Integra Total - SQL Injection (Unauthenticated) (CVE-2025-41371)](https://nvd.nist.gov/vuln/detail/CVE-2025-41371)
 - [TESI - Gandia Integra Total - SQL Injection (Authenticated) (CVE-2025-41372)](https://nvd.nist.gov/vuln/detail/CVE-2025-41372)
