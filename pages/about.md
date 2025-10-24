@@ -45,7 +45,21 @@ $> **{{ site.author.name }}** (M3n0sD0n4ld)<br>
 - [Company’s Recruitment Management System 1.0 - Remote Readable Administrator Credentials](https://m3n0sd0n4ld.blogspot.com/2022/07/companys-recruitment-management-system.html)
 
 ## CVEs
-
+- [CanalDenuncia.app - Improper Access Control (CVE-2025-41111)](https://nvd.nist.gov/vuln/detail/CVE-2025-41111)
+- [CanalDenuncia.app - Improper Access Control (CVE-2025-41112)](https://nvd.nist.gov/vuln/detail/CVE-2025-41112)
+- [CanalDenuncia.app - Improper Access Control (CVE-2025-41113)](https://nvd.nist.gov/vuln/detail/CVE-2025-41113)
+- [CanalDenuncia.app - Improper Access Control (CVE-2025-41114)](https://nvd.nist.gov/vuln/detail/CVE-2025-41114)
+- [CanalDenuncia.app - Improper Access Control (CVE-2025-41135)](https://nvd.nist.gov/vuln/detail/CVE-2025-41135)
+- [CanalDenuncia.app - Improper Access Control (CVE-2025-41136)](https://nvd.nist.gov/vuln/detail/CVE-2025-41136)
+- [CanalDenuncia.app - Improper Access Control (CVE-2025-41137)](https://nvd.nist.gov/vuln/detail/CVE-2025-41137)
+- [CanalDenuncia.app - Improper Access Control (CVE-2025-41138)](https://nvd.nist.gov/vuln/detail/CVE-2025-41138)
+- [CanalDenuncia.app - Improper Access Control (CVE-2025-41139)](https://nvd.nist.gov/vuln/detail/CVE-2025-41139)
+- [CanalDenuncia.app - Improper Access Control (CVE-2025-41140)](https://nvd.nist.gov/vuln/detail/CVE-2025-41140)
+- [CanalDenuncia.app - Improper Access Control (CVE-2025-41141)](https://nvd.nist.gov/vuln/detail/CVE-2025-41141)
+- [CanalDenuncia.app - Improper Access Control (CVE-2025-41142)](https://nvd.nist.gov/vuln/detail/CVE-2025-41142)
+- [CanalDenuncia.app - Improper Access Control (CVE-2025-41143)](https://nvd.nist.gov/vuln/detail/CVE-2025-41143)
+- [CanalDenuncia.app - Improper Access Control (CVE-2025-41144)](https://nvd.nist.gov/vuln/detail/CVE-2025-41144)
+- [CanalDenuncia.app - Improper Access Control (CVE-2025-41145)](https://nvd.nist.gov/vuln/detail/CVE-2025-41145)
 - [TESI - Gandia Integra Total - Path Traversal (CVE-2025-41073)](https://nvd.nist.gov/vuln/detail/CVE-2025-41073)
 - [TESI - Gandia Integra Total - SQL Injection (Unauthenticated) (CVE-2025-41370)](https://nvd.nist.gov/vuln/detail/CVE-2025-41370)
 - [TESI - Gandia Integra Total - SQL Injection (Unauthenticated) (CVE-2025-41371)](https://nvd.nist.gov/vuln/detail/CVE-2025-41371)
