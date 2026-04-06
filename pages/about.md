@@ -45,6 +45,10 @@ $> **{{ site.author.name }}** (M3n0sD0n4ld)<br>
 - [Company’s Recruitment Management System 1.0 - Remote Readable Administrator Credentials](https://m3n0sd0n4ld.blogspot.com/2022/07/companys-recruitment-management-system.html)
 
 ## CVEs
+- [1millionbot Millie Chatbot - Prompt Injection (CVE-2026-4399)](https://nvd.nist.gov/vuln/detail/CVE-2026-4399)
+- [1millionbot Millie Chatbot - Insecure Direct Object Reference (IDOR) (CVE-2026-4400)](https://nvd.nist.gov/vuln/detail/CVE-2026-4400)
+- [HiJiffy Chatbot - Incorrect authorization (CVE-2026-4262)](https://nvd.nist.gov/vuln/detail/CVE-2026-4262)
+- [HiJiffy Chatbot - Incorrect authorization (CVE-2026-4263)](https://nvd.nist.gov/vuln/detail/CVE-2026-4263)
 - [CanalDenuncia.app - Improper Access Control (CVE-2025-41111)](https://nvd.nist.gov/vuln/detail/CVE-2025-41111)
 - [CanalDenuncia.app - Improper Access Control (CVE-2025-41112)](https://nvd.nist.gov/vuln/detail/CVE-2025-41112)
 - [CanalDenuncia.app - Improper Access Control (CVE-2025-41113)](https://nvd.nist.gov/vuln/detail/CVE-2025-41113)
