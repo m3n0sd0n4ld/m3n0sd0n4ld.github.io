@@ -12,9 +12,9 @@ description: ""
 
 > **Nota de investigación — divulgación completa**
 >
-> **Autor:** David Utón (M3n0sD0n4ld)
-> **Fecha de publicación:** 18/10/2026
-> **Estado:** Divulgación pública tras las pruebas de mitigación descritas en este artículo<br>
+> **Autor:** David Utón (M3n0sD0n4ld)<br>
+> **Fecha de publicación:** 18/10/2026<br>
+> **Estado:** Divulgación pública tras las pruebas de mitigación descritas en este artículo
 
 ---
 
