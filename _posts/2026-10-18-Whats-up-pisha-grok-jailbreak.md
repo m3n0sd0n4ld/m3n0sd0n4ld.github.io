@@ -6,7 +6,7 @@ color: danger
 description: ""
 ---
 
-![logo](../assets/img/whats-up-pisha-grok-jailbreak/logo.jpg)
+<img src="../assets/img/whats-up-pisha-grok-jailbreak/logo.jpg" alt="logo" width="300"/>
 
 # Prompt Injection y Jailbreak mediante envenenamiento del system prompt en Grok 3 y Grok 4
 
