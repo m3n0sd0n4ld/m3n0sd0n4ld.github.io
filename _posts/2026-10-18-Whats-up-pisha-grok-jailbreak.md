@@ -8,8 +8,6 @@ description: ""
 
 ![logo](../assets/img/whats-up-pisha-grok-jailbreak/logo.jpg){: width="600"}
 
-# Prompt Injection y Jailbreak en Grok 3 y Grok 4: análisis de manipulación del contexto y evasión de restricciones
-
 > **Nota de investigación — divulgación completa**
 >
 > **Autor:** David Utón (M3n0sD0n4ld)<br>
