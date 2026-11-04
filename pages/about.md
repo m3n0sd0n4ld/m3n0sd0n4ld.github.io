@@ -207,6 +207,7 @@ $> **{{ site.author.name }}** (M3n0sD0n4ld)<br>
 | [KB-Vulns: 3](https://www.hackingarticles.in/kb-vuln-3-vulnhub-walkthrough/) | `Easy` | `Linux` | `#smb #SiteMagicCMS #SETUID #systemctl` |
 | [Cybox: 1](https://www.hackingarticles.in/cybox-1-vulnhub-walkthrough/) | `Medium` | `Linux` | `#LFI #RCE #Apache #poison #SETUID #uncommon` |
 
+
 ### UAM
 
 | Name | Level | OS | Tags |
