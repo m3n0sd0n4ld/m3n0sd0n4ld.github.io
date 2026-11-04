@@ -20,7 +20,6 @@
   --font-ui: 'Bricolage Grotesque', 'Segoe UI', system-ui, sans-serif;
   --font-read: 'Inter', system-ui, -apple-system, sans-serif;
   --font-code: 'JetBrains Mono', monospace;
-  --avatar: url('{{ site.author.image }}');
 }
 
 *, *:before, *:after { box-sizing: border-box; }
@@ -64,7 +63,7 @@ a { color: inherit; text-decoration: none; }
 .site-head-content.inner { width: 100%; max-width: 288px; margin: 0 auto; }
 .site-avatar {
   display: block; width: 96px; height: 96px; border-radius: 50%;
-  background-image: var(--avatar); background-size: cover; background-position: center; background-repeat: no-repeat;
+  background-size: cover; background-position: center; background-repeat: no-repeat;
   margin: 0 auto 1.5em; box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.1), 0 4px 12px rgba(0, 0, 0, 0.3);
   border: 1px solid rgba(255, 255, 255, 0.15);
 }
