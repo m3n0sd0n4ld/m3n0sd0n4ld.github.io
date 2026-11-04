@@ -1,106 +1,42 @@
 ### Site Settings ###
-title               : m3n0sd0n4ld
-description         : Crónicas Cuacfantásticas del Pato Suertudo.
-url                 : "https://m3n0sd0n4ld.github.io"
-baseurl             : ""                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
-repository          : m3n0sd0n4ld/m3n0sd0n4ld.github.io     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
-remote_theme        : YoussefRaafatNasry/portfolYOU
-minima:
-  skin: dark
-open_new_tab        : true                             # Opens external URLs in new tab (works for posts, projects and navbar only)
+title: m3n0sd0n4ld
+description: Crónicas Cuacfantásticas del Pato Suertudo.
+url: "https://m3n0sd0n4ld.github.io"
+baseurl: ""
+repository: m3n0sd0n4ld/m3n0sd0n4ld.github.io
 
+# Paginación (necesaria para el listado de posts)
+paginate: 6
+paginate_path: "/patoHackventuras/page:num/"
 
-### Plugins ###
 plugins:
   - jemoji
   - jekyll-sitemap
+  - jekyll-paginate   # añade este plugin
 
-
-### Navbar Settings ###
-nav_exclude:                                            # The following paths are excluded from navbar
+# Navegación (la usaremos en la sidebar)
+nav_exclude:
   - pages/tags.html
   - pages/404.html
   - pages/index.md
-  - documentation/partials/**                           # For Documentation Only
 
-
-### Author Info ###
 author:
-  name              : David Utón
-  image             : https://avatars.githubusercontent.com/u/54067582?v=4
-#  behance           : your_username
-# dribbble          : your_username
-#  email             : username@domain.com
-#  facebook          : your_username
-  github            : m3n0sd0n4ld
-# gitlab            : your_username
-# instagram         : your_username
-# kaggle            : your_username
-  linkedin          : david-uton
-#  medium            : your_username
-# soundcloud        : your_username
-# spotify           : your_username
-# stackoverflow     : your_user_id
-# tumblr            : your_username.tumblr.com
-# twitch            : your_username
-  twitter           : David_Uton
-# vimeo             : your_username
-# youtube           : your_channel_name
-# keybase           : your_username
+  name: David Utón
+  image: https://avatars.githubusercontent.com/u/54067582?v=4
+  github: m3n0sd0n4ld
+  linkedin: david-uton
+  twitter: David_Uton
 
-
-### Posts ###
 permalink: /patoHackventuras/:title
 
-
-### Collections ###
 collections:
   projects:
     output: true
     permalink: /mickey-tools/:name
-  elements:                                             # For Documentation Only
-    output: true                                        # For Documentation Only
 
-
-### Disqus ###
-disqus:
-  shortname: your-short-name-disqus                     # Your website Shortname on disqus
-
-
-### Analytics ###
-analytics:
-  enabled: false                                        # Set true to enable analytics
-  google:
-    tracking_id: your-google-tracking-id
-
-
-### Defaults for collections ###
 defaults:
-  - scope:
-      path: ""
-      type: "projects"
-    values:
-      layout: "page"
-  - scope:                                              # For Documentation Only
-      path: ""                                          # For Documentation Only
-      type: "elements"                                  # For Documentation Only
-    values:                                             # For Documentation Only
-      layout: "element"                                 # For Documentation Only
   - scope:
       path: ""
       type: "posts"
     values:
-      comments: false                                   # Set to true to enable disqus comments
-
-
-### Exclude from processing ###
-exclude:
-  - README.md
-  - CONTRIBUTING.md
-  - LICENSE
-  - "*.log"
-
-### Colours
-# Primary = #E8E8E9
-# Background = transparent
-# #bbbbbb
+      comments: false

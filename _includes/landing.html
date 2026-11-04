@@ -1,0 +1,40 @@
+<div class="posts">
+  {% for post in paginator.posts %}
+    <article class="card">
+      {% if post.image %}
+        <div class="card-media">
+          <a href="{{ post.url | relative_url }}">
+            <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" loading="lazy">
+          </a>
+        </div>
+      {% endif %}
+      <div class="card-body">
+        <div class="card-meta">
+          <span class="card-date">{{ post.date | date: "%d %b %Y" }}</span>
+          {% if post.tags.size > 0 %}
+            <span class="card-tags">
+              {% for tag in post.tags limit:3 %}
+                <a class="tag" href="{{ '/tags/#' | append: tag | relative_url }}">{{ tag }}</a>
+              {% endfor %}
+            </span>
+          {% endif %}
+        </div>
+        <h2 class="card-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+        <p class="card-snippet">{{ post.excerpt | strip_html | truncate: 180 }}</p>
+        <a class="card-more" href="{{ post.url | relative_url }}">Leer entrada</a>
+      </div>
+    </article>
+  {% endfor %}
+</div>
+
+{% if paginator.total_pages > 1 %}
+<nav class="pager pager-index">
+  {% if paginator.previous_page %}
+    <a class="pager-link" href="{{ paginator.previous_page_path | relative_url }}">← Anterior</a>
+  {% endif %}
+  <span>Página {{ paginator.page }} de {{ paginator.total_pages }}</span>
+  {% if paginator.next_page %}
+    <a class="pager-link" href="{{ paginator.next_page_path | relative_url }}">Siguiente →</a>
+  {% endif %}
+</nav>
+{% endif %}

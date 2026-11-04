@@ -1,0 +1,41 @@
+<aside class="site-header">
+  <div class="site-head-content inner">
+
+    <a class="site-avatar" href="{{ '/' | relative_url }}"></a>
+
+    <h1 class="site-titlenbt">
+      <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
+    </h1>
+    <h2 class="site-descriptionnbt">{{ site.description }}</h2>
+
+    <div class="side-social">
+      <a aria-label="GitHub" class="icon-btn" href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener" title="GitHub">
+        <svg viewBox="0 0 24 24"><use href="#i-github"/></svg>
+      </a>
+      <a aria-label="LinkedIn" class="icon-btn" href="https://www.linkedin.com/in/{{ site.author.linkedin }}/" target="_blank" rel="noopener" title="LinkedIn">
+        <svg viewBox="0 0 24 24"><use href="#i-linkedin"/></svg>
+      </a>
+      <a aria-label="X (Twitter)" class="icon-btn" href="https://twitter.com/{{ site.author.twitter }}" target="_blank" rel="noopener" title="X (Twitter)">
+        <svg viewBox="0 0 24 24"><use href="#i-x"/></svg>
+      </a>
+    </div>
+
+    <form action="{{ '/search' | relative_url }}" class="side-search" method="get" role="search">
+      <input aria-label="Buscar en el blog" name="q" placeholder="Buscar en el blog" type="search">
+      <button aria-label="Buscar" type="submit"><svg viewBox="0 0 24 24"><use href="#i-search"/></svg></button>
+    </form>
+
+    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+      <svg viewBox="0 0 24 24"><use href="#i-menu"/></svg>
+    </button>
+
+    <nav class="menu-primarynbt">
+      <ul class="menu-primary-items" id="menu-items">
+        {% for item in site.data.navigation %}
+          <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+
+  </div>
+</aside>

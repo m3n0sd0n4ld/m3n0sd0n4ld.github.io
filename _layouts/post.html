@@ -1,0 +1,60 @@
+---
+layout: default
+---
+<div class="entry">
+  <article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+
+    {% if page.image %}
+      <meta itemprop="image" content="{{ page.image | absolute_url }}">
+    {% endif %}
+    <a name="{{ page.id }}"></a>
+
+    <header class="entry-header">
+      {% if page.tags.size > 0 %}
+        <div class="entry-tags">
+          {% for tag in page.tags %}
+            <a class="tag" href="{{ '/tags/#' | append: tag | relative_url }}" rel="tag">{{ tag }}</a>
+          {% endfor %}
+        </div>
+      {% endif %}
+
+      <h1 class="entry-title" itemprop="name">{{ page.title }}</h1>
+
+      <div class="entry-meta">
+        <a class="timestamp-link" href="{{ page.url | relative_url }}" rel="bookmark" title="Enlace permanente">
+          <span class="published updated" itemprop="datePublished">{{ page.date | date: "%d %b %Y" }}</span>
+        </a>
+        <span class="reading-time"></span>
+      </div>
+    </header>
+
+    <div class="post-body entry-content" id="post-body-{{ page.id }}" itemprop="articleBody">
+      {{ content }}
+      <div style="clear: both;"></div>
+    </div>
+
+    <footer class="entry-footer">
+      {% include share.html %}
+    </footer>
+
+    {% if site.author %}
+      <div class="author-profile" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <img src="{{ site.author.image }}" itemprop="image" width="50" alt="{{ site.author.name }}">
+        <div>
+          <a class="g-profile" href="{{ '/about/' | relative_url }}" itemprop="url" rel="author" title="Perfil del autor">
+            <span itemprop="name">{{ site.author.name }}</span>
+          </a>
+        </div>
+      </div>
+    {% endif %}
+
+    {% include related-posts.html %}
+
+    {% if site.disqus.shortname and site.disqus.shortname != 'your-short-name-disqus' %}
+      {% include comments.html %}
+    {% endif %}
+
+  </article>
+</div>
+
+{% include pagination.html %}

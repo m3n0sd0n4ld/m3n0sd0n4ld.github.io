@@ -1,0 +1,30 @@
+---
+layout: default
+title: Buscar
+permalink: /search/
+---
+<div id="search-results"></div>
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const query = params.get('q');
+  if (query) {
+    fetch('{{ "/search.json" | relative_url }}')
+      .then(r => r.json())
+      .then(posts => {
+        const results = posts.filter(p => p.title.toLowerCase().includes(query.toLowerCase()));
+        const container = document.getElementById('search-results');
+        if (results.length === 0) {
+          container.innerHTML = '<p>No se encontraron resultados.</p>';
+          return;
+        }
+        container.innerHTML = results.map(p => `
+          <article class="card" style="margin-bottom:1rem;">
+            <div class="card-body">
+              <h2 class="card-title"><a href="${p.url}">${p.title}</a></h2>
+              <p class="card-snippet">${p.category || ''}</p>
+            </div>
+          </article>
+        `).join('');
+      });
+  }
+</script>

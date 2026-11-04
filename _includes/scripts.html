@@ -1,0 +1,108 @@
+<script>
+(function () {
+  var d = document, root = d.documentElement;
+  function $(s, c) { return (c || d).querySelector(s); }
+  function $$(s, c) { return Array.prototype.slice.call((c || d).querySelectorAll(s)); }
+  var isPost = d.body.classList.contains('pt-post');
+
+  /* --- Menú Hamburguesa (Móvil) --- */
+  var menuToggle = document.getElementById('menu-toggle');
+  var menuItems = document.getElementById('menu-items');
+  if (menuToggle && menuItems) {
+    menuToggle.addEventListener('click', function () {
+      menuItems.classList.toggle('is-open');
+    });
+  }
+
+  /* --- Botón Volver Arriba --- */
+  var btnTop = document.getElementById('back-to-top');
+  if (btnTop) {
+    window.addEventListener('scroll', function () {
+      btnTop.classList.toggle('is-visible', window.scrollY > 400);
+    }, { passive: true });
+    btnTop.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
+  /* --- Copiar texto --- */
+  function copyText(text, done) {
+    function fallback() {
+      var ta = d.createElement('textarea');
+      ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+      d.body.appendChild(ta); ta.select();
+      try { d.execCommand('copy'); done(); } catch (e) {}
+      d.body.removeChild(ta);
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(done, fallback);
+    } else {
+      fallback();
+    }
+  }
+
+  /* --- Bloques de código --- */
+  $$('.post-body pre').forEach(function (pre) {
+    if (pre.parentNode.classList.contains('codewrap')) return;
+    var wrap = d.createElement('div'); wrap.className = 'codewrap';
+    var bar = d.createElement('div'); bar.className = 'codebar';
+    var dots = d.createElement('span'); dots.className = 'dots'; dots.innerHTML = '<i></i><i></i><i></i>';
+    var btn = d.createElement('button'); btn.type = 'button'; btn.className = 'copy'; btn.textContent = 'Copiar';
+    btn.addEventListener('click', function () {
+      copyText(pre.innerText || pre.textContent, function () {
+        btn.textContent = 'Copiado'; btn.classList.add('done');
+        setTimeout(function () { btn.textContent = 'Copiar'; btn.classList.remove('done'); }, 1800);
+      });
+    });
+    bar.appendChild(dots); bar.appendChild(btn);
+    pre.parentNode.insertBefore(wrap, pre);
+    wrap.appendChild(bar); wrap.appendChild(pre);
+  });
+
+  if (isPost) {
+    /* --- Imágenes --- */
+    $$('.post-body img').forEach(function (img) {
+      if (!img.getAttribute('loading')) img.setAttribute('loading', 'lazy');
+      img.setAttribute('decoding', 'async');
+    });
+
+    /* --- Tiempo de lectura --- */
+    var content = $('.entry-content'), rt = $('.reading-time');
+    if (content && rt) {
+      var words = (content.textContent || '').trim().split(/\s+/).length;
+      rt.textContent = Math.max(1, Math.round(words / 220)) + ' min de lectura';
+    }
+
+    /* --- Barra de progreso --- */
+    var barProgress = $('.progress span'), ticking = false;
+    if (barProgress) {
+      var updateProgress = function () {
+        var h = root.scrollHeight - root.clientHeight;
+        var p = h > 0 ? Math.min(1, Math.max(0, (window.pageYOffset || root.scrollTop) / h)) : 0;
+        barProgress.style.transform = 'scaleX(' + p + ')';
+        ticking = false;
+      };
+      window.addEventListener('scroll', function () {
+        if (!ticking) { ticking = true; requestAnimationFrame(updateProgress); }
+      }, { passive: true });
+      updateProgress();
+    }
+
+    /* --- Copiar enlace --- */
+    var cl = $('[data-copy-link]');
+    if (cl) {
+      cl.addEventListener('click', function () {
+        copyText(location.protocol + '//' + location.host + location.pathname, function () {
+          cl.textContent = 'Enlace copiado'; cl.classList.add('done');
+          setTimeout(function () { cl.textContent = 'Copiar enlace'; cl.classList.remove('done'); }, 1800);
+        });
+      });
+    }
+  }
+})();
+</script>
+
+<!-- GTranslate (opcional) -->
+<div class="gtranslate_wrapper"></div>
+<script>window.gtranslateSettings = {"default_language":"es","native_language_names":true,"detect_browser_language":true,"languages":["es","fr","it","de","en","ru","zh-TW"],"wrapper_selector":".gtranslate_wrapper","switcher_horizontal_position":"right","switcher_vertical_position":"top"}</script>
+<script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>

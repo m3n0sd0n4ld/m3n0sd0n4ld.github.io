@@ -1,0 +1,11 @@
+{% if paginator.total_pages > 1 %}
+<nav aria-label="Paginación" class="pager pager-index">
+  {% if paginator.previous_page %}
+    <a class="pager-link" href="{{ paginator.previous_page_path | relative_url }}">← Anterior</a>
+  {% endif %}
+  <span>Página {{ paginator.page }} de {{ paginator.total_pages }}</span>
+  {% if paginator.next_page %}
+    <a class="pager-link" href="{{ paginator.next_page_path | relative_url }}">Siguiente →</a>
+  {% endif %}
+</nav>
+{% endif %}

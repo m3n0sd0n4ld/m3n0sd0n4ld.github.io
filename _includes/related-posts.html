@@ -1,0 +1,16 @@
+{% if page.tags.size > 0 %}
+  {% assign related = site.posts | where_exp: "post", "post.tags contains page.tags[0]" | where_exp: "post", "post.url != page.url" | limit: 4 %}
+  {% if related.size > 0 %}
+    <div class="related-postbwrap">
+      <h4>Sigue leyendo</h4>
+      <ul class="related-post-style-2">
+        {% for post in related %}
+          <li>
+            <a class="related-post-item-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            <span class="related-post-item-summary">{{ post.excerpt | strip_html | truncate: 120 }}</span>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endif %}
+{% endif %}
