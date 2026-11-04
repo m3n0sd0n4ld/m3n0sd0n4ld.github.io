@@ -1,7 +1,30 @@
 ---
 layout: page
-title: Tags
-permalink: /blog/tags
+title: Etiquetas
+permalink: /tags/
 ---
 
-{% include blog/tags.html %}
+<h1>Etiquetas</h1>
+
+{% assign sorted_tags = site.tags | sort %}
+<div class="entry-tags" style="margin:24px 0 40px;">
+  {% for tag in sorted_tags %}
+    <a class="tag" href="#{{ tag[0] | slugify }}">{{ tag[0] }} ({{ tag[1].size }})</a>
+  {% endfor %}
+</div>
+
+{% for tag in sorted_tags %}
+  <section id="{{ tag[0] | slugify }}" style="margin:32px 0;">
+    <h2 style="font-family:var(--font-ui);font-weight:700;font-size:24px;border-bottom:1px solid var(--line);padding-bottom:8px;">
+      {{ tag[0] }}
+    </h2>
+    <ul>
+      {% for post in tag[1] %}
+        <li style="margin:8px 0;">
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          <span style="color:var(--ink-3);font-size:14px;">— {{ post.date | date: "%d %b %Y" }}</span>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+{% endfor %}
