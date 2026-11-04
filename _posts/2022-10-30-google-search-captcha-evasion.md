@@ -59,7 +59,9 @@ By taking advantage of the "_ByPass_" functionality, we can use a **dictionary o
 
 ### Proof of concept video with avoidance option:
 
-{% include elements/video.html id="TyiQTFv4v1w" %}
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;margin:1.6em 0;border-radius:12px;">
+  <iframe src="https://www.youtube.com/embed/TyiQTFv4v1w" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allowfullscreen></iframe>
+</div>
 
 ## What does Google think about this?
 
