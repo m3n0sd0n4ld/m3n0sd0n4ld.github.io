@@ -7,14 +7,9 @@ weight: 3
 
 # **Sobre mi pedigree**
 
-<div class="col-lg-4 col-md-6 text-center mt-4">
-    <div id="container" class="my-2">
-      <div id="dummy"></div>
-      <div id="element">
-        <img src="https://avatars.githubusercontent.com/u/54067582?v=4" alt="m3n0sd0n4ld" class="circle-image wow  zoomIn animated" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s; animation-name: zoomIn;">
-      </div>
-    </div>
-</div><br>
+<div style="text-align:center;margin:0 0 24px;">
+  <img src="https://avatars.githubusercontent.com/u/54067582?v=4" alt="m3n0sd0n4ld" style="width:160px;height:160px;border-radius:50%;object-fit:cover;box-shadow:0 0 0 3px var(--accent-soft);">
+</div>
 
 $> **{{ site.author.name }}** (M3n0sD0n4ld)<br>
 
@@ -38,13 +33,14 @@ $> **{{ site.author.name }}** (M3n0sD0n4ld)<br>
 
 ## Exploits
 
-- [WordPress 5.7 - ‘Media Library’ XML External Entity Injection (XXE) (Authenticated) - CVE-2021-29447](https://www.exploit-db.com/exploits/50304)
-- [SUDO - CVE-2021-3156 (Checker)](https://github.com/m3n0sd0n4ld/CVE-Exploits/tree/main/CVE-2021-3156)
-- [Strapi < 3.0.0-beta.17.7 (Authenticated) - CVE-2019-19609](https://www.exploit-db.com/exploits/50238)
+- [WordPress 5.7 - 'Media Library' XML External Entity Injection (XXE) (Authenticated) - CVE-2021-29447](https://www.exploit-db.com/exploits/50304)
+- [SUDO - CVE-2021-3156 (Checker)](https://github.com/m3n0sd0n4ld/CVE-Exploits/tree/main/CVE-2021-3156)
+- [Strapi < 3.0.0-beta.17.7 (Authenticated) - CVE-2019-19609](https://www.exploit-db.com/exploits/50238)
 - [Simple Image Gallery System 1.0 - SQL Injection (Time-Based blind)](https://m3n0sd0n4ld.blogspot.com/2022/03/simple-image-gallery-system-10-sql.html)
-- [Company’s Recruitment Management System 1.0 - Remote Readable Administrator Credentials](https://m3n0sd0n4ld.blogspot.com/2022/07/companys-recruitment-management-system.html)
+- [Company's Recruitment Management System 1.0 - Remote Readable Administrator Credentials](https://m3n0sd0n4ld.blogspot.com/2022/07/companys-recruitment-management-system.html)
 
 ## CVEs
+
 - [1millionbot Millie Chatbot - Prompt Injection (CVE-2026-4399)](https://nvd.nist.gov/vuln/detail/CVE-2026-4399)
 - [1millionbot Millie Chatbot - Insecure Direct Object Reference (IDOR) (CVE-2026-4400)](https://nvd.nist.gov/vuln/detail/CVE-2026-4400)
 - [HiJiffy Chatbot - Incorrect authorization (CVE-2026-4262)](https://nvd.nist.gov/vuln/detail/CVE-2026-4262)
@@ -124,7 +120,7 @@ $> **{{ site.author.name }}** (M3n0sD0n4ld)<br>
 ## Artículos externos
 
 - [PenTest Magazine: Open-Source Pentesting Toolkit](https://pentestmag.com/product/pentest-open-source-pentesting-toolkit/)
-- [Company’s Recruitment Management System 1.0 - Remote Readable Administrator Credentials](https://m3n0sd0n4ld.blogspot.com/2022/07/companys-recruitment-management-system.html)
+- [Company's Recruitment Management System 1.0 - Remote Readable Administrator Credentials](https://m3n0sd0n4ld.blogspot.com/2022/07/companys-recruitment-management-system.html)
 - [GooFuzz: la herramienta para la enumeración de directorios y ficheros de forma pasiva](https://www.hackplayers.com/2022/06/goofuzz-tool-enum-pasiva.html)
 - [Cracking of payroll files](https://m3n0sd0n4ld.blogspot.com/2020/10/cracking-of-payroll-files.html)
 - [CTF: Aprende «hacking» jugando](https://www.sothis.tech/capture-the-flag-aprende-hacking-jugando/)
@@ -151,29 +147,28 @@ $> **{{ site.author.name }}** (M3n0sD0n4ld)<br>
 
 | Name | Level | OS | Tags |
 | :--- | :---: | :---: | :---: |
-| [Resolute](https://github.com/m3n0sd0n4ld/writeups/blob/master/pdfs/Resolute%20-%20hackthebox.pdf) | `Medium`  | `Windows` | `#smb #evil-winrm #password-spray` |
-| [Monteverde](https://www.hackingarticles.in/hack-the-box-monteverde-walkthrough) | `Medium`  | `Windows` | `#enum4linux #powershell #AzureAD` |
-| [Sauna](https://www.hackingarticles.in/hackthebox-sauna-walkthrough/) | `Easy`  | `Windows` | `#GetNPUsers #mimikatz #winPEAS` |
-| [Conceal](https://www.hackingarticles.in/conceal-hackthebox-walkthrough/) | `Hard`  | `Windows` | `#snmp #ike-scan #strongswan` |
-| [Omni](https://www.hackingarticles.in/omni-hackthebox-walkthrough/) | `Easy`  | `Windows` | `#IoT #SirepRAT.py #WDP` |
-| [Mango](https://www.hackingarticles.in/mango-hackthebox-walkthrough/) | `Medium`  | `Linux` | `#NoSQL #script #SUID #jjs #java` |
-| [Bastard](https://www.hackingarticles.in/bastard-hackthebox-walkthrough/) | `Medium`  | `Windows` | `#Drupal #RCE` |
-| [Forest](https://www.hackingarticles.in/forest-hackthebox-walkthrough/) | `Easy`  | `Windows` | `#Exchange #Secretsdump` |
-| [Doctor](https://www.hackingarticles.in/doctor-hackthebox-walkthrough/) | `Easy`  | `Linux` | `#SSTI #RCE #Splunk` |
-| [Chaos](https://www.hackingarticles.in/chaos-hackthebox-walkthrough/) | `Medium`  | `Linux` | `#WP #Roundcube #Firefox` |
+| [Resolute](https://github.com/m3n0sd0n4ld/writeups/blob/master/pdfs/Resolute%20-%20hackthebox.pdf) | `Medium` | `Windows` | `#smb #evil-winrm #password-spray` |
+| [Monteverde](https://www.hackingarticles.in/hack-the-box-monteverde-walkthrough) | `Medium` | `Windows` | `#enum4linux #powershell #AzureAD` |
+| [Sauna](https://www.hackingarticles.in/hackthebox-sauna-walkthrough/) | `Easy` | `Windows` | `#GetNPUsers #mimikatz #winPEAS` |
+| [Conceal](https://www.hackingarticles.in/conceal-hackthebox-walkthrough/) | `Hard` | `Windows` | `#snmp #ike-scan #strongswan` |
+| [Omni](https://www.hackingarticles.in/omni-hackthebox-walkthrough/) | `Easy` | `Windows` | `#IoT #SirepRAT.py #WDP` |
+| [Mango](https://www.hackingarticles.in/mango-hackthebox-walkthrough/) | `Medium` | `Linux` | `#NoSQL #script #SUID #jjs #java` |
+| [Bastard](https://www.hackingarticles.in/bastard-hackthebox-walkthrough/) | `Medium` | `Windows` | `#Drupal #RCE` |
+| [Forest](https://www.hackingarticles.in/forest-hackthebox-walkthrough/) | `Easy` | `Windows` | `#Exchange #Secretsdump` |
+| [Doctor](https://www.hackingarticles.in/doctor-hackthebox-walkthrough/) | `Easy` | `Linux` | `#SSTI #RCE #Splunk` |
+| [Chaos](https://www.hackingarticles.in/chaos-hackthebox-walkthrough/) | `Medium` | `Linux` | `#WP #Roundcube #Firefox` |
 
 ### TryHackMe
-
 
 | Name | Level | OS | Tags |
 | :--- | :---: | :---: | :---: |
 | [Relevant](https://www.hackingarticles.in/relevant-tryhackme-walkthrough/) | `Medium` | `Windows` | `#smb #cmdasp` |
-| [Startup](https://www.hackingarticles.in/startup-tryhackme-walkthrough/) | `Easy`  | `Linux` | `#wireshark #cron #gobuster` |
-| [Internal](https://www.hackingarticles.in/internal-tryhackme-walkthrough/) | `Hard`  | `Linux` | `#WP #Jenkins` |
-| [Revenge](https://www.hackingarticles.in/revenge-tryhackme-walkthrough) | `Medium`  | `Linux` | `#sqlmap #sudo #systemctl` |
-| [0day](https://www.hackingarticles.in/0day-tryhackme-walkthrough) | `Medium`  | `Linux` | `#shellshock #overlays` |
-| [Ghizer](https://www.hackingarticles.in/ghizer-tryhackme-walkthrough) | `Medium`  | `Linux` | `#debug #RCE #Limesurvey #ghidra` |
-| [Iron Corp](https://www.hackingarticles.in/iron-corp-tryhackme-walkthrough) | `Hard`  | `Windows` | `#hydra #dig #SSRF #ACL` |
+| [Startup](https://www.hackingarticles.in/startup-tryhackme-walkthrough/) | `Easy` | `Linux` | `#wireshark #cron #gobuster` |
+| [Internal](https://www.hackingarticles.in/internal-tryhackme-walkthrough/) | `Hard` | `Linux` | `#WP #Jenkins` |
+| [Revenge](https://www.hackingarticles.in/revenge-tryhackme-walkthrough) | `Medium` | `Linux` | `#sqlmap #sudo #systemctl` |
+| [0day](https://www.hackingarticles.in/0day-tryhackme-walkthrough) | `Medium` | `Linux` | `#shellshock #overlays` |
+| [Ghizer](https://www.hackingarticles.in/ghizer-tryhackme-walkthrough) | `Medium` | `Linux` | `#debug #RCE #Limesurvey #ghidra` |
+| [Iron Corp](https://www.hackingarticles.in/iron-corp-tryhackme-walkthrough) | `Hard` | `Windows` | `#hydra #dig #SSRF #ACL` |
 
 ### VulnHub
 
@@ -217,12 +212,3 @@ $> **{{ site.author.name }}** (M3n0sD0n4ld)<br>
 | Name | Level | OS | Tags |
 | :--- | :---: | :---: | :---: |
 | [El coche fantástico](https://github.com/m3n0sd0n4ld/writeups/blob/master/pdfs/UAM%20-%20El%20coche%20fant%C3%A1stico%20-%20Episodio%201.pdf) | `Easy` | `Linux` | `#web #waf #xor #RCE` |
-
-<!--<div class="row">
-{% include about/skills.html title="Programming Skills" source=site.data.programming-skills %}
-{% include about/skills.html title="Other Skills" source=site.data.other-skills %}
-</div>
-
-<div class="row">
-{% include about/timeline.html %}
-</div> -->
