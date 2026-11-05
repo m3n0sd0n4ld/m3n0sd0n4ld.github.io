@@ -17,14 +17,14 @@ weight: 1
     height: 100%;
     display: flex;
     flex-direction: column;
-    text-align: left; /* Alineación clásica de portfolYOU */
+    text-align: left; 
   }
 
   /* Imagen ocupando todo el ancho superior */
   .projects-grid .card-media {
     width: 100%;
     aspect-ratio: 16 / 9;
-    background: var(--chip); /* Fondo gris suave de la plantilla original */
+    background: var(--chip); 
     border-bottom: 1px solid var(--line);
     border-radius: var(--radius-card) var(--radius-card) 0 0;
     overflow: hidden;
@@ -36,9 +36,10 @@ weight: 1
   .projects-grid .card-media img {
     width: 100%;
     height: 100%;
-    object-fit: contain; /* Adapta la imagen sin recortarla */
-    padding: 20px; /* Margen interno para que el logo no toque los bordes */
+    object-fit: contain; 
+    padding: 20px; 
     transition: transform 0.3s ease;
+    mix-blend-mode: multiply;
   }
 
   .projects-grid .card:hover .card-media img {
