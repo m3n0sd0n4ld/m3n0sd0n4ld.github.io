@@ -1,5 +1,5 @@
 ---
-title: Prompt Injection con Jailbreak en Grok 3 y 4
+title: What's up pisha? Prompt Injection con Jailbreak en Grok 3 y 4
 tags: [AI, LLM, Grok, attack, prompt-injection, jailbreak]
 style: border
 color: danger
