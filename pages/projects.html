@@ -14,56 +14,42 @@ weight: 1
   }
   
   .projects-grid .card {
-    padding: 24px;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: left; /* Alineación clásica de portfolYOU */
   }
 
-  .projects-grid .card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-  }
-
-  /* El marco de la imagen */
+  /* Imagen ocupando todo el ancho superior */
   .projects-grid .card-media {
     width: 100%;
-    aspect-ratio: 16 / 9; /* Formato panorámico para el marco */
+    aspect-ratio: 16 / 9;
+    background: var(--chip); /* Fondo gris suave de la plantilla original */
+    border-bottom: 1px solid var(--line);
+    border-radius: var(--radius-card) var(--radius-card) 0 0;
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20px;
-    background: var(--chip); /* Fondo gris suave para resaltar el logo */
-    border-radius: 12px;
-    border-bottom: none;
-    overflow: hidden;
   }
 
-  /* La imagen dentro del marco */
   .projects-grid .card-media img {
-    max-width: 75%; /* Dejamos un margen para que no toque los bordes */
-    max-height: 75%;
-    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Adapta la imagen sin recortarla */
+    padding: 20px; /* Margen interno para que el logo no toque los bordes */
     transition: transform 0.3s ease;
   }
 
   .projects-grid .card:hover .card-media img {
-    transform: scale(1.08); /* Efecto de zoom al pasar el ratón */
+    transform: scale(1.05);
   }
 
   .projects-grid .card-body {
-    padding: 0;
+    padding: 24px;
     display: flex;
     flex-direction: column;
     flex: 1;
-    align-items: center;
-  }
-
-  .projects-grid .card-tags {
-    justify-content: center;
-    margin-bottom: 12px;
   }
 
   .projects-grid .card-title {
@@ -72,37 +58,34 @@ weight: 1
   }
 
   .projects-grid .card-title a {
-    text-decoration: none !important; /* Quitamos subrayado */
     color: var(--ink);
+    text-decoration: none !important;
   }
-  
+
   .projects-grid .card-title a:hover {
     color: var(--accent);
   }
 
   .projects-grid .card-snippet {
     margin-bottom: 20px;
-    -webkit-line-clamp: 3; /* Limitamos a 3 líneas para que todas las tarjetas midan igual */
+    -webkit-line-clamp: 3; /* Corta el texto a 3 líneas */
     line-clamp: 3;
     font-size: 15px;
+    color: var(--ink-2);
   }
 
-  /* Botón de GitHub */
   .projects-grid .card-more {
     margin-top: auto;
-    padding: 8px 16px;
-    background: var(--accent-soft);
-    color: var(--accent-ink);
-    border-radius: 999px;
-    font-size: 14px;
+    font-family: var(--font-ui);
+    font-size: 15px;
     font-weight: 600;
+    color: var(--accent-ink);
     text-decoration: none !important;
-    transition: all 0.2s ease;
   }
 
   .projects-grid .card-more:hover {
-    background: var(--accent);
-    color: #fff;
+    text-decoration: underline !important;
+    text-underline-offset: 4px;
   }
 </style>
 
@@ -125,7 +108,7 @@ weight: 1
       <div class="card-body">
         
         {% if project.tags.size > 0 %}
-          <div class="card-tags">
+          <div class="card-tags" style="margin-bottom: 12px; justify-content: flex-start;">
             {% for tag in project.tags limit:3 %}
               <span class="tag">{{ tag }}</span>
             {% endfor %}
@@ -141,7 +124,7 @@ weight: 1
         </p>
 
         <a class="card-more" href="{{ project.external_url }}" target="_blank" rel="noopener">
-          Ver en GitHub →
+          Ver proyecto &rarr;
         </a>
         
       </div>
