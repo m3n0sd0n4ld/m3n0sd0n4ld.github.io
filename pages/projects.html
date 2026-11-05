@@ -7,47 +7,48 @@ weight: 1
 
 # Mickey-Herramientas
 
-Herramientas propias para pentesting, OSINT y análisis de vulnerabilidades.
-
-<div class="posts" style="margin-top:24px; grid-template-columns:repeat(2, minmax(0,1fr));">
+<div class="posts" style="margin-top:24px; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;">
 
   {% for project in site.projects %}
-    <article class="card">
+    <article class="card" style="display: flex; flex-direction: column; align-items: center; text-align: center; padding: 24px;">
+      
       {% assign img_src = project.image %}
       {% if img_src and img_src != "" %}
-        <div class="card-media">
-          <a href="{{ project.url | relative_url }}">
+        <div style="width: 100%; height: 120px; display: flex; align-items: center; justify-content: center; margin-bottom: 16px;">
+          <a href="{{ project.external_url }}" target="_blank" rel="noopener">
             {% unless img_src contains '://' %}
               {% assign img_src = img_src | relative_url %}
             {% endunless %}
-            <img src="{{ img_src | strip }}" alt="{{ project.title }}" loading="lazy">
+            <!-- object-fit: contain hace que la imagen se adapte sin recortarse ni deformarse -->
+            <img src="{{ img_src | strip }}" alt="{{ project.name }}" loading="lazy" style="max-width: 100%; max-height: 100%; object-fit: contain; display: block;">
           </a>
         </div>
       {% endif %}
 
-      <div class="card-body">
-        <div class="card-meta">
-          {% if project.date %}
-            <span class="card-date">{{ project.date | date: "%b %Y" }}</span>
-          {% endif %}
-          {% if project.tags.size > 0 %}
-            <span class="card-tags">
-              {% for tag in project.tags limit:3 %}
-                <a class="tag" href="{{ '/tags/#' | append: tag | relative_url }}">{{ tag }}</a>
-              {% endfor %}
-            </span>
-          {% endif %}
-        </div>
+      <div class="card-body" style="padding: 0; width: 100%;">
+        
+        {% if project.tags.size > 0 %}
+          <div class="card-tags" style="justify-content: center; margin-bottom: 12px;">
+            {% for tag in project.tags limit:3 %}
+              <span class="tag">{{ tag }}</span>
+            {% endfor %}
+          </div>
+        {% endif %}
 
-        <h2 class="card-title">
-          <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
+        <h2 class="card-title" style="font-size: 22px; margin-bottom: 8px;">
+          <!-- Usamos project.name y abrimos en pestaña nueva -->
+          <a href="{{ project.external_url }}" target="_blank" rel="noopener" style="color: var(--ink);">{{ project.name }}</a>
         </h2>
 
-        <p class="card-snippet">
+        <p class="card-snippet" style="margin-bottom: 16px; -webkit-line-clamp: 4; line-clamp: 4;">
           {{ project.description | default: project.excerpt | strip_html | truncate: 160 }}
         </p>
 
-        <a class="card-more" href="{{ project.url | relative_url }}">Ver más</a>
+        <!-- Botón que lleva al external_url -->
+        <a class="card-more" href="{{ project.external_url }}" target="_blank" rel="noopener" style="margin-top: auto;">
+          Ver en GitHub →
+        </a>
+        
       </div>
     </article>
   {% else %}
