@@ -5,8 +5,6 @@ permalink: /about/
 weight: 3
 ---
 
-# **Sobre mi pedigree**
-
 <div style="text-align:center;margin:0 0 24px;">
   <img src="https://avatars.githubusercontent.com/u/54067582?v=4" alt="m3n0sd0n4ld" style="width:160px;height:160px;border-radius:50%;object-fit:cover;box-shadow:0 0 0 3px var(--accent-soft);">
 </div>
