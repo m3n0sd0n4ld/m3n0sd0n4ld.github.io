@@ -122,7 +122,9 @@ a { color: inherit; text-decoration: none; }
   display: inline-flex; align-items: center; justify-content: center;
   padding: 4px 12px; border-radius: 999px;
   background: var(--accent-soft); color: var(--accent-ink);
-  font-family: var(--font-ui); font-size: 13px; font-weight: 600; line-height: 1.5;
+  font-family: var(--font-ui); font-size: 13px; font-weight: 600; 
+  line-height: 1.2;
+  white-space: nowrap;
   transition: all 0.2s ease;
   text-decoration: none !important;
   border: 1px solid transparent;
@@ -153,7 +155,7 @@ a { color: inherit; text-decoration: none; }
 .card-body { flex: 1; display: flex; flex-direction: column; gap: 11px; padding: 22px 24px 24px; }
 .card-meta { display: flex; align-items: center; gap: 12px; min-width: 0; font-family: var(--font-ui); font-size: 14px; font-weight: 500; color: var(--ink-3); }
 .card-date { flex: none; }
-.card-tags { display: flex; gap: 6px; min-width: 0; overflow: hidden; }
+.card-tags { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; min-width: 0; }
 
 .card-title { margin: 0; font-family: var(--font-ui); font-weight: 700; font-size: 24px; line-height: 1.18; letter-spacing: -.015em; text-wrap: balance; overflow-wrap: break-word; }
 .card-title a { color: var(--ink); }
