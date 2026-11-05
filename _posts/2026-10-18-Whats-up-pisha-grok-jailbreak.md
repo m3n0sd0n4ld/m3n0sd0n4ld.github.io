@@ -4,6 +4,7 @@ tags: [AI, LLM, Grok, attack, prompt-injection, jailbreak]
 style: border
 color: danger
 description: ""
+image: "../assets/img/whats-up-pisha-grok-jailbreak/logo.jpg"
 ---
 
 ![logo](../assets/img/whats-up-pisha-grok-jailbreak/logo.jpg){: width="600"}
