@@ -1,8 +1,8 @@
 - title: Inicio
-  url: /
-- title: PatoHackventuras
   url: /patoHackventuras/
 - title: Mickey-Herramientas
   url: /mickey-tools/
-- title: Sobre mí
+- title: PatoHackventuras
+  url: /patoHackventuras/
+- title: Sobre mi pedigree
   url: /about/
