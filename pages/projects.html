@@ -9,56 +9,49 @@ weight: 1
 
 Herramientas propias para pentesting, OSINT y análisis de vulnerabilidades.
 
-<div class="posts" style="margin-top:24px;grid-template-columns:repeat(2,minmax(0,1fr));">
+<div class="posts" style="margin-top:24px; grid-template-columns:repeat(2, minmax(0,1fr));">
 
-  <article class="card">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="tag">Go</span>
-        <span class="tag">CVE</span>
-      </div>
-      <h2 class="card-title"><a href="https://github.com/m3n0sd0n4ld/uCVE" target="_blank" rel="noopener">uCVE</a></h2>
-      <p class="card-snippet">Herramienta escrita en Go que permite extraer CVE's relacionados con un determinado software y versión, obteniendo un informe en HTML y/o exportándolo al informe de pentesting.</p>
-      <a class="card-more" href="https://github.com/m3n0sd0n4ld/uCVE" target="_blank" rel="noopener">Ver en GitHub</a>
-    </div>
-  </article>
+  {% for project in site.projects %}
+    <article class="card">
+      {% assign img_src = project.image %}
+      {% if img_src and img_src != "" %}
+        <div class="card-media">
+          <a href="{{ project.url | relative_url }}">
+            {% unless img_src contains '://' %}
+              {% assign img_src = img_src | relative_url %}
+            {% endunless %}
+            <img src="{{ img_src | strip }}" alt="{{ project.title }}" loading="lazy">
+          </a>
+        </div>
+      {% endif %}
 
-  <article class="card">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="tag">Bash</span>
-        <span class="tag">OSINT</span>
-        <span class="tag">Google Dorking</span>
-      </div>
-      <h2 class="card-title"><a href="https://github.com/m3n0sd0n4ld/GooFuzz" target="_blank" rel="noopener">GooFuzz</a></h2>
-      <p class="card-snippet">Fuzzing con enfoque OSINT: enumera directorios, archivos, subdominios o parámetros sin dejar evidencias en el servidor del objetivo mediante búsquedas avanzadas en Google (Google Dorking).</p>
-      <a class="card-more" href="https://github.com/m3n0sd0n4ld/GooFuzz" target="_blank" rel="noopener">Ver en GitHub</a>
-    </div>
-  </article>
+      <div class="card-body">
+        <div class="card-meta">
+          {% if project.date %}
+            <span class="card-date">{{ project.date | date: "%b %Y" }}</span>
+          {% endif %}
+          {% if project.tags.size > 0 %}
+            <span class="card-tags">
+              {% for tag in project.tags limit:3 %}
+                <a class="tag" href="{{ '/tags/#' | append: tag | relative_url }}">{{ tag }}</a>
+              {% endfor %}
+            </span>
+          {% endif %}
+        </div>
 
-  <article class="card">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="tag">Bash</span>
-        <span class="tag">OSINT</span>
-        <span class="tag">Descontinuada</span>
-      </div>
-      <h2 class="card-title"><a href="https://github.com/m3n0sd0n4ld/uDork" target="_blank" rel="noopener">uDork</a></h2>
-      <p class="card-snippet">Script en Bash que usa técnicas avanzadas de búsqueda en Google para obtener información sensible en archivos o directorios, encontrar dispositivos IoT o detectar versiones de aplicaciones web. (Descontinuada)</p>
-      <a class="card-more" href="https://github.com/m3n0sd0n4ld/uDork" target="_blank" rel="noopener">Ver en GitHub</a>
-    </div>
-  </article>
+        <h2 class="card-title">
+          <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
+        </h2>
 
-  <article class="card">
-    <div class="card-body">
-      <div class="card-meta">
-        <span class="tag">Python</span>
-        <span class="tag">Fuerza bruta</span>
+        <p class="card-snippet">
+          {{ project.description | default: project.excerpt | strip_html | truncate: 160 }}
+        </p>
+
+        <a class="card-more" href="{{ project.url | relative_url }}">Ver más</a>
       </div>
-      <h2 class="card-title"><a href="https://github.com/m3n0sd0n4ld/uNominaCracker" target="_blank" rel="noopener">uNominaCracker</a></h2>
-      <p class="card-snippet">Script en Python que realiza fuerza bruta sobre los ficheros ZIP con nóminas de trabajadores mediante el uso del DNI (Documento Nacional de Identidad).</p>
-      <a class="card-more" href="https://github.com/m3n0sd0n4ld/uNominaCracker" target="_blank" rel="noopener">Ver en GitHub</a>
-    </div>
-  </article>
+    </article>
+  {% else %}
+    <p>No hay proyectos todavía.</p>
+  {% endfor %}
 
 </div>
