@@ -14,30 +14,43 @@ weight: 1
   }
   
   .projects-grid .card {
-    padding: 32px 24px 24px;
+    padding: 24px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    height: 100%;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
 
+  .projects-grid .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  }
+
+  /* El marco de la imagen */
   .projects-grid .card-media {
-    height: 150px;
     width: 100%;
+    aspect-ratio: 16 / 9; /* Formato panorámico para el marco */
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
-    background: transparent;
-    border: none;
+    background: var(--chip); /* Fondo gris suave para resaltar el logo */
+    border-radius: 12px;
+    border-bottom: none;
+    overflow: hidden;
   }
 
+  /* La imagen dentro del marco */
   .projects-grid .card-media img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain; /* Mantiene la proporción sin recortar */
-    border-radius: 8px;
+    max-width: 75%; /* Dejamos un margen para que no toque los bordes */
+    max-height: 75%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+  }
+
+  .projects-grid .card:hover .card-media img {
+    transform: scale(1.08); /* Efecto de zoom al pasar el ratón */
   }
 
   .projects-grid .card-body {
@@ -50,23 +63,46 @@ weight: 1
 
   .projects-grid .card-tags {
     justify-content: center;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
   }
 
   .projects-grid .card-title {
-    font-size: 24px;
+    font-size: 22px;
     margin-bottom: 12px;
+  }
+
+  .projects-grid .card-title a {
+    text-decoration: none !important; /* Quitamos subrayado */
+    color: var(--ink);
+  }
+  
+  .projects-grid .card-title a:hover {
+    color: var(--accent);
   }
 
   .projects-grid .card-snippet {
     margin-bottom: 20px;
-    -webkit-line-clamp: 4;
-    line-clamp: 4;
+    -webkit-line-clamp: 3; /* Limitamos a 3 líneas para que todas las tarjetas midan igual */
+    line-clamp: 3;
+    font-size: 15px;
   }
 
+  /* Botón de GitHub */
   .projects-grid .card-more {
     margin-top: auto;
-    font-size: 16px;
+    padding: 8px 16px;
+    background: var(--accent-soft);
+    color: var(--accent-ink);
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none !important;
+    transition: all 0.2s ease;
+  }
+
+  .projects-grid .card-more:hover {
+    background: var(--accent);
+    color: #fff;
   }
 </style>
 
