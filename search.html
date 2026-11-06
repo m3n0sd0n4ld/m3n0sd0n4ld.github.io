@@ -1,0 +1,99 @@
+---
+layout: page
+title: Buscar
+permalink: /search/
+---
+
+<style>
+  .search-header { margin-bottom: 32px; padding-bottom: 16px; border-bottom: 1px solid var(--line); }
+  .search-header h2 { margin: 0; font-family: var(--font-ui); font-size: 24px; color: var(--ink); }
+  .search-header p { margin: 8px 0 0; color: var(--ink-3); font-size: 15px; }
+  .search-highlight { background: var(--accent-soft); color: var(--accent-ink); padding: 0 4px; border-radius: 4px; font-weight: 600; }
+  .no-results { text-align: center; padding: 40px 0; color: var(--ink-2); }
+</style>
+
+<div class="search-header">
+  <h2 id="search-title">Buscando...</h2>
+  <p id="search-stats"></p>
+</div>
+
+<div class="posts" id="search-results">
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const query = urlParams.get('q');
+  const resultsContainer = document.getElementById('search-results');
+  const titleContainer = document.getElementById('search-title');
+  const statsContainer = document.getElementById('search-stats');
+
+  if (!query || query.trim() === "") {
+    titleContainer.textContent = "Buscar en el blog";
+    statsContainer.textContent = "Escribe un término en el buscador de la barra lateral.";
+    return;
+  }
+
+  titleContainer.innerHTML = `Resultados para: <span class="search-highlight">${query}</span>`;
+
+  fetch('/search.json')
+    .then(response => response.json())
+    .then(posts => {
+      const searchTerm = query.toLowerCase();
+      
+      const results = posts.filter(post => {
+        const titleMatch = post.title.toLowerCase().includes(searchTerm);
+        const tagMatch = post.tags.toLowerCase().includes(searchTerm);
+        const contentMatch = post.content.toLowerCase().includes(searchTerm);
+        return titleMatch || tagMatch || contentMatch;
+      });
+
+      statsContainer.textContent = `Se han encontrado ${results.length} artículos.`;
+      
+      if (results.length === 0) {
+        resultsContainer.innerHTML = `
+          <div class="no-results">
+            <h3>No se encontraron resultados</h3>
+            <p>Prueba con otras palabras clave.</p>
+          </div>
+        `;
+        return;
+      }
+
+      let html = '';
+      results.forEach(post => {
+        let snippet = post.content.substring(0, 180) + '...';
+        
+        let tagsHtml = '';
+        if (post.tags && post.tags !== "") {
+          const tagsArray = post.tags.split(', ');
+          tagsHtml = `<span class="card-tags">` + 
+            tagsArray.map(t => `<span class="tag">${t}</span>`).join('') + 
+          `</span>`;
+        }
+
+        html += `
+          <article class="card">
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="card-date">${post.date}</span>
+                ${tagsHtml}
+              </div>
+              <h2 class="card-title">
+                <a href="${post.url}">${post.title}</a>
+              </h2>
+              <p class="card-snippet">${snippet}</p>
+              <a class="card-more" href="${post.url}">Leer entrada</a>
+            </div>
+          </article>
+        `;
+      });
+      
+      resultsContainer.innerHTML = html;
+    })
+    .catch(error => {
+      console.error("Error cargando los resultados:", error);
+      statsContainer.textContent = "Hubo un error al realizar la búsqueda.";
+    });
+});
+</script>
