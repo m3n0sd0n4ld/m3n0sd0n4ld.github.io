@@ -4,6 +4,7 @@ tags: [writeup, hackthebox, cacti, rce, sqli, CVE-2024-25641, duplicati]
 style: border
 color: success
 description: ""
+image: "../assets/img/monitorsthree-hackthebox-writeup/MonitorsThree.png"
 ---
 
 ![logo](../assets/img/monitorsthree-hackthebox-writeup/MonitorsThree.png)

@@ -4,6 +4,7 @@ tags: [writeup, tryhackme, MagnusBilling, cve-2023-30258, asterisk, rce, fail2ba
 style: border
 color: success
 description: ""
+image: "../assets/img/billing-tryhackme-writeup/Gldbd3AWIAAHxYf.jpeg"
 ---
 
 ![logo](../assets/img/billing-tryhackme-writeup/Gldbd3AWIAAHxYf.jpeg)

@@ -4,6 +4,7 @@ tags: [writeup, tryhackme, nginx, lfi, keepass, wordpress, sqli, rce]
 style: border
 color: success
 description: ""
+image: "../assets/img/mountaineer-tryhackme-writeup/GaMPIMLWQAAKJg3.png"
 ---
 
 ![logo](../assets/img/mountaineer-tryhackme-writeup/GaMPIMLWQAAKJg3.png)

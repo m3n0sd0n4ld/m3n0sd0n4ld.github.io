@@ -4,6 +4,7 @@ tags: [writeup, tryhackme, SSRF, WordPress, JSmol2WP, RCE, john, SUDO]
 style: border
 color: success
 description: ""
+image: "../assets/img/smol-tryhackme-writeup/GiFIrsYXUAA8N3u.jpeg"
 ---
 
 ![logo](../assets/img/smol-tryhackme-writeup/GiFIrsYXUAA8N3u.jpeg)

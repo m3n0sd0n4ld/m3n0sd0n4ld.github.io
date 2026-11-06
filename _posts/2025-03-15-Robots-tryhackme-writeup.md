@@ -4,6 +4,7 @@ tags: [writeup, tryhackme, xxs, cookie, phpinfo, shell_exec, wrappers, php, scri
 style: border
 color: success
 description: ""
+image: "../assets/img/robots-tryhackme-writeup/GmBekvvXgAABh9c.jpeg"
 ---
 
 ![logo](../assets/img/robots-tryhackme-writeup/GmBekvvXgAABh9c.jpeg)

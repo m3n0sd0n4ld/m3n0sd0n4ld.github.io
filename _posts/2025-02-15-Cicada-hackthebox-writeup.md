@@ -4,6 +4,7 @@ tags: [writeup, hackthebox, rid-brute, spraying, ldap, ldapdomaindump, SeBackupP
 style: border
 color: success
 description: ""
+image: "../assets/img/cicada-hackthebox-writeup/Cicada.png"
 ---
 
 ![logo](../assets/img/cicada-hackthebox-writeup/Cicada.png)

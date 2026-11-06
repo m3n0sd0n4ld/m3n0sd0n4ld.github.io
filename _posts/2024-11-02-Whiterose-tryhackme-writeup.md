@@ -4,6 +4,7 @@ tags: [writeup, tryhackme, IDOR, EJS, CVE-2023-22809, sudoedit]
 style: border
 color: success
 description: ""
+image: "../assets/img/whiterose-tryhackme-writeup/GbKP4d8WsAA6Aul.png"
 ---
 
 ![logo](../assets/img/whiterose-tryhackme-writeup/GbKP4d8WsAA6Aul.png)

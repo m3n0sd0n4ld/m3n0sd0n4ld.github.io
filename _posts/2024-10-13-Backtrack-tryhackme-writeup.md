@@ -4,6 +4,7 @@ tags: [writeup, tryhackme, aria2, ansible-playbook, fileupload, bypass, TTY-Push
 style: border
 color: success
 description: ""
+imagen: "../assets/img/backtrack-tryhackme-writeup/GZoL-t6XQBgHwxz.png"
 ---
 
 ![logo](../assets/img/backtrack-tryhackme-writeup/GZoL-t6XQBgHwxz.png)

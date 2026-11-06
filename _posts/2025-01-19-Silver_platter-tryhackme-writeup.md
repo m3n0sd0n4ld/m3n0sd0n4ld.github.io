@@ -4,6 +4,7 @@ tags: [writeup, tryhackme, silverpeas, CVE-2024-36042, bypass, adm]
 style: border
 color: success
 description: ""
+image: "../assets/img/silver_platter-tryhackme-writeup/Gg9CZ3yWQAAEEZa.jpeg"
 ---
 
 ![logo](../assets/img/silver_platter-tryhackme-writeup/Gg9CZ3yWQAAEEZa.jpeg)
