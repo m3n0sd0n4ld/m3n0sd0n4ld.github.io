@@ -6,9 +6,14 @@ permalink: /search.json
   {% for post in site.posts %}
     {% assign img_src = post.image %}
     {% if img_src == nil or img_src == "" %}
-      {% assign content_split = post.content | split: 'src="' %}
-      {% if content_split.size > 1 %}
-        {% assign img_src = content_split[1] | split: '"' | first %}
+      {% assign img_test = post.content | split: 'src="' %}
+      {% if img_test.size > 1 %}
+        {% assign img_src = img_test[1] | split: '"' | first %}
+      {% else %}
+        {% assign img_test = post.content | split: '![' %}
+        {% if img_test.size > 1 %}
+          {% assign img_src = img_test[1] | split: '](' | last | split: ')' | first %}
+        {% endif %}
       {% endif %}
     {% endif %}
     {

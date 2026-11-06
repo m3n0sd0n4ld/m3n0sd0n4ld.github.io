@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function() {
         let snippet = post.content.substring(0, 180) + '...';
         
         let imgHtml = '';
-        if (post.image && post.image !== "") {
+        if (post.image && post.image !== "" && post.image !== null) {
           imgHtml = `
             <div class="card-media">
               <a href="${post.url}">
