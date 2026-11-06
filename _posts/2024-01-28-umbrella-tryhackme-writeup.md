@@ -4,6 +4,7 @@ tags: [writeup, tryhackme, docker, web, registry, eval]
 style: border
 color: success
 description: ""
+image: "../assets/img/umbrella-tryhackme-writeup/GEOix97XIAALuZK.jpg"
 ---
 
 ![logo](../assets/img/umbrella-tryhackme-writeup/GEOix97XIAALuZK.jpg)
