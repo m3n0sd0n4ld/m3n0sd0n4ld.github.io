@@ -4,6 +4,7 @@ tags: [writeup, tryhackme, ssrf, bypass, CVE-2018-18955, firefox]
 style: border
 color: success
 description: ""
+image: "../assets/img/the_london_bridge-tryhackme-writeup/GYVyj82W0AAmSb4.png"
 ---
 
 ![logo](../assets/img/the_london_bridge-tryhackme-writeup/GYVyj82W0AAmSb4.png)

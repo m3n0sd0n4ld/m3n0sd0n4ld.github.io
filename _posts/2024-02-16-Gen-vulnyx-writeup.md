@@ -4,6 +4,7 @@ tags: [writeup, vulnyx, ppk, putty, puttygen]
 style: border
 color: success
 description: ""
+image: "../assets/img/gen-vulnyx-writeup/1.png"
 ---
 
 ![logo](../assets/img/gen-vulnyx-writeup/1.png)

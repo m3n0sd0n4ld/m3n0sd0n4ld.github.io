@@ -4,6 +4,7 @@ tags: [writeup, tryhackme, simpleHTTP, python, rce, sockets, exploiting]
 style: border
 color: success
 description: ""
+image: "../assets/img/pyrat-tryhackme-writeup/GY51sNIWIAAqPLf.png"
 ---
 
 ![logo](../assets/img/pyrat-tryhackme-writeup/GY51sNIWIAAqPLf.png)

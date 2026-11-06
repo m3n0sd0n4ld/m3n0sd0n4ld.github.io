@@ -4,6 +4,7 @@ tags: [writeup, tryhackme, padding-oracle, padbuster, command-injection, docker]
 style: border
 color: success
 description: ""
+image: "../assets/img/new_york_flankees-tryhackme-writeup/GSTjSWkXEAAwclh.jpg"
 ---
 
 ![logo](../assets/img/new_york_flankees-tryhackme-writeup/GSTjSWkXEAAwclh.jpg)
