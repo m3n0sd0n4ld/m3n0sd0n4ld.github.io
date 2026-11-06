@@ -4,10 +4,10 @@ tags: [writeup,tryhackme,ldap,active-directory,kerbrute,windows,asreproast]
 style: border
 color: success
 description: ""
+image: "https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Fusion-Corp/1.jpeg"
 ---
 
-
-![](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Fusion-Corp/1.jpeg)
+![logo](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Fusion-Corp/1.jpeg)
 
 ## Scanning
 We launch **nmap** a bit *"aggressive"* (but we are in a controlled environment and we can afford it :P), to all ports and with verbosity to discover ports as **nmap** is getting them.

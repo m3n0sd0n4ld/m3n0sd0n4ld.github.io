@@ -4,10 +4,10 @@ tags: [hydra,writeup,tryhackme,telnet,pop3,linux,overlays,aspell]
 style: border
 color: success
 description: ""
+image: "https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/GoldenEye/1.png"
 ---
 
-
-![](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/GoldenEye/1.png)
+![logo](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/GoldenEye/1.png)
 
 ## Scanning
 We perform a quick and aggressive scan (**not recommended in real environments**) to detect open ports on the server.

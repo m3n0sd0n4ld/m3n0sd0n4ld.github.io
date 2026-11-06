@@ -4,6 +4,7 @@ tags: [writeup,tryhackme,capabilities,linux,tcpdump,ansible]
 style: border
 color: success
 description: ""
+image: "https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Aratus/1.png"
 ---
 
 ![logo](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Aratus/1.png)

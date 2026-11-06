@@ -4,9 +4,10 @@ tags: [writeup,cron,docker,phpbb]
 style: border
 color: success
 description: ""
+image: "https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/CatPictures/1.jpeg"
 ---
 
-![](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/CatPictures/1.jpeg)
+![logo](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/CatPictures/1.jpeg)
 
 ## Scanning
 We use **nmap** to scan all ports, along with scripts and software versions.

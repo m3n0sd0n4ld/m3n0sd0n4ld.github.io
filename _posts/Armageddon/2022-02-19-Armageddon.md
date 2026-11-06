@@ -4,10 +4,10 @@ tags: [writeup,hackthebox,drupal,drupalgeddon2,snap]
 style: border
 color: success
 description: ""
+image: "https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Armageddon/1.png"
 ---
 
-
-![](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Armageddon/1.png)
+![logo](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Armageddon/1.png)
 
 ## Scanning
 We run nmap on all ports with scripts and software versions.

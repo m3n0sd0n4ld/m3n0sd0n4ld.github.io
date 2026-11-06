@@ -4,10 +4,10 @@ tags: [writeup,tryhackme,linux,ctf,web]
 style: border
 color: success
 description: ""
+image: "https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/ConvertMyVideo/1.png"
 ---
 
-
-![](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/ConvertMyVideo/1.png)
+![logo](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/ConvertMyVideo/1.png)
 
 ## Scanning
 We launch nmap with scripts and software versions on all ports.

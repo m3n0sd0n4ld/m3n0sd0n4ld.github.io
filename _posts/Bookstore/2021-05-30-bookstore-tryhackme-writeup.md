@@ -4,6 +4,7 @@ tags: [writeup,rest,python,tryhackme,linux,api,suid]
 style: border
 color: success
 description: ""
+image: "https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Bookstore/logo.jpeg"
 ---
 
 ![logo](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Bookstore/logo.jpeg)
