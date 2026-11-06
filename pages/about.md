@@ -22,10 +22,10 @@ weight: 3
 
 ## 🛠️ Mickey-Herramientas
 
-1. **[uCVE](https://github.com/m3n0sd0n4ld/uCVE):** ![Go](https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white) Herramienta escrita en GO que permite extraer CVE's relacionados con un determinado software y versión, obteniendo un informe en formato HTML con el resultado y/o exportándolo al informe de pentesting.
-2. **[GooFuzz](https://github.com/m3n0sd0n4ld/GooFuzz):** ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat&logo=gnu-bash&logoColor=white) Herramienta para realizar fuzzing con un enfoque OSINT, consiguiendo enumerar directorios, archivos, subdominios o parámetros sin dejar evidencias en el servidor del objetivo y mediante búsquedas avanzadas en Google (Google Dorking).
-3. **[uDork](https://github.com/m3n0sd0n4ld/uDork):** ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat&logo=gnu-bash&logoColor=white) Script escrito en Bash Scripting que utiliza técnicas avanzadas de búsqueda en Google para obtener información sensible en archivos o directorios, encontrar dispositivos IoT, detectar versiones de aplicaciones web... *(Descontinuada)*.
-4. **[uNominaCracker](https://github.com/m3n0sd0n4ld/uNominaCracker):** ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white) Se trata de un script escrito en Python que realiza fuerza bruta en los ficheros ZIP con nóminas de los trabajadores mediante el uso de su DNI.
+1. **[uCVE](https://github.com/m3n0sd0n4ld/uCVE):** Herramienta escrita en GO que permite extraer CVE's relacionados con un determinado software y versión, obteniendo un informe en formato HTML con el resultado y/o exportándolo al informe de pentesting.
+2. **[GooFuzz](https://github.com/m3n0sd0n4ld/GooFuzz):** Herramienta para realizar fuzzing con un enfoque OSINT, consiguiendo enumerar directorios, archivos, subdominios o parámetros sin dejar evidencias en el servidor del objetivo y mediante búsquedas avanzadas en Google (Google Dorking).
+3. **[uDork](https://github.com/m3n0sd0n4ld/uDork):** Script escrito en Bash Scripting que utiliza técnicas avanzadas de búsqueda en Google para obtener información sensible en archivos o directorios, encontrar dispositivos IoT, detectar versiones de aplicaciones web... *(Descontinuada)*.
+4. **[uNominaCracker](https://github.com/m3n0sd0n4ld/uNominaCracker):** Se trata de un script escrito en Python que realiza fuerza bruta en los ficheros ZIP con nóminas de los trabajadores mediante el uso de su DNI.
 
 ---
 
@@ -48,7 +48,7 @@ weight: 3
 
 ## 🏆 CVEs
 
-<details>
+<details markdown="1">
 <summary>👉 Desplegar lista completa de CVEs (Haz clic aquí)</summary>
 
 - [1millionbot Millie Chatbot - Prompt Injection (CVE-2026-4399)](https://nvd.nist.gov/vuln/detail/CVE-2026-4399)
@@ -133,7 +133,7 @@ weight: 3
 
 ## 📝 Artículos y Eventos
 
-<details>
+<details markdown="1">
 <summary>👉 Desplegar artículos externos</summary>
 
 - [PenTest Magazine: Open-Source Pentesting Toolkit](https://pentestmag.com/product/pentest-open-source-pentesting-toolkit/)
@@ -149,7 +149,7 @@ weight: 3
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>👉 Desplegar eventos y ponencias</summary>
 
 - [Interview: Digitalización industrial en CCI (Centro de Ciberseguridad Industrial)](https://vimeo.com/431392473)
@@ -167,7 +167,7 @@ weight: 3
 
 ## 📚 Viejos artículos (Writeups)
 
-<details>
+<details markdown="1">
 <summary>👉 Desplegar Writeups de HackTheBox</summary>
 
 | Name | Level | OS | Tags |
@@ -185,7 +185,7 @@ weight: 3
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>👉 Desplegar Writeups de TryHackMe</summary>
 
 | Name | Level | OS | Tags |
@@ -200,7 +200,7 @@ weight: 3
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>👉 Desplegar Writeups de VulnHub</summary>
 
 | Name | Level | OS | Tags |
@@ -240,7 +240,7 @@ weight: 3
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>👉 Desplegar Writeups de UAM</summary>
 
 | Name | Level | OS | Tags |
