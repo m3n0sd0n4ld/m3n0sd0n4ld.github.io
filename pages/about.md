@@ -5,6 +5,34 @@ permalink: /about/
 weight: 3
 ---
 
+<style>
+  .quick-index { 
+    margin: 32px 0; 
+    padding: 24px; 
+    background: var(--surface); 
+    border: 1px solid var(--line); 
+    border-radius: var(--radius-card); 
+    text-align: center; 
+  }
+  .quick-index p { 
+    margin: 0 0 12px; 
+    font-family: var(--font-ui); 
+    font-weight: 700; 
+    color: var(--ink); 
+    font-size: 18px; 
+  }
+  .quick-index a { 
+    color: var(--ink) !important; 
+    text-decoration: none !important; 
+    font-family: var(--font-ui); 
+    font-weight: 500; 
+    transition: color 0.2s ease; 
+  }
+  .quick-index a:hover { 
+    color: var(--accent) !important; 
+  }
+</style>
+
 <p align="center">
   <img src="https://avatars.githubusercontent.com/u/54067582?v=4" alt="m3n0sd0n4ld" width="140" style="border-radius: 50%; box-shadow: 0 0 0 4px var(--accent-soft); object-fit: cover;">
 </p>
@@ -13,10 +41,11 @@ weight: 3
 
 > Gaditano 100% (50% "Gadi" y 50% "tano"). Más de 10 años como técnico informático y servicio técnico en microelectrónica. 12 años jugando con tecnología Industrial. Apasionado de la Ciberseguridad y retos de hacking. Actualmente trabajando en Seguridad Ofensiva.
 
----
-
+<div class="quick-index" markdown="1">
 **Índice rápido:**
+
 [🛠️ Herramientas](#-mickey-herramientas) | [🏆 CVEs](#-cves) | [🐞 Exploits](#-exploits) | [📝 Artículos y Eventos](#-artículos-y-eventos) | [📚 Viejos Writeups](#-viejos-artículos)
+</div>
 
 ---
 
@@ -49,7 +78,7 @@ weight: 3
 ## 🏆 CVEs
 
 <details markdown="1">
-<summary>👉 Lista completa de CVEs</summary>
+<summary>👉 Lista completa de CVEs (Haz clic aquí)</summary>
 
 - [1millionbot Millie Chatbot - Prompt Injection (CVE-2026-4399)](https://nvd.nist.gov/vuln/detail/CVE-2026-4399)
 - [1millionbot Millie Chatbot - Insecure Direct Object Reference (IDOR) (CVE-2026-4400)](https://nvd.nist.gov/vuln/detail/CVE-2026-4400)
