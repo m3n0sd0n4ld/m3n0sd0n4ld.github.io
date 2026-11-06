@@ -4,10 +4,10 @@ tags: [writeup,tryhackme,strings,stego,linux,crypto]
 style: border
 color: success
 description: ""
+image: "https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Jack-of-All-Trades/1.jpeg"
 ---
 
-
-![](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Jack-of-All-Trades/1.jpeg)
+![logo](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Jack-of-All-Trades/1.jpeg)
 
 ## Scanning
 We performed an nmap scan of all ports, with scripts and software versions.

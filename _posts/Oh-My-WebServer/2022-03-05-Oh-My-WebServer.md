@@ -4,10 +4,11 @@ tags: [writeup,tryhackme,apache,linux,omigod,cve-2021-41773]
 style: border
 color: success
 description: ""
+image: "https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Oh-My-WebServer/1.png"
 ---
 
 
-![](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Oh-My-WebServer/1.png)
+![logo](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Oh-My-WebServer/1.png)
 
 ## Scanning
 We run nmap on all ports with scripts and software versions.

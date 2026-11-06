@@ -4,10 +4,11 @@ tags: [mariadb,writeup,ipmi,zabbix,hackthebox,linux]
 style: border
 color: success
 description: ""
+image: "https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Shibboleth/1.jpg"
 ---
 
 
-![](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Shibboleth/1.jpg)
+![logo](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Shibboleth/1.jpg)
 
 ## Scanning
 We run nmap on all ports with scripts and software versions.

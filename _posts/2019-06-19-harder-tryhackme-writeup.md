@@ -4,7 +4,7 @@ tags: [writeup, tryhackme, git, linux, alpine, gpg]
 style: border
 color: success
 description: ""
-image: "../assets/img/harder-tryhackme-writeup/1.pn"
+image: "../assets/img/harder-tryhackme-writeup/1.png"
 ---
 
 ![logo](../assets/img/harder-tryhackme-writeup/1.png)

@@ -4,10 +4,11 @@ tags: [writeup,tryhackme,linux,nano,ssh,privatekeys,sudo]
 style: border
 color: success
 description: ""
+image: "https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/KoTH-Hackers/1.png"
 ---
 
 
-![](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/KoTH-Hackers/1.png)
+![logo](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/KoTH-Hackers/1.png)
 
 ## Scanning
 We scanned with the nmap tool all ports with scripts and software versions.

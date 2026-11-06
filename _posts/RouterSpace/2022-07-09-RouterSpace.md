@@ -4,10 +4,11 @@ tags: [writeup,anbox,command-injection,sudo,apk,hackthebox]
 style: border
 color: success
 description: ""
+image: "https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/RouterSpace/1.png"
 ---
 
 
-![](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/RouterSpace/1.png)
+![logo](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/RouterSpace/1.png)
 
 ## Scanning
 We run nmap on 22 and 80 ports with scripts and software versions.
