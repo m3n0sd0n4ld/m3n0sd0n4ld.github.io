@@ -17,8 +17,7 @@ permalink: /search/
   <p id="search-stats"></p>
 </div>
 
-<div class="posts" id="search-results">
-</div>
+<div class="posts" id="search-results"></div>
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
@@ -64,16 +63,29 @@ document.addEventListener("DOMContentLoaded", function() {
       results.forEach(post => {
         let snippet = post.content.substring(0, 180) + '...';
         
+        let imgHtml = '';
+        if (post.image && post.image !== "") {
+          imgHtml = `
+            <div class="card-media">
+              <a href="${post.url}">
+                <img src="${post.image}" alt="${post.title}" loading="lazy">
+              </a>
+            </div>
+          `;
+        }
+
         let tagsHtml = '';
         if (post.tags && post.tags !== "") {
           const tagsArray = post.tags.split(', ');
+          const limitedTags = tagsArray.slice(0, 3);
           tagsHtml = `<span class="card-tags">` + 
-            tagsArray.map(t => `<span class="tag">${t}</span>`).join('') + 
+            limitedTags.map(t => `<span class="tag">${t}</span>`).join('') + 
           `</span>`;
         }
 
         html += `
           <article class="card">
+            ${imgHtml}
             <div class="card-body">
               <div class="card-meta">
                 <span class="card-date">${post.date}</span>

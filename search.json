@@ -4,11 +4,19 @@ permalink: /search.json
 ---
 [
   {% for post in site.posts %}
+    {% assign img_src = post.image %}
+    {% if img_src == nil or img_src == "" %}
+      {% assign content_split = post.content | split: 'src="' %}
+      {% if content_split.size > 1 %}
+        {% assign img_src = content_split[1] | split: '"' | first %}
+      {% endif %}
+    {% endif %}
     {
       "title": {{ post.title | jsonify }},
       "url": {{ post.url | relative_url | jsonify }},
       "date": {{ post.date | date: "%d %b %Y" | jsonify }},
       "tags": {{ post.tags | join: ", " | jsonify }},
+      "image": {{ img_src | jsonify }},
       "content": {{ post.content | strip_html | strip_newlines | jsonify }}
     }{% unless forloop.last %},{% endunless %}
   {% endfor %}
