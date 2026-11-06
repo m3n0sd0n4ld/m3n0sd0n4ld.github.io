@@ -1,9 +1,10 @@
 ---
-title: UpDown HackTheBox Writeup
+title: Scrambled HackTheBox Writeup
 tags: [tgt,ticketer,tickets,kerbrute,yoserial,kerberos,invoke-command,windows,mssql-client,serialization,writeup,hackthebox,psexec,silver-ticket,command-injection,mssql]
 style: border
 color: success
 description: ""
+image: "https://blogger.googleusercontent.com/img/a/AVvXsEgPbcK1vhyX_GGTpGHFFWgCpeMPHhxwEZT8Jy5S6GzU3aadonr6cgi20dfUQepcIToP57nXXSzd8Gsm9T2HUJgM91CMDz-Lrs2c42th5X7D-jMVu8DYftKg6jwu7KF_qzkFpgET9z-7QSR3DgaXurRnhf4xEZJQ8_JpuOWDxBIBxT82oGSCyKodLfh1jA"
 ---
 
 [![](https://blogger.googleusercontent.com/img/a/AVvXsEgPbcK1vhyX_GGTpGHFFWgCpeMPHhxwEZT8Jy5S6GzU3aadonr6cgi20dfUQepcIToP57nXXSzd8Gsm9T2HUJgM91CMDz-Lrs2c42th5X7D-jMVu8DYftKg6jwu7KF_qzkFpgET9z-7QSR3DgaXurRnhf4xEZJQ8_JpuOWDxBIBxT82oGSCyKodLfh1jA=w640-h483)](https://blogger.googleusercontent.com/img/a/AVvXsEgPbcK1vhyX_GGTpGHFFWgCpeMPHhxwEZT8Jy5S6GzU3aadonr6cgi20dfUQepcIToP57nXXSzd8Gsm9T2HUJgM91CMDz-Lrs2c42th5X7D-jMVu8DYftKg6jwu7KF_qzkFpgET9z-7QSR3DgaXurRnhf4xEZJQ8_JpuOWDxBIBxT82oGSCyKodLfh1jA)
