@@ -5,29 +5,31 @@ permalink: /about/
 weight: 3
 ---
 
-<div style="text-align:center;margin:0 0 24px;">
-  <img src="https://avatars.githubusercontent.com/u/54067582?v=4" alt="m3n0sd0n4ld" style="width:160px;height:160px;border-radius:50%;object-fit:cover;box-shadow:0 0 0 3px var(--accent-soft);">
-</div>
+<p align="center">
+  <img src="https://avatars.githubusercontent.com/u/54067582?v=4" alt="m3n0sd0n4ld" width="140" style="border-radius: 50%; box-shadow: 0 0 0 4px var(--accent-soft); object-fit: cover;">
+</p>
 
-$> **{{ site.author.name }}** (M3n0sD0n4ld)<br>
+<h2 align="center">$> {{ site.author.name }} (M3n0sD0n4ld)</h2>
 
-- Gaditano 100% (50% "Gadi" y 50% "tano")
-- Más de 10 años como técnico informático y servicio técnico en microelectrónica.
-- 12 años jugando con tecnología Industrial.
-- Apasionado de la Ciberseguridad y retos de hacking.
-- Actualmente trabajando en Seguridad Ofensiva.
+> Gaditano 100% (50% "Gadi" y 50% "tano"). Más de 10 años como técnico informático y servicio técnico en microelectrónica. 12 años jugando con tecnología Industrial. Apasionado de la Ciberseguridad y retos de hacking. Actualmente trabajando en Seguridad Ofensiva.
+
+---
 
 ## Mickey-Herramientas
 
-1. [uCVE](https://github.com/m3n0sd0n4ld/uCVE): Herramienta escrita en GO que permite extraer CVE's relacionados con un determinado software y versión, obteniendo un informe en formato HTML con el resultado y/o exportándolo al informe de pentesting.
-2. [GooFuzz](https://github.com/m3n0sd0n4ld/GooFuzz): Herramienta para realizar fuzzing con un enfoque OSINT, consiguiendo enumerar directorios, archivos, subdominios o parámetros sin dejar evidencias en el servidor del objetivo y mediante búsquedas avanzadas en Google (Google Dorking).
-3. [uDork](https://github.com/m3n0sd0n4ld/uDork): Script escrito en Bash Scripting que utiliza técnicas avanzadas de búsqueda en Google para obtener información sensible en archivos o directorios, encontrar dispositivos IoT, detectar versiones de aplicaciones web... (Descontinuada)
-4. [uNominaCracker](https://github.com/m3n0sd0n4ld/uNominaCracker): Se trata de un script escrito en Python que realiza fuerza bruta en los ficheros ZIP con nóminas de los trabajadores mediante el uso de su DNI (Documento Nacional de Identidad).
+1. **[uCVE](https://github.com/m3n0sd0n4ld/uCVE):** Herramienta escrita en GO que permite extraer CVE's relacionados con un determinado software y versión, obteniendo un informe en formato HTML con el resultado y/o exportándolo al informe de pentesting.
+2. **[GooFuzz](https://github.com/m3n0sd0n4ld/GooFuzz):** Herramienta para realizar fuzzing con un enfoque OSINT, consiguiendo enumerar directorios, archivos, subdominios o parámetros sin dejar evidencias en el servidor del objetivo y mediante búsquedas avanzadas en Google (Google Dorking).
+3. **[uDork](https://github.com/m3n0sd0n4ld/uDork):** Script escrito en Bash Scripting que utiliza técnicas avanzadas de búsqueda en Google para obtener información sensible en archivos o directorios, encontrar dispositivos IoT, detectar versiones de aplicaciones web... (Descontinuada).
+4. **[uNominaCracker](https://github.com/m3n0sd0n4ld/uNominaCracker):** Se trata de un script escrito en Python que realiza fuerza bruta en los ficheros ZIP con nóminas de los trabajadores mediante el uso de su DNI (Documento Nacional de Identidad).
+
+---
 
 ## Aportes a la comunidad
 
 - [OWASP - RSQL Injection](https://owasp.org/www-community/attacks/RSQL_Injection)
 - [Hacktricks - RSQL Injection](https://book.hacktricks.wiki/en/pentesting-web/rsql-injection.html?highlight=rsql)
+
+---
 
 ## Exploits
 
@@ -36,6 +38,8 @@ $> **{{ site.author.name }}** (M3n0sD0n4ld)<br>
 - [Strapi < 3.0.0-beta.17.7 (Authenticated) - CVE-2019-19609](https://www.exploit-db.com/exploits/50238)
 - [Simple Image Gallery System 1.0 - SQL Injection (Time-Based blind)](https://m3n0sd0n4ld.blogspot.com/2022/03/simple-image-gallery-system-10-sql.html)
 - [Company's Recruitment Management System 1.0 - Remote Readable Administrator Credentials](https://m3n0sd0n4ld.blogspot.com/2022/07/companys-recruitment-management-system.html)
+
+---
 
 ## CVEs
 
@@ -115,6 +119,8 @@ $> **{{ site.author.name }}** (M3n0sD0n4ld)<br>
 - [Schlix CMS v2.2.8-1 - Remote Code Execution (CVE-2023-31505)](https://m3n0sd0n4ld.github.io/patoHackventuras/cve-2023-31505)
 - [Scada-LTS - Privilege escalation (CVE-2022-41976)](https://m3n0sd0n4ld.github.io/patoHackventuras/cve-2022-41976)
 
+---
+
 ## Artículos externos
 
 - [PenTest Magazine: Open-Source Pentesting Toolkit](https://pentestmag.com/product/pentest-open-source-pentesting-toolkit/)
@@ -128,6 +134,8 @@ $> **{{ site.author.name }}** (M3n0sD0n4ld)<br>
 - [El Coronavirus, una excusa más para los ciberdelincuentes](https://www.sothis.tech/ciberseguridad-aplicada-al-coronavirus/)
 - [Red Segura: Ciberseguridad aplicada al Coronavirus](https://www.redseguridad.com/especialidades-tic/activos-de-informacion/ciberseguridad-aplicada-al-coronavirus_20200402.html/amp/)
 
+---
+
 ## Eventos y ponencias
 
 - [Interview: Digitalización industrial en CCI (Centro de Ciberseguridad Industrial)](https://vimeo.com/431392473)
@@ -138,6 +146,8 @@ $> **{{ site.author.name }}** (M3n0sD0n4ld)<br>
 - [Conference: MailDay - Hackterriza como puedas - BitUP 2021](https://youtu.be/efpL9KAW3Fo?t=33410)
 - [Conference: IES Rafael Alberti (Cádiz) - IoT Pentesting - 2022](https://youtu.be/K1lTgYDF4lE)
 - [Conference: GooFuzz - Securiters Twitch- 2022](https://www.twitch.tv/videos/1517579986)
+
+---
 
 ## Viejos artículos
 
