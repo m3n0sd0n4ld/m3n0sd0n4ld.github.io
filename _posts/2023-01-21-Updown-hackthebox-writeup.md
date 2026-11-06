@@ -4,6 +4,7 @@ tags: [writeup,python,git,hackthebox,linux,easy-install,php,.phar,proc_open]
 style: border
 color: success
 description: ""
+image: "https://blogger.googleusercontent.com/img/a/AVvXsEjF1jdJKFLjieZGTgqjTxuAWn9wqli89CjChm5zelOh09ufDsqGbVFhNaqOYFlZZUuxwGbjIkF1p5XN9vvmH3KuzixK7Zx9meIslrE1kucdA-BfcXar7hzZmCsdbpmo5LatMrnSyWxcYT4i8xuLdMlCiuyqUaIwUB72r_J0YuppZdAdcTGue3DXhEACsA"
 ---
 
 [![](https://blogger.googleusercontent.com/img/a/AVvXsEjF1jdJKFLjieZGTgqjTxuAWn9wqli89CjChm5zelOh09ufDsqGbVFhNaqOYFlZZUuxwGbjIkF1p5XN9vvmH3KuzixK7Zx9meIslrE1kucdA-BfcXar7hzZmCsdbpmo5LatMrnSyWxcYT4i8xuLdMlCiuyqUaIwUB72r_J0YuppZdAdcTGue3DXhEACsA=w640-h485)](https://blogger.googleusercontent.com/img/a/AVvXsEjF1jdJKFLjieZGTgqjTxuAWn9wqli89CjChm5zelOh09ufDsqGbVFhNaqOYFlZZUuxwGbjIkF1p5XN9vvmH3KuzixK7Zx9meIslrE1kucdA-BfcXar7hzZmCsdbpmo5LatMrnSyWxcYT4i8xuLdMlCiuyqUaIwUB72r_J0YuppZdAdcTGue3DXhEACsA)

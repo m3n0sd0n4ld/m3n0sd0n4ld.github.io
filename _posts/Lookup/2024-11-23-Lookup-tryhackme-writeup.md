@@ -4,6 +4,7 @@ tags: [writeup, tryhackme, bruteforce, elFinder, command-injection, path-hijacki
 style: border
 color: success
 description: ""
+image: "https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Lookup/GdAsgYEXcAAaKPJ.png"
 ---
 
 ![logo](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/Lookup/GdAsgYEXcAAaKPJ.png)

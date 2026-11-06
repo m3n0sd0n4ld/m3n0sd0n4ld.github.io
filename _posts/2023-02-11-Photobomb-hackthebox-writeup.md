@@ -4,6 +4,7 @@ tags: [hackthebox,find,linux,ld_preload,setenv,command-injection,sinatra]
 style: border
 color: success
 description: ""
+image: "https://blogger.googleusercontent.com/img/a/AVvXsEjrdlB4DYQ2__-_3TeiMeRSuqI7VGlqGfxroswbtOdvCxU3kdFzsotu0N7W-4JTtz8B6Q4W6uv8P6ouLUBGJuJI9S1EsKGmWU0H-dJxT5PomMPPXTFysCIRRC_RbDq-XLuFai228WGxUOHFZf197nzE98Qd2-cgQ4seRP8JnuM-P_00Qpj5txsucbUxzQ"
 ---
 
  [![](https://blogger.googleusercontent.com/img/a/AVvXsEjrdlB4DYQ2__-_3TeiMeRSuqI7VGlqGfxroswbtOdvCxU3kdFzsotu0N7W-4JTtz8B6Q4W6uv8P6ouLUBGJuJI9S1EsKGmWU0H-dJxT5PomMPPXTFysCIRRC_RbDq-XLuFai228WGxUOHFZf197nzE98Qd2-cgQ4seRP8JnuM-P_00Qpj5txsucbUxzQ=w640-h485)](https://blogger.googleusercontent.com/img/a/AVvXsEjrdlB4DYQ2__-_3TeiMeRSuqI7VGlqGfxroswbtOdvCxU3kdFzsotu0N7W-4JTtz8B6Q4W6uv8P6ouLUBGJuJI9S1EsKGmWU0H-dJxT5PomMPPXTFysCIRRC_RbDq-XLuFai228WGxUOHFZf197nzE98Qd2-cgQ4seRP8JnuM-P_00Qpj5txsucbUxzQ)

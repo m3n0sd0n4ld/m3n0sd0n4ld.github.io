@@ -4,6 +4,7 @@ tags: [article, bypass, captcha, google, evasion,goofuzz]
 style: 
 color: 
 description: ""
+image: "../assets/img/google-search-captcha-evasion/1.png"
 ---
 
 ![](../assets/img/google-search-captcha-evasion/1.png)

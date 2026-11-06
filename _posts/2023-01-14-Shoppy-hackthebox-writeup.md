@@ -4,6 +4,7 @@ tags: [writeup,hackthebox,linux, fuzzing, mattermost]
 style: border
 color: success
 description: ""
+image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitc6mljegodOvBjmUHuHhvdjsBECBkPM4C2oDbraR_F_VSSoBmmZ8BKAwkNUlHnVOtpU-ZoxlHXRB9QAQU-klRGLFz3z6ao5T98XDqcE-2m_6I7jsPWEE4GyJIm3bCVDFTCd-9_agakqfk2PnRkfHWlBr99uLoZV2Z1n2QWKiQfRDuCZDAFa5Jhip8ig/s700/Shoppy.png"
 ---
 
 [![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitc6mljegodOvBjmUHuHhvdjsBECBkPM4C2oDbraR_F_VSSoBmmZ8BKAwkNUlHnVOtpU-ZoxlHXRB9QAQU-klRGLFz3z6ao5T98XDqcE-2m_6I7jsPWEE4GyJIm3bCVDFTCd-9_agakqfk2PnRkfHWlBr99uLoZV2Z1n2QWKiQfRDuCZDAFa5Jhip8ig/w640-h484/Shoppy.png)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitc6mljegodOvBjmUHuHhvdjsBECBkPM4C2oDbraR_F_VSSoBmmZ8BKAwkNUlHnVOtpU-ZoxlHXRB9QAQU-klRGLFz3z6ao5T98XDqcE-2m_6I7jsPWEE4GyJIm3bCVDFTCd-9_agakqfk2PnRkfHWlBr99uLoZV2Z1n2QWKiQfRDuCZDAFa5Jhip8ig/s700/Shoppy.png)
