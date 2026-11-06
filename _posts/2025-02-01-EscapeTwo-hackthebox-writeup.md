@@ -4,7 +4,7 @@ tags: [writeup, hackthebox, ldap, ad, ldapdomaindump, bloodhound, kerberoast, ms
 style: border
 color: success
 description: ""
-image: "../assets/img/escapetwo-hackthebox-writeup/Trickster.png"
+image: "../assets/img/escapetwo-hackthebox-writeup/EscapeTwo.png"
 ---
 
 ![logo](../assets/img/escapetwo-hackthebox-writeup/EscapeTwo.png)

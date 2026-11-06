@@ -4,6 +4,7 @@ tags: [writeup, tryhackme, linux, ctf, upx, reversing, python-library]
 style: border
 color: success
 description: ""
+image: "../assets/img/valley-tryhackme-writeup/1.jpg"
 ---
 
 ![logo](../assets/img/valley-tryhackme-writeup/1.jpg)

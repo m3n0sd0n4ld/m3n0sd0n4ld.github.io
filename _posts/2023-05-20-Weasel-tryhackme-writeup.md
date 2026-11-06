@@ -4,6 +4,7 @@ tags: [writeup, tryhackme, windows, ctf, jupyter, mount]
 style: border
 color: success
 description: ""
+image: "../assets/img/weasel-tryhackme-writeup/1.jpg"
 ---
 
 ![logo](../assets/img/weasel-tryhackme-writeup/1.jpg)

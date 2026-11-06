@@ -4,6 +4,7 @@ tags: [writeup, tryhackme, bypass, captcha, bruteforce, python]
 style: border
 color: success
 description: ""
+image: "../assets/img/capture-tryhackme-writeup/machine.jpg"
 ---
 
 ![logo](../assets/img/capture-tryhackme-writeup/machine.jpg)

@@ -4,6 +4,7 @@ tags: [writeup, tryhackme, sqli, wfuzz, orderby]
 style: border
 color: success
 description: ""
+image: "../assets/img/prioritise-tryhackme-writeup/1.jpg"
 ---
 
 ![logo](../assets/img/prioritise-tryhackme-writeup/1.jpg)
