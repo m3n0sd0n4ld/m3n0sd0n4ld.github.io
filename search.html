@@ -4,18 +4,65 @@ title: Buscar
 permalink: /search/
 ---
 
+<div class="search-page">
 <style>
-  .search-header { margin-bottom: 32px; padding-bottom: 16px; border-bottom: 1px solid var(--line); }
-  .search-header h2 { margin: 0; font-family: var(--font-ui); font-size: 24px; color: var(--ink); }
-  .search-header p { margin: 8px 0 0; color: var(--ink-3); font-size: 15px; }
-  .search-highlight { background: var(--accent-soft); color: var(--accent-ink); padding: 0 4px; border-radius: 4px; font-weight: 600; }
-  .no-results { text-align: center; padding: 40px 0; color: var(--ink-2); }
+  .search-page .search-header { margin-bottom: 32px; padding-bottom: 16px; border-bottom: 1px solid var(--line); }
+  .search-page .search-header h2 { margin: 0; font-family: var(--font-ui); font-size: 24px; color: var(--ink); }
+  .search-page .search-header p { margin: 8px 0 0; color: var(--ink-3); font-size: 15px; }
+  .search-page .search-highlight { background: var(--accent-soft); color: var(--accent-ink); padding: 0 4px; border-radius: 4px; font-weight: 600; }
+  .search-page .no-results { text-align: center; padding: 40px 0; color: var(--ink-2); }
 
-  /* Correcciones para que la imagen llene todo el espacio sin dejar franjas grises */
-  .card-media a { height: 100% !important; }
-  .card-media img { height: 100% !important; width: 100% !important; object-fit: cover !important; }
-  
-  .posts > .card:first-child .card-media { height: 100% !important; }
+  .search-page .posts > .card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  @media (min-width: 1181px) {
+    .search-page .posts > .card:first-child {
+      flex-direction: row;
+    }
+  }
+
+  .search-page .card-media {
+    position: relative !important;
+    width: 100% !important;
+    aspect-ratio: 16 / 9 !important;
+    background: var(--chip) !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border-bottom: 1px solid var(--line) !important;
+  }
+
+  @media (min-width: 1181px) {
+    .search-page .posts > .card:first-child .card-media {
+      flex: 1.25 1 0;
+      aspect-ratio: auto !important;
+      min-height: 100% !important;
+      border-bottom: 0 !important;
+      border-right: 1px solid var(--line) !important;
+    }
+  }
+
+  .search-page .card-media a {
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+  }
+
+  .search-page .card-media img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    display: block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
 </style>
 
 <div class="search-header">
@@ -24,6 +71,7 @@ permalink: /search/
 </div>
 
 <div class="posts" id="search-results"></div>
+</div>
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
