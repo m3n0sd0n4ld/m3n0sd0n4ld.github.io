@@ -10,6 +10,12 @@ permalink: /search/
   .search-header p { margin: 8px 0 0; color: var(--ink-3); font-size: 15px; }
   .search-highlight { background: var(--accent-soft); color: var(--accent-ink); padding: 0 4px; border-radius: 4px; font-weight: 600; }
   .no-results { text-align: center; padding: 40px 0; color: var(--ink-2); }
+
+  /* Correcciones para que la imagen llene todo el espacio sin dejar franjas grises */
+  .card-media a { height: 100% !important; }
+  .card-media img { height: 100% !important; width: 100% !important; object-fit: cover !important; }
+  
+  .posts > .card:first-child .card-media { height: 100% !important; }
 </style>
 
 <div class="search-header">
