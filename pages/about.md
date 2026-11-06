@@ -78,7 +78,7 @@ weight: 3
 ## 🏆 CVEs
 
 <details markdown="1">
-<summary>👉 Lista completa de CVEs (Haz clic aquí)</summary>
+<summary>👉 Lista completa de CVEs</summary>
 
 - [1millionbot Millie Chatbot - Prompt Injection (CVE-2026-4399)](https://nvd.nist.gov/vuln/detail/CVE-2026-4399)
 - [1millionbot Millie Chatbot - Insecure Direct Object Reference (IDOR) (CVE-2026-4400)](https://nvd.nist.gov/vuln/detail/CVE-2026-4400)
