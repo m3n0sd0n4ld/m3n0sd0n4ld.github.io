@@ -4,10 +4,11 @@ tags: [writeup,tryhackme,linux,steghide,reversing,brainfuck]
 style: border
 color: success
 description: ""
+image: "https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/The-Blob-Blog/1.png"
 ---
 
 
-![](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/The-Blob-Blog/1.png)
+![logo](https://raw.githubusercontent.com/m3n0sd0n4ld/m3n0sd0n4ld.github.io/main/_posts/The-Blob-Blog/1.png)
 
 ## Scanning
 We scan with **nmap** all ports with scripts and versions.
