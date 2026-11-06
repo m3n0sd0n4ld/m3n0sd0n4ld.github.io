@@ -4,6 +4,7 @@ tags: [writeup, tryhackme, jwt, api, privesc, ssrf, llm, chatbot, ssti, rce, rab
 style: border
 color: success
 description: ""
+image: "../assets/img/Rabbit_store-tryhackme-writeup/GkVVKrcWUAASL9L.jpeg"
 ---
 
 ![logo](../assets/img/Rabbit_store-tryhackme-writeup/GkVVKrcWUAASL9L.jpeg)
