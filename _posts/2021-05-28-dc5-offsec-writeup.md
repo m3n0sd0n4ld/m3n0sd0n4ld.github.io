@@ -4,6 +4,7 @@ tags: [writeup, offsec, LFI, RCE, Nginx, log, poison,SETUID, screen]
 style: border
 color: success
 description: ""
+image: "../assets/img/dc5-offsec-writeup/1.png"
 ---
 
 ![logo](../assets/img/dc5-offsec-writeup/1.png)

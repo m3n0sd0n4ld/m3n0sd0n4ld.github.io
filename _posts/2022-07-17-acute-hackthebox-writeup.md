@@ -4,6 +4,7 @@ tags: [antivirus, evasion, hackthebox, invoke-command, powershellweb, windows, w
 style: border
 color: success
 description: ""
+image: "../assets/img/acute/1.png"
 ---
 
 ![logo](../assets/img/acute/1.png)

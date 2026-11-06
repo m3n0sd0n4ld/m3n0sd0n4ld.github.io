@@ -4,9 +4,10 @@ tags: [article, cracking, dni, payroll, tool, unominacracker]
 style: 
 color: 
 description: ""
+image: "../assets/img/cracking-of-payroll-files/1.png"
 ---
 
-![](../assets/img/cracking-of-payroll-files/1.png)
+![logo](../assets/img/cracking-of-payroll-files/1.png)
 
 It is incredible how much information a company constantly generates, regardless of its size or capital. All, and I mean absolutely all, need to manage files on a daily basis or at least once a month, such as payroll files.
 

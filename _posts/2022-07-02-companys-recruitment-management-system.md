@@ -4,9 +4,10 @@ tags: [ exploit, simple-image-gallery-system, sql-injection]
 style: border
 color: danger
 description: ""
+image: "../assets/img/companys-recruitment-management-system/logo.jpeg"
 ---
 
-![](../assets/img/companys-recruitment-management-system/1.png)
+![](../assets/img/companys-recruitment-management-system/logo.jpeg)
 
 ## Introduction
 This is a **PHP Project** entitled **Company's Recruitment Management System**. This project is a web-based application that is a sort of job portal website for a certain company. This system provides the company's possible employees an online platform to explore the careers/employment vacancies of the company. It has a pleasant user interface and user-friendly functionalities

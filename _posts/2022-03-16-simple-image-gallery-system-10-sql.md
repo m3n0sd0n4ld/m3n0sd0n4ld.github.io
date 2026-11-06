@@ -4,7 +4,10 @@ tags: [ exploit, simple-image-gallery-system, sql-injection]
 style: border
 color: danger
 description: ""
+image: "../assets/img/simple-image-gallery-system-10-sql/logo.jpeg"
 ---
+
+![logo](../assets/img/simple-image-gallery-system-10-sql/logo.jpeg)
 
 ## Description
 The Simple Image Gallery System 1.0 application is vulnerable to SQL injection through the "username" parameter in the authentication form.
