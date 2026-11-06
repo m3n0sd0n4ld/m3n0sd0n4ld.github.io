@@ -15,23 +15,28 @@ weight: 3
 
 ---
 
-## Mickey-Herramientas
-
-1. **[uCVE](https://github.com/m3n0sd0n4ld/uCVE):** Herramienta escrita en GO que permite extraer CVE's relacionados con un determinado software y versión, obteniendo un informe en formato HTML con el resultado y/o exportándolo al informe de pentesting.
-2. **[GooFuzz](https://github.com/m3n0sd0n4ld/GooFuzz):** Herramienta para realizar fuzzing con un enfoque OSINT, consiguiendo enumerar directorios, archivos, subdominios o parámetros sin dejar evidencias en el servidor del objetivo y mediante búsquedas avanzadas en Google (Google Dorking).
-3. **[uDork](https://github.com/m3n0sd0n4ld/uDork):** Script escrito en Bash Scripting que utiliza técnicas avanzadas de búsqueda en Google para obtener información sensible en archivos o directorios, encontrar dispositivos IoT, detectar versiones de aplicaciones web... (Descontinuada).
-4. **[uNominaCracker](https://github.com/m3n0sd0n4ld/uNominaCracker):** Se trata de un script escrito en Python que realiza fuerza bruta en los ficheros ZIP con nóminas de los trabajadores mediante el uso de su DNI (Documento Nacional de Identidad).
+**Índice rápido:**
+[🛠️ Herramientas](#-mickey-herramientas) | [🏆 CVEs](#-cves) | [🐞 Exploits](#-exploits) | [📝 Artículos y Eventos](#-artículos-y-eventos) | [📚 Viejos Writeups](#-viejos-artículos)
 
 ---
 
-## Aportes a la comunidad
+## 🛠️ Mickey-Herramientas
+
+1. **[uCVE](https://github.com/m3n0sd0n4ld/uCVE):** ![Go](https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white) Herramienta escrita en GO que permite extraer CVE's relacionados con un determinado software y versión, obteniendo un informe en formato HTML con el resultado y/o exportándolo al informe de pentesting.
+2. **[GooFuzz](https://github.com/m3n0sd0n4ld/GooFuzz):** ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat&logo=gnu-bash&logoColor=white) Herramienta para realizar fuzzing con un enfoque OSINT, consiguiendo enumerar directorios, archivos, subdominios o parámetros sin dejar evidencias en el servidor del objetivo y mediante búsquedas avanzadas en Google (Google Dorking).
+3. **[uDork](https://github.com/m3n0sd0n4ld/uDork):** ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat&logo=gnu-bash&logoColor=white) Script escrito en Bash Scripting que utiliza técnicas avanzadas de búsqueda en Google para obtener información sensible en archivos o directorios, encontrar dispositivos IoT, detectar versiones de aplicaciones web... *(Descontinuada)*.
+4. **[uNominaCracker](https://github.com/m3n0sd0n4ld/uNominaCracker):** ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white) Se trata de un script escrito en Python que realiza fuerza bruta en los ficheros ZIP con nóminas de los trabajadores mediante el uso de su DNI.
+
+---
+
+## 🌐 Aportes a la comunidad
 
 - [OWASP - RSQL Injection](https://owasp.org/www-community/attacks/RSQL_Injection)
 - [Hacktricks - RSQL Injection](https://book.hacktricks.wiki/en/pentesting-web/rsql-injection.html?highlight=rsql)
 
 ---
 
-## Exploits
+## 🐞 Exploits
 
 - [WordPress 5.7 - 'Media Library' XML External Entity Injection (XXE) (Authenticated) - CVE-2021-29447](https://www.exploit-db.com/exploits/50304)
 - [SUDO - CVE-2021-3156 (Checker)](https://github.com/m3n0sd0n4ld/CVE-Exploits/tree/main/CVE-2021-3156)
@@ -41,7 +46,10 @@ weight: 3
 
 ---
 
-## CVEs
+## 🏆 CVEs
+
+<details>
+<summary>👉 Desplegar lista completa de CVEs (Haz clic aquí)</summary>
 
 - [1millionbot Millie Chatbot - Prompt Injection (CVE-2026-4399)](https://nvd.nist.gov/vuln/detail/CVE-2026-4399)
 - [1millionbot Millie Chatbot - Insecure Direct Object Reference (IDOR) (CVE-2026-4400)](https://nvd.nist.gov/vuln/detail/CVE-2026-4400)
@@ -119,9 +127,14 @@ weight: 3
 - [Schlix CMS v2.2.8-1 - Remote Code Execution (CVE-2023-31505)](https://m3n0sd0n4ld.github.io/patoHackventuras/cve-2023-31505)
 - [Scada-LTS - Privilege escalation (CVE-2022-41976)](https://m3n0sd0n4ld.github.io/patoHackventuras/cve-2022-41976)
 
+</details>
+
 ---
 
-## Artículos externos
+## 📝 Artículos y Eventos
+
+<details>
+<summary>👉 Desplegar artículos externos</summary>
 
 - [PenTest Magazine: Open-Source Pentesting Toolkit](https://pentestmag.com/product/pentest-open-source-pentesting-toolkit/)
 - [Company's Recruitment Management System 1.0 - Remote Readable Administrator Credentials](https://m3n0sd0n4ld.blogspot.com/2022/07/companys-recruitment-management-system.html)
@@ -134,9 +147,10 @@ weight: 3
 - [El Coronavirus, una excusa más para los ciberdelincuentes](https://www.sothis.tech/ciberseguridad-aplicada-al-coronavirus/)
 - [Red Segura: Ciberseguridad aplicada al Coronavirus](https://www.redseguridad.com/especialidades-tic/activos-de-informacion/ciberseguridad-aplicada-al-coronavirus_20200402.html/amp/)
 
----
+</details>
 
-## Eventos y ponencias
+<details>
+<summary>👉 Desplegar eventos y ponencias</summary>
 
 - [Interview: Digitalización industrial en CCI (Centro de Ciberseguridad Industrial)](https://vimeo.com/431392473)
 - [Conference: Voz de la industria sobre la integración de Redes IT/OT - Ciberseguridad Industrial](https://t.co/dXTbGuI56n?amp=1)
@@ -147,11 +161,14 @@ weight: 3
 - [Conference: IES Rafael Alberti (Cádiz) - IoT Pentesting - 2022](https://youtu.be/K1lTgYDF4lE)
 - [Conference: GooFuzz - Securiters Twitch- 2022](https://www.twitch.tv/videos/1517579986)
 
+</details>
+
 ---
 
-## Viejos artículos
+## 📚 Viejos artículos (Writeups)
 
-### HackTheBox
+<details>
+<summary>👉 Desplegar Writeups de HackTheBox</summary>
 
 | Name | Level | OS | Tags |
 | :--- | :---: | :---: | :---: |
@@ -166,7 +183,10 @@ weight: 3
 | [Doctor](https://www.hackingarticles.in/doctor-hackthebox-walkthrough/) | `Easy` | `Linux` | `#SSTI #RCE #Splunk` |
 | [Chaos](https://www.hackingarticles.in/chaos-hackthebox-walkthrough/) | `Medium` | `Linux` | `#WP #Roundcube #Firefox` |
 
-### TryHackMe
+</details>
+
+<details>
+<summary>👉 Desplegar Writeups de TryHackMe</summary>
 
 | Name | Level | OS | Tags |
 | :--- | :---: | :---: | :---: |
@@ -178,7 +198,10 @@ weight: 3
 | [Ghizer](https://www.hackingarticles.in/ghizer-tryhackme-walkthrough) | `Medium` | `Linux` | `#debug #RCE #Limesurvey #ghidra` |
 | [Iron Corp](https://www.hackingarticles.in/iron-corp-tryhackme-walkthrough) | `Hard` | `Windows` | `#hydra #dig #SSRF #ACL` |
 
-### VulnHub
+</details>
+
+<details>
+<summary>👉 Desplegar Writeups de VulnHub</summary>
 
 | Name | Level | OS | Tags |
 | :--- | :---: | :---: | :---: |
@@ -215,8 +238,13 @@ weight: 3
 | [KB-Vulns: 3](https://www.hackingarticles.in/kb-vuln-3-vulnhub-walkthrough/) | `Easy` | `Linux` | `#smb #SiteMagicCMS #SETUID #systemctl` |
 | [Cybox: 1](https://www.hackingarticles.in/cybox-1-vulnhub-walkthrough/) | `Medium` | `Linux` | `#LFI #RCE #Apache #poison #SETUID #uncommon` |
 
-### UAM
+</details>
+
+<details>
+<summary>👉 Desplegar Writeups de UAM</summary>
 
 | Name | Level | OS | Tags |
 | :--- | :---: | :---: | :---: |
 | [El coche fantástico](https://github.com/m3n0sd0n4ld/writeups/blob/master/pdfs/UAM%20-%20El%20coche%20fant%C3%A1stico%20-%20Episodio%201.pdf) | `Easy` | `Linux` | `#web #waf #xor #RCE` |
+
+</details>
