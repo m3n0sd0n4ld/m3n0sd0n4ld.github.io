@@ -49,7 +49,7 @@ weight: 3
 ## 🏆 CVEs
 
 <details markdown="1">
-<summary>👉 Desplegar lista completa de CVEs (Haz clic aquí)</summary>
+<summary>👉 Lista completa de CVEs</summary>
 
 - [1millionbot Millie Chatbot - Prompt Injection (CVE-2026-4399)](https://nvd.nist.gov/vuln/detail/CVE-2026-4399)
 - [1millionbot Millie Chatbot - Insecure Direct Object Reference (IDOR) (CVE-2026-4400)](https://nvd.nist.gov/vuln/detail/CVE-2026-4400)
@@ -134,7 +134,7 @@ weight: 3
 ## 📝 Artículos y Eventos
 
 <details markdown="1">
-<summary>👉 Desplegar artículos externos</summary>
+<summary>👉 Artículos externos</summary>
 
 - [PenTest Magazine: Open-Source Pentesting Toolkit](https://pentestmag.com/product/pentest-open-source-pentesting-toolkit/)
 - [Company's Recruitment Management System 1.0 - Remote Readable Administrator Credentials](https://m3n0sd0n4ld.blogspot.com/2022/07/companys-recruitment-management-system.html)
@@ -150,7 +150,7 @@ weight: 3
 </details>
 
 <details markdown="1">
-<summary>👉 Desplegar eventos y ponencias</summary>
+<summary>👉 Eventos y ponencias</summary>
 
 - [Interview: Digitalización industrial en CCI (Centro de Ciberseguridad Industrial)](https://vimeo.com/431392473)
 - [Conference: Voz de la industria sobre la integración de Redes IT/OT - Ciberseguridad Industrial](https://t.co/dXTbGuI56n?amp=1)
@@ -168,7 +168,7 @@ weight: 3
 ## 📚 Viejos artículos (Writeups)
 
 <details markdown="1">
-<summary>👉 Desplegar Writeups de HackTheBox</summary>
+<summary>👉 Writeups de HackTheBox</summary>
 
 | Name | Level | OS | Tags |
 | :--- | :---: | :---: | :---: |
@@ -186,7 +186,7 @@ weight: 3
 </details>
 
 <details markdown="1">
-<summary>👉 Desplegar Writeups de TryHackMe</summary>
+<summary>👉 Writeups de TryHackMe</summary>
 
 | Name | Level | OS | Tags |
 | :--- | :---: | :---: | :---: |
@@ -201,7 +201,7 @@ weight: 3
 </details>
 
 <details markdown="1">
-<summary>👉 Desplegar Writeups de VulnHub</summary>
+<summary>👉 Writeups de VulnHub</summary>
 
 | Name | Level | OS | Tags |
 | :--- | :---: | :---: | :---: |
@@ -241,7 +241,7 @@ weight: 3
 </details>
 
 <details markdown="1">
-<summary>👉 Desplegar Writeups de UAM</summary>
+<summary>👉 Writeups de UAM</summary>
 
 | Name | Level | OS | Tags |
 | :--- | :---: | :---: | :---: |
