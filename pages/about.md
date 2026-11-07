@@ -70,8 +70,8 @@ weight: 3
 - [WordPress 5.7 - 'Media Library' XML External Entity Injection (XXE) (Authenticated) - CVE-2021-29447](https://www.exploit-db.com/exploits/50304)
 - [SUDO - CVE-2021-3156 (Checker)](https://github.com/m3n0sd0n4ld/CVE-Exploits/tree/main/CVE-2021-3156)
 - [Strapi < 3.0.0-beta.17.7 (Authenticated) - CVE-2019-19609](https://www.exploit-db.com/exploits/50238)
-- [Simple Image Gallery System 1.0 - SQL Injection (Time-Based blind)](https://m3n0sd0n4ld.blogspot.com/2022/03/simple-image-gallery-system-10-sql.html)
-- [Company's Recruitment Management System 1.0 - Remote Readable Administrator Credentials](https://m3n0sd0n4ld.blogspot.com/2022/07/companys-recruitment-management-system.html)
+- [Simple Image Gallery System 1.0 - SQL Injection (Time-Based blind)](https://m3n0sd0n4ld.github.io/patoHackventuras/simple-image-gallery-system-10-sql)
+- [Company's Recruitment Management System 1.0 - Remote Readable Administrator Credentials](https://m3n0sd0n4ld.github.io/patoHackventuras/companys-recruitment-management-system)
 
 ---
 
@@ -164,9 +164,9 @@ weight: 3
 <summary>👉 Artículos externos</summary>
 
 - [PenTest Magazine: Open-Source Pentesting Toolkit](https://pentestmag.com/product/pentest-open-source-pentesting-toolkit/)
-- [Company's Recruitment Management System 1.0 - Remote Readable Administrator Credentials](https://m3n0sd0n4ld.blogspot.com/2022/07/companys-recruitment-management-system.html)
+- [Company's Recruitment Management System 1.0 - Remote Readable Administrator Credentials](https://m3n0sd0n4ld.github.io/patoHackventuras/companys-recruitment-management-system)
 - [GooFuzz: la herramienta para la enumeración de directorios y ficheros de forma pasiva](https://www.hackplayers.com/2022/06/goofuzz-tool-enum-pasiva.html)
-- [Cracking of payroll files](https://m3n0sd0n4ld.blogspot.com/2020/10/cracking-of-payroll-files.html)
+- [Cracking of payroll files](https://www.linkedin.com/pulse/cracking-ficheros-de-n%C3%B3minas-david-ut%C3%B3n-amaya/)
 - [CTF: Aprende «hacking» jugando](https://www.sothis.tech/capture-the-flag-aprende-hacking-jugando/)
 - [Por el router muere el pez](https://www.sothis.tech/por-el-router-muere-el-pez/)
 - [Ciberataques físicos: cuando el peligro está en un USB](https://www.sothis.tech/sistemas-de-control-industrial/)
